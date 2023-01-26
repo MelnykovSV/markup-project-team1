@@ -1,0 +1,70 @@
+// ===================Montserrat===================
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  src: local(''), url('../fonts/Montserrat-Light.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('../fonts/Montserrat-Light.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''), url('../fonts/Montserrat-Regular.woff2') format('woff2'),
+    url('../fonts/Montserrat-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  src: local(''), url('../fonts/Montserrat-Medium.woff2') format('woff2'),
+    url('../fonts/Montserrat-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  src: local(''), url('../fonts/Montserrat-SemiBold.woff2') format('woff2'),
+    url('../fonts/Montserrat-SemiBold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''), url('../fonts/Montserrat-Bold.woff2') format('woff2'),
+    url('../fonts/Montserrat-Bold.woff') format('woff');
+}
+
+// ===================Montserrat===================
+
+@font-face {
+  font-family: 'Times new roman';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''), url('../fonts/TimesNewRoman.woff2') format('woff2'),
+    url('../fonts/TimesNewRoman.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Times new roman';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''), url('../fonts/TimesNewRoman-Bold.woff2') format('woff2'),
+    url('../fonts/TimesNewRoman-Bold.woff') format('woff');
+}
+
+// ===================FilmP3===================
+
+@font-face {
+  font-family: 'FilmP3';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''), url('../fonts/FilmP3Bold.woff2') format('woff2'),
+    url('../fonts/FilmP3Bold.woff') format('woff');
+}
