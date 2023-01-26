@@ -20,3 +20,9 @@ our hotel
 
 Інспектуємо слайдер і стилізуємо його через класи, які бічимо на елементах
 слайдера (.slick-track, мені здеється, краще не чіпати).
+
+Детальніше: https://github.com/NataliiaValko/demo_js/blob/main/src/js/slick.js
+
+<!-- ==========================МОДАЛКИ========================== -->
+
+Детальніше: https://github.com/NataliiaValko/demo_js/blob/main/src/js/modal.js
