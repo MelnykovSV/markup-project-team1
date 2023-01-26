@@ -25,6 +25,9 @@
   // #BABABA
   --bg-image-secondary-rgb: 186, 186, 186;
 
+  //  Приклади використання rgb-змінних для отримання rgba кольорів з різною прозорістю:
+  // rgba(var(--name-rgb), 0),   rgba(var(--name-rgb), 0.35),  rgba(var(--name-rgb), 0.8),
+
   // ======================BACKGROUND======================
   //   fon lemon
   --bg: #fffdee;
