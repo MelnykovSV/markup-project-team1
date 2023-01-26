@@ -15,8 +15,8 @@
 
 .slick-small - для слайдерів з малими квадратними картинками
 
-.slick-description - для слайдерів в секціях Details of our restaurant та
-Details of our hotel
+.slick-details - для слайдерів в секціях Details of our restaurant та Details of
+our hotel
 
 Інспектуємо слайдер і стилізуємо його через класи, які бічимо на елементах
-слайдера (.slick-track, мені здеється, краще не чіпати)
+слайдера (.slick-track, мені здеється, краще не чіпати).
