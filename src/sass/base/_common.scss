@@ -39,3 +39,29 @@ body {
 .modal-open {
   overflow: hidden;
 }
+
+.complex__text {
+  display: block;
+  margin-bottom: 12px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  line-height: 1.15;
+  color: var(--text-secondary-light);
+  @media (min-width: $tablet) {
+    font-size: 32px;
+    margin-bottom: 4px;
+  }
+}
+.complex__logo {
+  display: block;
+  font-family: 'FilmP3';
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.075;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  color: var(--text-mimino-dark);
+  @media (min-width: $tablet) {
+    font-size: 64px;
+  }
+}
