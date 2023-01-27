@@ -1,0 +1,50 @@
+.menu-heading{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.15;
+    text-transform: uppercase;
+}
+
+.table{
+    &__title{
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.15;    
+    }
+}
+
+.table-row{
+    &__name{
+        // font-family: 'Times New Roman', Times, serif;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+    }
+
+    &__aside{
+        // font-family: 'Times New Roman', Times, serif;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+    }
+    
+    &__weight{
+        // font-family: 'Times New Roman', Times, serif;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+    }
+
+    &__price{
+        // font-family: 'Times New Roman', Times, serif;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+    }
+}
