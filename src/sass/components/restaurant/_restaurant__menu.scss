@@ -18,7 +18,7 @@
 
 .table{
     padding-bottom: 16px;
-    max-width: 384px;
+    min-width: 384px;
     &__title{
         font-family: 'Times New Roman', Times, serif;
         font-weight: 700;
@@ -59,6 +59,7 @@
         letter-spacing: 0.02em;
         padding-bottom: 8px;
         text-align: left;
+        width: 220px;
         border: 1px solid purple;
 
 
@@ -81,13 +82,12 @@
         font-size: 14px;
         line-height: 1.2;
         letter-spacing: 0.02em;
-        // min-width: 60px;
         text-align: center;
         border: 1px solid purple;
 
     @media (min-width:1200px){
         font-size: 16px;
-    }
+        }
 
     }
 }
