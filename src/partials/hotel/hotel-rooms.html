@@ -1,233 +1,260 @@
 <section class="hotel-rooms-section">
-  <h2 class="">Список номерів кімнат готелю</h2>
+  <h2 class="visually-hidden">Список номерів кімнат готелю</h2>
 
-  <ul class="list-rooms">
+  <ul class="list-rooms list">
     <li class="list-rooms__item">
-      <span class="section-label">Amet minim mollit non</span>
-      <span class="section-logo">MIMIHO</span>
+      <div class="container">
+        <div class="complex list-rooms__complex">
+          <span class="complex__text">Amet minim mollit non</span>
+          <span class="complex__logo" aria-label="Міміно">Mimino</span>
+        </div>
 
-      <h3 class="list-rooms__title">ДВОМІСНИЙ НОМЕР люкс</h3>
+        <h3 class="list-rooms__title">
+          Двомісний номер <span class="list-rooms__label">люкс</span>
+        </h3>
 
-      <p class="list-rooms__descr">
-        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-        sint. Velit officia consequat duis enim velit mollit. Exercitation
-        veniam consequat sunt nostrud amet.
-      </p>
+        <p class="list-rooms__descr">
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+          sint. Velit officia consequat duis enim velit mollit. Exercitation
+          veniam consequat sunt nostrud amet.
+        </p>
 
-      <picture>
-        <source
-          srcset="
-            ./images/hotel/desktop-room-img.jpg?as=webp&width=460 1x,
-            ./images/hotel/desktop-room-img.jpg?as=webp&width=920 2x
-          "
-          media="(min-width:1280px)"
-          type="image/webp"
-        />
-        <source
-          srcset="
-            ./images/hotel/desktop-room-img.jpg?width=460 1x,
-            ./images/hotel/desktop-room-img.jpg?width=920 2x
-          "
-          media="(min-width:1280px)"
-          type="image/jpeg"
-        />
-        <source
-          srcset="
-            ./images/hotel/tablet-room-img.jpg?as=webp&width=400 1x,
-            ./images/hotel/tablet-room-img.jpg?as=webp&width=800 2x
-          "
-          media="(min-width:1024px)"
-          type="image/webp"
-        />
-        <source
-          srcset="
-            ./images/hotel/tablet-room-img.jpg?width=400 1x,
-            ./images/hotel/tablet-room-img.jpg?width=800 2x
-          "
-          media="(min-width:1024px)"
-          type="image/jpeg"
-        />
-        <source
-          srcset="
-            ./images/hotel/mobile-room-img.jpg?as=webp&width=224 1x,
-            ./images/hotel/mobile-room-img.jpg?as=webp&width=448 2x
-          "
-          type="image/webp"
-        />
-        <source
-          srcset="
-            ./images/hotel/mobile-room-img.jpg?width=224 1x,
-            ./images/hotel/mobile-room-img.jpg?width=448 2x
-          "
-          type="image/jpeg"
-        />
+        <picture>
+          <source
+            srcset="
+              ./images/hotel/desktop-room-img.jpg?as=webp&width=460 1x,
+              ./images/hotel/desktop-room-img.jpg?as=webp&width=920 2x
+            "
+            media="(min-width:1280px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/hotel/desktop-room-img.jpg?width=460 1x,
+              ./images/hotel/desktop-room-img.jpg?width=920 2x
+            "
+            media="(min-width:1280px)"
+            type="image/jpeg"
+          />
+          <source
+            srcset="
+              ./images/hotel/tablet-room-img.jpg?as=webp&width=400 1x,
+              ./images/hotel/tablet-room-img.jpg?as=webp&width=800 2x
+            "
+            media="(min-width:1024px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/hotel/tablet-room-img.jpg?width=400 1x,
+              ./images/hotel/tablet-room-img.jpg?width=800 2x
+            "
+            media="(min-width:1024px)"
+            type="image/jpeg"
+          />
+          <source
+            srcset="
+              ./images/hotel/mobile-room-img.jpg?as=webp&width=224 1x,
+              ./images/hotel/mobile-room-img.jpg?as=webp&width=448 2x
+            "
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/hotel/mobile-room-img.jpg?width=224 1x,
+              ./images/hotel/mobile-room-img.jpg?width=448 2x
+            "
+            type="image/jpeg"
+          />
+          <img
+            class="list-rooms__img"
+            src="./images/hotel/desktop-room-img.jpg"
+            alt="Фотографія номер готелю"
+          />
+        </picture>
 
-        <img src="./images/hotel/desktop-room-img.jpg" alt="Номер готелю" />
-      </picture>
+        <ul class="list-btns list">
+          <li class="list-btns__item">
+            <button class="list-btns__btn" type="button">Детальніше</button>
+          </li>
 
-      <div class="list-rooms__test"></div>
-
-      <ul class="list-btns">
-        <li class="list-btns__item">
-          <button class="btn" type="button">Детальніше</button>
-        </li>
-
-        <li class="list-btns__item">
-          <button class="btn" type="button">Переглянути ціни</button>
-        </li>
-      </ul>
+          <li class="list-btns__item">
+            <button class="list-btns__btn" type="button">
+              Переглянути ціни
+            </button>
+          </li>
+        </ul>
+      </div>
     </li>
 
     <li class="list-rooms__item">
-      <span class="section__label">Amet minim mollit non</span>
-      <span class="section__logo">MIMIHO</span>
+      <div class="container">
+        <div class="complex">
+          <span class="complex__text">Amet minim mollit non</span>
+          <span class="complex__logo" aria-label="Міміно">Mimino</span>
+        </div>
 
-      <h3 class="list-rooms__title">ТРЬОХМІСНИЙ НОМЕР</h3>
+        <h3 class="list-rooms__title">Трьохмісний номер</h3>
 
-      <p class="list-rooms__descr">
-        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-        sint. Velit officia consequat duis enim velit mollit. Exercitation
-        veniam consequat sunt nostrud amet.
-      </p>
+        <p class="list-rooms__descr">
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+          sint. Velit officia consequat duis enim velit mollit. Exercitation
+          veniam consequat sunt nostrud amet.
+        </p>
 
-      <picture>
-        <source
-          srcset="
-            ./images/hotel/desktop-room-img.jpg?as=webp&width=460 1x,
-            ./images/hotel/desktop-room-img.jpg?as=webp&width=920 2x
-          "
-          media="(min-width:1280px)"
-          type="image/webp"
-        />
-        <source
-          srcset="
-            ./images/hotel/desktop-room-img.jpg?width=460 1x,
-            ./images/hotel/desktop-room-img.jpg?width=920 2x
-          "
-          media="(min-width:1280px)"
-          type="image/jpeg"
-        />
-        <source
-          srcset="
-            ./images/hotel/tablet-room-img.jpg?as=webp&width=400 1x,
-            ./images/hotel/tablet-room-img.jpg?as=webp&width=800 2x
-          "
-          media="(min-width:1024px)"
-          type="image/webp"
-        />
-        <source
-          srcset="
-            ./images/hotel/tablet-room-img.jpg?width=400 1x,
-            ./images/hotel/tablet-room-img.jpg?width=800 2x
-          "
-          media="(min-width:1024px)"
-          type="image/jpeg"
-        />
-        <source
-          srcset="
-            ./images/hotel/mobile-room-img.jpg?as=webp&width=224 1x,
-            ./images/hotel/mobile-room-img.jpg?as=webp&width=448 2x
-          "
-          type="image/webp"
-        />
-        <source
-          srcset="
-            ./images/hotel/mobile-room-img.jpg?width=224 1x,
-            ./images/hotel/mobile-room-img.jpg?width=448 2x
-          "
-          type="image/jpeg"
-        />
+        <picture>
+          <source
+            srcset="
+              ./images/hotel/desktop-room-img.jpg?as=webp&width=460 1x,
+              ./images/hotel/desktop-room-img.jpg?as=webp&width=920 2x
+            "
+            media="(min-width:1280px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/hotel/desktop-room-img.jpg?width=460 1x,
+              ./images/hotel/desktop-room-img.jpg?width=920 2x
+            "
+            media="(min-width:1280px)"
+            type="image/jpeg"
+          />
+          <source
+            srcset="
+              ./images/hotel/tablet-room-img.jpg?as=webp&width=400 1x,
+              ./images/hotel/tablet-room-img.jpg?as=webp&width=800 2x
+            "
+            media="(min-width:1024px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/hotel/tablet-room-img.jpg?width=400 1x,
+              ./images/hotel/tablet-room-img.jpg?width=800 2x
+            "
+            media="(min-width:1024px)"
+            type="image/jpeg"
+          />
+          <source
+            srcset="
+              ./images/hotel/mobile-room-img.jpg?as=webp&width=224 1x,
+              ./images/hotel/mobile-room-img.jpg?as=webp&width=448 2x
+            "
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/hotel/mobile-room-img.jpg?width=224 1x,
+              ./images/hotel/mobile-room-img.jpg?width=448 2x
+            "
+            type="image/jpeg"
+          />
+          <img
+            class="list-rooms__img"
+            src="./images/hotel/desktop-room-img.jpg"
+            alt="Фотографія номер готелю"
+          />
+        </picture>
 
-        <img src="./images/hotel/desktop-room-img.jpg" alt="Номер готелю" />
-      </picture>
+        <ul class="list-btns list">
+          <li class="list-btns__item">
+            <button class="list-btns__btn" type="button">Детальніше</button>
+          </li>
 
-      <div class="list-rooms__test"></div>
-
-      <ul class="list-btns">
-        <li class="list-btns__item">
-          <button class="btn" type="button">Детальніше</button>
-        </li>
-
-        <li class="list-btns__item">
-          <button class="btn" type="button">Переглянути ціни</button>
-        </li>
-      </ul>
+          <li class="list-btns__item">
+            <button class="list-btns__btn" type="button">
+              Переглянути ціни
+            </button>
+          </li>
+        </ul>
+      </div>
     </li>
 
     <li class="list-rooms__item">
-      <span class="section__label">Amet minim mollit non</span>
-      <span class="section__logo">MIMIHO</span>
+      <div class="container">
+        <div class="complex">
+          <span class="complex__text">Amet minim mollit non</span>
+          <span class="complex__logo" aria-label="Міміно">Mimino</span>
+        </div>
 
-      <h3 class="list-rooms__title">ДВОМІСНИЙ НОМЕР</h3>
+        <h3 class="list-rooms__title">Двомісний номер</h3>
 
-      <p class="list-rooms__descr">
-        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-        sint. Velit officia consequat duis enim velit mollit. Exercitation
-        veniam consequat sunt nostrud amet.
-      </p>
+        <p class="list-rooms__descr">
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+          sint. Velit officia consequat duis enim velit mollit. Exercitation
+          veniam consequat sunt nostrud amet.
+        </p>
 
-      <picture>
-        <source
-          srcset="
-            ./images/hotel/desktop-room-img.jpg?as=webp&width=460 1x,
-            ./images/hotel/desktop-room-img.jpg?as=webp&width=920 2x
-          "
-          media="(min-width:1280px)"
-          type="image/webp"
-        />
-        <source
-          srcset="
-            ./images/hotel/desktop-room-img.jpg?width=460 1x,
-            ./images/hotel/desktop-room-img.jpg?width=920 2x
-          "
-          media="(min-width:1280px)"
-          type="image/jpeg"
-        />
-        <source
-          srcset="
-            ./images/hotel/tablet-room-img.jpg?as=webp&width=400 1x,
-            ./images/hotel/tablet-room-img.jpg?as=webp&width=800 2x
-          "
-          media="(min-width:1024px)"
-          type="image/webp"
-        />
-        <source
-          srcset="
-            ./images/hotel/tablet-room-img.jpg?width=400 1x,
-            ./images/hotel/tablet-room-img.jpg?width=800 2x
-          "
-          media="(min-width:1024px)"
-          type="image/jpeg"
-        />
-        <source
-          srcset="
-            ./images/hotel/mobile-room-img.jpg?as=webp&width=224 1x,
-            ./images/hotel/mobile-room-img.jpg?as=webp&width=448 2x
-          "
-          type="image/webp"
-        />
-        <source
-          srcset="
-            ./images/hotel/mobile-room-img.jpg?width=224 1x,
-            ./images/hotel/mobile-room-img.jpg?width=448 2x
-          "
-          type="image/jpeg"
-        />
+        <div class="list-rooms__thumb">
+          <picture>
+            <source
+              srcset="
+                ./images/hotel/desktop-room-img.jpg?as=webp&width=460 1x,
+                ./images/hotel/desktop-room-img.jpg?as=webp&width=920 2x
+              "
+              media="(min-width:1280px)"
+              type="image/webp"
+            />
+            <source
+              srcset="
+                ./images/hotel/desktop-room-img.jpg?width=460 1x,
+                ./images/hotel/desktop-room-img.jpg?width=920 2x
+              "
+              media="(min-width:1280px)"
+              type="image/jpeg"
+            />
+            <source
+              srcset="
+                ./images/hotel/tablet-room-img.jpg?as=webp&width=400 1x,
+                ./images/hotel/tablet-room-img.jpg?as=webp&width=800 2x
+              "
+              media="(min-width:1024px)"
+              type="image/webp"
+            />
+            <source
+              srcset="
+                ./images/hotel/tablet-room-img.jpg?width=400 1x,
+                ./images/hotel/tablet-room-img.jpg?width=800 2x
+              "
+              media="(min-width:1024px)"
+              type="image/jpeg"
+            />
+            <source
+              srcset="
+                ./images/hotel/mobile-room-img.jpg?as=webp&width=224 1x,
+                ./images/hotel/mobile-room-img.jpg?as=webp&width=448 2x
+              "
+              type="image/webp"
+            />
+            <source
+              srcset="
+                ./images/hotel/mobile-room-img.jpg?width=224 1x,
+                ./images/hotel/mobile-room-img.jpg?width=448 2x
+              "
+              type="image/jpeg"
+            />
+            <img
+              class="list-rooms__img"
+              src="./images/hotel/desktop-room-img.jpg"
+              alt="Фотографія номер готелю"
+            />
+          </picture>
+        </div>
 
-        <img src="./images/hotel/desktop-room-img.jpg" alt="Номер готелю" />
-      </picture>
+        <div class="list-rooms__test"></div>
 
-      <div class="list-rooms__test"></div>
+        <ul class="list-btns list">
+          <li class="list-btns__item">
+            <button class="list-btns__btn" type="button">Детальніше</button>
+          </li>
 
-      <ul class="list-btns">
-        <li class="list-btns__item">
-          <button class="btn" type="button">Детальніше</button>
-        </li>
-
-        <li class="list-btns__item">
-          <button class="btn" type="button">Переглянути ціни</button>
-        </li>
-      </ul>
+          <li class="list-btns__item">
+            <button class="list-btns__btn" type="button">
+              Переглянути ціни
+            </button>
+          </li>
+        </ul>
+      </div>
     </li>
   </ul>
 </section>

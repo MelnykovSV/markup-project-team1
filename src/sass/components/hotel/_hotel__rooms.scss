@@ -1,0 +1,66 @@
+// .hotel-rooms-section {
+//   padding: 32px 0;
+// }
+
+.list-rooms {
+  &__item {
+    padding: 32px 0;
+  }
+
+  &__complex {
+    margin-bottom: 32px;
+  }
+
+  &__title {
+    margin-bottom: 12px;
+
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  &__label {
+    text-transform: lowercase;
+  }
+
+  &__descr {
+    margin-bottom: 32px;
+    max-width: 258px;
+
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+
+    letter-spacing: 0.02em;
+  }
+
+  &__img {
+    margin-left: auto;
+    margin-bottom: 32px;
+
+    background-color: var(--bg-image);
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+  }
+}
+
+.list-btns {
+  &__item:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  &__btn {
+    @include button-dark();
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.list-rooms__item:nth-child(2n) {
+  background-color: var(--bg-dark);
+}
