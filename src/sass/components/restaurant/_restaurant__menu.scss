@@ -4,14 +4,22 @@
     font-size: 32px;
     line-height: 1.15;
     text-transform: uppercase;
+    max-width: 318px;
+    text-align: left;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .table{
+    padding-bottom: 16px;
+    max-width: 384px;
     &__title{
         font-family: 'Times New Roman', Times, serif;
         font-weight: 700;
         font-size: 20px;
-        line-height: 1.15;    
+        line-height: 1.15;
+        text-align: left;  
+        padding-bottom: 16px;  
     }
 }
 
@@ -22,6 +30,8 @@
         font-size: 14px;
         line-height: 1.2;
         letter-spacing: 0.02em;
+        padding-bottom: 4px;
+        min-width: 220px;
     }
 
     &__aside{
@@ -30,6 +40,7 @@
         font-size: 10px;
         line-height: 1.2;
         letter-spacing: 0.02em;
+        padding-bottom: 8px;
     }
     
     &__weight{
@@ -46,8 +57,17 @@
         font-size: 14px;
         line-height: 1.2;
         letter-spacing: 0.02em;
+        min-width: 60px;
     }
 }
 
+.thead{
+    // display: none;
+    min-width: 225px;
+}
+
+.thead-vaga{
+min-height: 38px;
+}
 
 .menu-button { @include button-dark}
