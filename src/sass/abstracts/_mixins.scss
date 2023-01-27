@@ -1,26 +1,24 @@
 @mixin button-dark() {
   background-color: var(--primary-dark);
-  /* Fon dark lemon */
   display: inline-block;
-  border: 2px solid #f0ecd6;
+  border: 2px solid var(--bg-dark);
   border-radius: 25px;
   min-width: 236px;
   max-width: 258px;
   padding: 14px 24px;
-  color: #f3c653;
+  color: var(--secondary);
   text-align: center;
 }
 
 @mixin button-transparent() {
   background: rgba(var(--primary-dark-rgb), 0.4);
-  /* Fon dark lemon */
   display: inline-block;
-  border: 2px solid #ffffff;
+  border: 2px solid var(--primary-light);
   border-radius: 25px;
   min-width: 232px;
   max-width: 300px;
   padding: 14px 35px;
-  color: #f3c653;
+  color: var(--secondary);
   text-align: center;
   @media screen and (max-width: 1280px) {
     padding-left: 24px;

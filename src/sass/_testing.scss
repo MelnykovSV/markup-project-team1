@@ -245,5 +245,5 @@ button {
 // }
 
 .tb {
-  @include button-dark();
+  @include button-transparent();
 }
