@@ -243,3 +243,7 @@ button {
 //   opacity: 1;
 //   pointer-events: all;
 // }
+
+.tb {
+  @include button-dark();
+}
