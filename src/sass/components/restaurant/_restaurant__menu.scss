@@ -8,6 +8,12 @@
     text-align: left;
     padding-top: 32px;
     padding-bottom: 32px;
+
+    @media (min-width: 1024px){
+
+        
+    }
+
 }
 
 .table{
@@ -19,7 +25,12 @@
         font-size: 20px;
         line-height: 1.15;
         text-align: left;  
-        padding-bottom: 16px;  
+        padding-bottom: 16px; 
+        
+    @media (min-width:1280px){
+        font-size: 24px;
+        line-height: 1.16;
+        }
     }
 }
 
@@ -31,7 +42,13 @@
         line-height: 1.2;
         letter-spacing: 0.02em;
         padding-bottom: 4px;
-        min-width: 220px;
+        // min-width: 220px;
+        border: 1px solid purple;
+
+    @media (max-width:1200px){
+        font-size: 16px;
+        }
+
     }
 
     &__aside{
@@ -41,6 +58,10 @@
         line-height: 1.2;
         letter-spacing: 0.02em;
         padding-bottom: 8px;
+        text-align: left;
+        border: 1px solid purple;
+
+
     }
     
     &__weight{
@@ -50,6 +71,8 @@
         line-height: 1.2;
         letter-spacing: 0.02em;
         text-align: center;
+        border: 1px solid purple;
+
     }
 
     &__price{
@@ -58,14 +81,19 @@
         font-size: 14px;
         line-height: 1.2;
         letter-spacing: 0.02em;
-        min-width: 60px;
+        // min-width: 60px;
         text-align: center;
+        border: 1px solid purple;
+
+    @media (min-width:1200px){
+        font-size: 16px;
+    }
+
     }
 }
 
 .thead{
-    // display: none;
-    min-width: 225px;
+    display: none;
 }
 
 .thead-vaga{
