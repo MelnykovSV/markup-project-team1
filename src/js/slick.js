@@ -12,13 +12,13 @@ $('.slick-header').slick({
 
   responsive: [
     {
-      breakpoint: 1200,
+      breakpoint: 1280,
       settings: {
-        slidesToShow: 2,
+        slidesToShow: 1,
       },
     },
     {
-      breakpoint: 768,
+      breakpoint: 1024,
       settings: {
         slidesToShow: 1,
       },
