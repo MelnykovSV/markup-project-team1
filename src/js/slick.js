@@ -40,7 +40,9 @@ $('.slick-small').slick({
   slidesToScroll: 1,
   adaptiveHeight: true,
   slidesToShow: 2,
-
+  variableWidth: true,
+  cssEase: 'linear',
+  // initialSlide: 1,
   //   responsive: none,
 });
 
