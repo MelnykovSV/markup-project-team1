@@ -103,8 +103,8 @@
         background-color: var(--primary-dark);
         transition: background-color var(--time) var(--cubic), 
         color var(--time) var(--cubic);
+        cursor: pointer;
         
-
         &:hover, 
         &:focus {
             color: var( --primary-dark);
