@@ -8,6 +8,8 @@
 @import './abstracts/placeholders';
 @import './abstracts/functions';
 
+@import './base/slick-small';
+
 // Reusable
 
 @import './layout/header';
@@ -44,3 +46,4 @@
 // @import './testing';
 // @import './example';
 @import './layout/modals';
+@import './components/custom-selects';
