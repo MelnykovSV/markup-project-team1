@@ -1,0 +1,126 @@
+// Slider
+
+.slick {
+  //   position: relative;
+  margin-left: 69px;
+  margin-right: -15px;
+
+  padding-bottom: 72px;
+  //   bottom: 0;
+  //   right: 0;
+  //   z-index: 3;
+  //   padding-bottom: 72px;
+  //   margin-left: 84px;
+  //   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+}
+
+.slick-list {
+  //   position: absolute;
+  //   top: 0;
+  //   right: -15px;
+  width: 100%;
+  height: auto;
+  max-width: 1000px;
+  margin: 0 auto;
+
+  overflow: visible;
+}
+
+.slick-track {
+  display: flex;
+}
+
+.slick-small__item {
+  margin: 0 12px;
+  // padding: 60px;
+  //   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+}
+
+.slick .slick-slide.slick-active {
+  opacity: 1;
+}
+
+.slick .slick-slide {
+  opacity: 0;
+  transition: opacity 250ms linear;
+}
+
+.slick .slick-clone {
+  opacity: 0;
+}
+
+.slick-small__box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 245px;
+  height: 245px;
+  width: 100%;
+  margin: 0 auto;
+
+  border-radius: 2px;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+}
+
+.slick-small-prev,
+.slick-small-next {
+  position: absolute;
+  display: block;
+  top: 265px;
+
+  width: 32px;
+  height: 32px;
+
+  cursor: pointer;
+  border: none;
+
+  fill: var(--primary-dark);
+  //   background-color: red;
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
+  //   padding: 0;
+  //   width: 50px;
+  //   height: 40px;
+  //   font-family: inherit;
+  //   font-weight: 900;
+  //   font-size: 36px;
+  //   line-height: 1;
+  //   color: green;
+  background-color: transparent;
+}
+
+.slick-small-prev {
+  //   background-image: url(../images/arrow-left.svg);
+  right: 81px;
+}
+
+.slick-small-next {
+  //   background-image: url(../images/arrow-right.svg);
+  right: 17px;
+}
+
+.my-slick-prev {
+  left: 50px;
+
+  @media screen and(min-width: 768px) {
+    left: 250px;
+  }
+
+  @media screen and(min-width: 1200px) {
+    left: 350px;
+  }
+}
+
+.my-slick-next {
+  right: 50px;
+
+  @media screen and(min-width: 768px) {
+    right: 250px;
+  }
+
+  @media screen and(min-width: 1200px) {
+    right: 350px;
+  }
+}
