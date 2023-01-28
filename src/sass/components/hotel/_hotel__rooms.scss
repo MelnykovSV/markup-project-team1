@@ -66,14 +66,3 @@
 .list-rooms__item:nth-child(2n) {
   background-color: var(--bg-dark);
 }
-
-.room-gallery-slider {
-  margin-bottom: 72px;
-
-  &__item {
-    background-color: var(--bg-image);
-    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-    border-radius: 2px;
-    overflow: hidden;
-  }
-}

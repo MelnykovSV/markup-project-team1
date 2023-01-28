@@ -1,3 +1,7 @@
+.slick-list {
+  overflow: visible;
+}
+
 .slick-track {
   display: flex;
   gap: 16px;
@@ -35,8 +39,28 @@
 
   transition: fill var(--time) var(--cubic);
 
-  &:hover,
-  &:focus {
-    fill: var(--secondary);
+  // &:hover,
+  // &:focus {
+  //   fill: var(--secondary);
+  // }
+}
+
+.slick-slide.room-gallery-slider__item {
+  opacity: 0;
+  transition: opacity 250ms linear;
+}
+
+.slick-slide.slick-active.room-gallery-slider__item {
+  opacity: 1;
+}
+
+.room-gallery-slider {
+  margin-bottom: 72px;
+
+  &__item {
+    background-color: var(--bg-image);
+    border-radius: 2px;
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
   }
 }
