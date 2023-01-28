@@ -129,7 +129,7 @@ min-width:1440px для звичайних дисплеїв та ретини. �
       <option value="111">option111</option>
       <option value="1111">option1111</option>
     </select>
-    <select name="testselect" class="js-select">
+    <select name="testselect" class="js-select"></select>
       <option value="1">option1</option>
       <option value="11">option11</option>
       <option value="111">option111</option>
