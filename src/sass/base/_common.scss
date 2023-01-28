@@ -64,4 +64,8 @@ body {
   @media (min-width: $tablet) {
     font-size: 64px;
   }
+
+  & > span {
+    letter-spacing: normal;
+  }
 }
