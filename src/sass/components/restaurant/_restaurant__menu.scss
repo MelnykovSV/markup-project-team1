@@ -10,6 +10,9 @@
         padding-top: 32px;
         padding-bottom: 32px;
     
+        @media (max-width:414px){
+            font-size: 29px;
+        }
         @media (min-width: 1024px){
         padding-bottom: 40px;
         padding-top: 58px;
@@ -24,6 +27,7 @@
     @media (min-width:1024px){
     width: 410px;
     break-inside: avoid;
+    margin-right: 45px;
     }
 
     &__title{
@@ -34,9 +38,10 @@
         text-align: left;  
         padding-bottom: 16px; 
         
-    @media (min-width:1280px){
+    @media (min-width: 1024px){
         font-size: 24px;
         line-height: 1.16;
+        padding-bottom: 20px;
         }
     }
 
@@ -49,23 +54,19 @@
         column-count: 2;
         column-gap: 88px;
         }
-       
+      
     }
 
     &__list{
         list-style: none;
-        padding-bottom: 16px;
+        margin-bottom: 16px;
     
         &:last-child{
-            padding-bottom: 0;
+            margin-bottom: 0;
         }
     
         @media (min-width:1024px){
-            // margin-right: 88px;
-            // flex-basis: calc((100% - 88px) / 2);
-            // flex-direction: column;
-            break-inside: avoids;
-    
+            // break-inside: avoids;
         }
     }
 
@@ -75,7 +76,6 @@
 
     .table__row{
         &__name{
-            // font-family: 'Times New Roman', Times, serif;
             font-weight: 500;
             font-size: 14px;
             line-height: 1.2;
@@ -84,13 +84,14 @@
             width: 220px;
             text-align: left;
     
-        @media (max-width:1200px){
+        @media (min-width:1280px){
             font-size: 16px;
             }
         }
 
         &__name-second{
-            margin-bottom: 11px;
+            padding-bottom: 11px;
+            text-align: left;
         }
     
         &__aside{
