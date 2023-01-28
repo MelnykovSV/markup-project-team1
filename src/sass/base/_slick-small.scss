@@ -39,10 +39,12 @@
 
   transition: fill var(--time) var(--cubic);
 
-  // &:hover,
-  // &:focus {
-  //   fill: var(--secondary);
-  // }
+  @media screen and (min-width: $desktop) {
+    &:hover,
+    &:focus {
+      fill: var(--secondary);
+    }
+  }
 }
 
 .slick-slide.room-gallery-slider__item {
