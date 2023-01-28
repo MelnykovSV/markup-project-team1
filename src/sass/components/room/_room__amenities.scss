@@ -1,0 +1,77 @@
+.amenities {
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    @media screen and (min-width: $tablet) {
+        padding-top: 50px;
+        padding-bottom: 40px;
+    }
+    @media screen and (min-width: $desktop) {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+
+    &__title {
+        text-transform: uppercase;
+        margin-bottom: 16px;
+    }
+
+    &__subtitle {
+        text-transform: uppercase;
+        margin-bottom: 16px;
+    }
+
+    &__text {
+        color: var(--text-primary);
+
+        @media screen and (min-width: $tablet) {
+            max-width: 400px;
+        }
+
+        &--top {
+            max-width: 757px;
+            margin-bottom: 32px;
+        }       
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;  
+        margin-bottom: 40px;      
+    }
+        
+    &__item {
+        display: flex;
+        flex-wrap: wrap;        
+        gap: 16px;
+
+        @media screen and (min-width: $tablet) {
+            gap: 80px;
+        }
+
+        @media screen and (min-width: $desktop) {            
+            gap: 160px;
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 32px;
+    }
+
+    &__button {
+        @include button-dark
+    }
+
+    &__link {
+        display: block;
+        color: var(--secondary-dark);
+    }
+
+    &__icon {
+        fill: var(--secondary-dark);
+    }
+}
