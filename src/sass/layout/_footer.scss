@@ -59,14 +59,6 @@
     }
   }
 
-  &__item {
-    margin-bottom: 16px;
-  }
-
-  &__item:last-child {
-    margin-bottom: 0;
-  }
-
   &__nav-link {
     color: var(--secondary);
     font-family: 'Montserrat';
@@ -107,6 +99,7 @@
       display: block;
     }
   }
+
 
   &__networks-item {
     display: flex;
