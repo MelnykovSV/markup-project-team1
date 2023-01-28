@@ -96,7 +96,7 @@
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex;
+    display: block;
 }
 
 .list-table{
@@ -108,8 +108,10 @@
     }
 
     @media (min-width:1024px){
-        display: flex;  
+        display: block;  
         flex-wrap: wrap;  
+        flex-basis: calc((100% - 30px) / 2);
+
     }
 }
 
