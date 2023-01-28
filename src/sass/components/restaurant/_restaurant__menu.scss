@@ -96,6 +96,7 @@
     list-style: none;
     padding: 0;
     margin: 0;
+    display: flex;
 }
 
 .list-table{
@@ -104,6 +105,11 @@
 
     &:last-child{
         padding-bottom: 0;
+    }
+
+    @media (min-width:1024px){
+        display: flex;  
+        flex-wrap: wrap;  
     }
 }
 
