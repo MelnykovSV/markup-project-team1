@@ -247,3 +247,26 @@ button {
 .tb {
   @include button-transparent();
 }
+
+.modal1 {
+  padding-left: 100px;
+  padding-bottom: 500px;
+}
+.tel {
+}
+.appartment-select {
+}
+.option1 {
+}
+.option2 {
+}
+.option3 {
+}
+
+.selects-wrap {
+  display: flex;
+}
+
+.nice-select {
+  background-color: aqua;
+}

@@ -18,8 +18,10 @@
     "url": "https://github.com/MelnykovSV/markup-project-team1/issues"
   },
   "dependencies": {
+    "imask": "^6.4.3",
     "jquery": "^3.6.3",
-    "modern-normalize": "^1.1.0"
+    "modern-normalize": "^1.1.0",
+    "nice-select2": "^2.1.0"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.6.0",
