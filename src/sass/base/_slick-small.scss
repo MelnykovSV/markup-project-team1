@@ -5,6 +5,10 @@
 .slick-track {
   display: flex;
   gap: 16px;
+
+  @media screen and (min-width: $tablet) {
+    gap: 40px;
+  }
 }
 
 .slick-small-prev,
@@ -24,15 +28,15 @@
   cursor: pointer;
 }
 
-.slick-small-prev {
-  bottom: -52px;
-  left: 0px;
-}
+// .slick-small-prev {
+//   bottom: -52px;
+//   left: 0px;
+// }
 
-.slick-small-next {
-  bottom: -52px;
-  left: 64px;
-}
+// .slick-small-next {
+//   bottom: -52px;
+//   left: 64px;
+// }
 
 .slick-arrow {
   fill: var(--primary-dark);

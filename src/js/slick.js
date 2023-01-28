@@ -42,7 +42,6 @@ $('.slick-small').slick({
   slidesToShow: 2,
   variableWidth: true,
   cssEase: 'linear',
-  // initialSlide: 1,
   //   responsive: none,
 });
 

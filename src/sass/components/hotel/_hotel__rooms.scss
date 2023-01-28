@@ -183,10 +183,18 @@
 
 .room-gallery-slider {
   margin-bottom: 72px;
-  max-width: 404px;
+  width: 404px;
+
+  transform: translateX(-135px);
 
   @media screen and (min-width: $tablet) {
     margin-bottom: 0;
+    width: 428px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 0;
+    width: 548px;
   }
 
   &__item {
@@ -194,6 +202,16 @@
     border-radius: 2px;
     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
     overflow: hidden;
+  }
+
+  & .slick-small-prev {
+    bottom: -52px;
+    left: 135px;
+  }
+
+  & .slick-small-next {
+    bottom: -52px;
+    left: 199px;
   }
 }
 
@@ -245,6 +263,20 @@
 
     @media screen and (min-width: $tablet) {
       border-color: var(--primary-light);
+    }
+  }
+
+  & .room-gallery-slider {
+    transform: translateX(115px);
+
+    & .slick-small-prev {
+      bottom: -52px;
+      left: 171px;
+    }
+
+    & .slick-small-next {
+      bottom: -52px;
+      left: 235px;
     }
   }
 }
