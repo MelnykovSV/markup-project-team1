@@ -14,14 +14,32 @@
     &__title {
         text-transform: uppercase;
         margin-bottom: 16px;
+        font-family: 'Times New Roman';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: calc(37 / 32);
+        color: var(--primary-dark);
     }
 
     &__subtitle {
         text-transform: uppercase;
         margin-bottom: 16px;
+        font-family: 'Times New Roman';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: calc(28 / 24);
+        color: var(--primary-dark);
     }
 
     &__text {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: calc(20 / 16);
+        letter-spacing: 0.02em;
         color: var(--text-primary);
 
         @media screen and (min-width: $tablet) {
@@ -55,23 +73,77 @@
         }
     }
 
-    &__buttons {
+    &__buttons {        
         display: flex;
         flex-direction: column;
-        align-items: flex-end;
+        align-items: center;
         gap: 32px;
+
+        @media screen and (min-width: $tablet) {
+            align-items: flex-end;
+        }
+        @media screen and (min-width: $desktop) {
+            margin-left: 563px;
+            align-items: flex-start;
+        }
     }
 
-    &__button {
-        @include button-dark
-    }
+    &__button {        
+        display: block;
+        padding: 20px 42px;        
+        border: 1px solid var(--secondary);
+        border-radius: 25px;
+        font-family: 'Montserrat'; 
+        font-style: normal;       
+        font-weight: 500;
+        font-size: 20px;
+        line-height: calc(24 / 20);
+        text-transform: uppercase;
+        color: var(--primary-light);
+        background-color: var(--primary-dark);
+        transition: background-color var(--time) var(--cubic), 
+        color var(--time) var(--cubic);
+        
+
+        &:hover, 
+        &:focus {
+            color: var( --primary-dark);
+            background-color: var(--secondary);
+        }
+
+        @media screen and (min-width: $tablet) {
+            padding: 18px 38px;
+            font-size: 24px;
+            line-height: calc(29/ 24);
+        }
+    }  
 
     &__link {
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: calc(20 / 16);
+        letter-spacing: 0.02em;
         color: var(--secondary-dark);
-    }
-
-    &__icon {
         fill: var(--secondary-dark);
-    }
+        transition: fill var(--time) var(--cubic), 
+        color var(--time) var(--cubic);
+
+        &:hover, &:focus {
+        color: var(--secondary);
+        fill: var(--secondary);
+        }      
+
+        @media screen and (min-width: $tablet) {         
+            gap: 16px;
+            font-size: 20px;
+            line-height: calc(24 / 20);
+        }
+    }  
+          
 }
