@@ -1,21 +1,109 @@
 .modal {
-  position: absolute;
-  width: 414px;
+  position: fixed;
+  width: min(100vw, 414px);
+  max-height: 100vh;
   border-radius: 2px;
+  overflow-y: auto;
   z-index: 52;
-  overflow-y: scroll;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #fffdee;
-  height: 668px;
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
 
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 15px;
+  transition: opacity var(--time) var(--cubic),
+    visibility var(--time) var(--cubic);
+  padding: 60px 15px;
+
+  @media screen and (min-width: $tablet) {
+    width: min(100%, 712px);
+    overflow-y: visible;
+    padding: 60px;
+  }
+}
+
+.nice-select-dropdown {
+  width: 100%;
+}
+
+.modal__input-block {
+  margin-bottom: 40px;
+  display: flex;
+  gap: 20px;
+
+  flex-direction: column;
+  @media screen and (min-width: $tablet) {
+    gap: 16px;
+    flex-direction: row;
+  }
+}
+
+.modal__input-block--alt {
+  margin-bottom: 40px;
+  display: flex;
+  gap: 20px;
+
+  flex-direction: column;
+  @media screen and (min-width: $tablet) {
+    gap: 16px;
+    flex-direction: column;
+  }
+}
+
+.modal__input-subblock {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    width: 100%;
+    gap: 28px;
+  }
+}
+.input-container {
+  width: 100%;
+}
+
+.modal__input-block--alt .modal__input-subblock {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 16px;
+    justify-content: right;
+  }
+}
+.input-container {
+  width: 100%;
+}
+
+.modal__appartment-type {
+  font-family: 'Times New Roman';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: calc(28 / 24);
+  letter-spacing: 0.05em;
+  color: var(--text-modal);
+  margin-bottom: 28px;
+}
+.appartment-type-desc {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+
+  letter-spacing: 0.02em;
+
+  color: var(--secondary-dark);
+  margin-bottom: 20px;
 }
 
 .modal1.active {
@@ -56,19 +144,42 @@
 }
 
 .modal_title {
-  margin-top: 60px;
+  font-family: 'Times New Roman';
   margin-bottom: 40px;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
-  color: #000000;
+  color: var(--primaty-color);
   text-align: center;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 40px;
+    line-height: calc(46 / 40);
+    letter-spacing: 0.05em;
+  }
 }
 
-.modal_container {
-  display: block;
+.modal_title-alt {
+  font-family: 'Times New Roman';
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: var(--primaty-color);
+  text-align: center;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 32px;
+    line-height: calc(37 / 32);
+    letter-spacing: 0.05em;
+  }
 }
+
+// .modal_container {
+//   display: block;
+// }
 
 .modal__input {
   width: 100%;
@@ -86,13 +197,34 @@
   letter-spacing: 0.05em;
 
   color: #808080;
+  @media screen and (min-width: $tablet) {
+    height: 64px;
+  }
+}
+
+.modal__input-block--alt .modal__input-subblock .input-container {
+  @media screen and (min-width: $tablet) {
+    max-width: 288px;
+  }
 }
 
 .modal-select {
   position: relative;
 }
 
-.modal__select {
+.modal__select.js-select {
+  appearance: none;
+  display: block;
+  width: 100%;
+  height: 54px;
+  padding: 16px;
+  padding-right: 40px;
+  border: none;
+}
+
+.modal__select.js-select.nice-select {
+  appearance: none;
+  display: block;
   width: 100%;
   height: 54px;
   padding: 16px;
@@ -100,6 +232,9 @@
   border: 1px solid #c79002;
   border-radius: 2px;
   margin-bottom: 8px;
+  @media screen and (min-width: $tablet) {
+    height: 64px;
+  }
 }
 
 .modal__icon-select {
@@ -110,17 +245,20 @@
 }
 
 .modal__text {
+  display: block;
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
   color: #c79002;
+  padding-left: 12px;
 
-  margin-bottom: 20px;
+  @media screen and (min-width: $tablet) {
+    font-size: 16px;
+    line-height: calc(20 / 16);
+  }
 }
 
 .modal__button-submit {
-  margin-top: 40px;
-  margin-bottom: 60px;
   width: 100%;
   height: 64px;
   background-color: #000000;
@@ -131,6 +269,11 @@
   font-size: 20px;
   line-height: 24px;
   text-transform: uppercase;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 24px;
+    line-height: calc(29 / 24);
+  }
 }
 
 .backdrop {
@@ -149,11 +292,11 @@
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop.active {
-  visibility: visible;
-  opacity: 1;
-  pointer-events: all;
-}
+// .backdrop.active {
+//   visibility: visible;
+//   opacity: 1;
+//   pointer-events: all;
+// }
 
 .nice-select::after {
   top: 50%;
@@ -190,182 +333,13 @@
   color: #808080;
 }
 
-// ================================SOME TITLE================================
-
-.backdrop {
+.js-backdrop-modal.active {
   position: fixed;
-  top: 0;
   left: 0;
+  top: 0;
   width: 100%;
   height: 100%;
-  overflow-y: scroll;
-}
-
-.backdrop.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-}
-
-.modal-room {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-  margin: 0;
-  padding: 15px;
-
-  max-width: 414px;
-  width: 100%;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-              0px 1px 1px rgba(0, 0, 0, 0.14),
-              0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-
-  background-color: var(--bg);
-
-  @media screen and (min-width: 1024px) {
-      max-width: 712px;
-      width: 100%;
-      padding: 60px;
- }
-}
-
-.modal-room__close {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-
-  display: inline-flex;
-  width: 30px;
-  height: 30px;
-  align-items: center;
-  justify-content: center;
-  border: transparent;
-  cursor: pointer;
-
-  fill: var(--primary-dark);
-  background-color: var(--bg);
-}
-
-.modal-room__form {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.modal-room__list {
-  padding: 0;
-  margin: 0;
-
-  @media screen and (min-width: 1024px) {
-      display: flex;
- }
-}
-
-.modal-room__title {
-  margin-bottom: 40px;
-
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.05em;
-
-  color: var(--primary-dark);
-}
-
-.modal-room__subtitle {
-  margin-bottom: 28px;
-
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.17;
-  letter-spacing: 0.05em;
-
-  color: #808080;
-}
-
-.modal-room__text {
-  margin-bottom: 20px;
-
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.02em;
-
-  color: var(--secondary-dark);
-}
-
-.modal-item {
-  list-style: none;
-  position: relative;
-  margin-bottom: 68px;
-  padding: 0;
-}
-
-.modal-item:last-child {
-  @media screen and (min-width: 1024px) {
-      margin-left: 16px;
- }   
-}
-
-.modal-item__input {
-  padding-left: 15px;
-  width: 384px;
-  height: 64px;
-  border: 1px solid var(--secondary-dark);
-  
-  text-align: left;
-  background-color: var(--bg);
-
-  @media screen and (min-width: 1024px) {
-      width: 288px;
-      padding-left: 12px;
- } 
-}
-
-.modal-item__label {
-  position: absolute;
-  bottom: -25px;
-  left: 12px;
-
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
-
-  color: var(--secondary-dark);
-}
-
-.modal-room__btn {
-  display: block;
-  padding: 20px 64px;
-  
-  border: 1px solid var(--secondary);
-  border-radius: 2px;
-  max-width: 384px;
-
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  cursor: pointer;
-  margin: 0 auto;
-  letter-spacing: 0.06em;
-
-  background-color: var(--primary-dark);
-  color: var(--primary-light);
-
-  &:hover,
-  &:focus {
-      background-color: var(--secondary);
-      color: var(--primary-dark);
-  }
-
-  @media screen and (min-width: 1024px) {
-      padding: 18px 142px;
-      max-width: 592px;
-      width: 100%;
-
-      font-size: 24px;
-      line-height: 1.21;
-  } 
+  z-index: 5;
+  background-color: rgba(0, 0, 0, 0.3);
+  pointer-events: all;
 }
