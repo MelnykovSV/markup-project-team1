@@ -130,18 +130,29 @@
     } 
 }
 
-.menu__button {@include button-dark;
+.menu__button-open {@include button-dark;
     margin-top: 32px;
     margin-bottom: 32px;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 14px;
     letter-spacing: 0.02em;
     line-height: 1.2;
     min-width: 236px;
+    margin-left: 55px;
+
+    @media (min-width:414px){
+    font-size: 16px;
     margin-left: 70px;
+  
+    }
 
     @media (min-width:1024px){
-        margin-left: 650px;
+        margin-left: a;
+       
+
+        // margin-top: 0;
+        // margin-left: 0;    
+        // right: 0;
     }
 } 
 
