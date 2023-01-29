@@ -1,100 +1,113 @@
+.about-section {
+  padding-bottom: 72px;
+
+  overflow: hidden;
+
+  @media screen and (min-width: $tablet) {
+    padding-bottom: 96px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    padding-bottom: 104px;
+  }
+}
+
+.about-section__first-box {
+  margin-bottom: 32px;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+
+    margin-bottom: calc(180px - 32px);
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: calc(123px - 32px);
+  }
+}
+
+.about-section__text-box {
+  @media screen and (min-width: $tablet) {
+    margin-right: 26px;
+
+    transform: translateY(120px);
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 37px;
+  }
+}
+
+.about-section__second-box {
+  margin-bottom: 32px;
+
+  @media screen and (max-width: calc($tablet - 1px)) {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 20px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    position: relative;
+
+    margin-bottom: 154px;
+    padding-left: calc(445px - 47px);
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 113px;
+    padding-left: calc(577px - 47px);
+  }
+}
+//
+
 .mb28px {
-  @media (max-width: 1023px) {
+  @media screen and (max-width: calc($tablet - 1px)) {
     margin-bottom: 28px;
   }
 }
 
 .about-section__container {
-  position: relative;
   padding-top: 16px;
 
-  @media (min-width: 1024px) {
-    padding-top: 120px;
-
-    padding-bottom: 262px;
-  }
-
-  @media (min-width: 1280px) {
-    padding-bottom: 207px;
+  @media screen and (min-width: $tablet) {
+    padding-top: 0;
   }
 }
 
 .about-section__complex {
   margin-bottom: 12px;
 
-  @media (min-width: 1024px) {
+  @media screen and (min-width: $tablet) {
     margin-bottom: 24px;
-  }
-}
-
-.about-section__list {
-  @media (max-width: 1023px) {
-    margin-bottom: 32px;
-  }
-}
-
-.about-section__item {
-  font-weight: 600;
-  font-size: 12px;
-
-  letter-spacing: 0.02em;
-
-  color: var(--text-primary);
-
-  &:first-child {
-    margin-bottom: 32px;
-
-    @media (min-width: 1024px) {
-      margin-bottom: 142px;
-    }
-
-    @media (min-width: 1280px) {
-      margin-bottom: 162px;
-    }
-  }
-
-  @media (min-width: 1024px) {
-    font-size: 16px;
-  }
-
-  &:nth-child(2n) {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: left;
-    align-items: center;
-    gap: 12px;
-
-    color: var(--secondary-dark);
-
-    @media (min-width: 414px) {
-      gap: 20px;
-    }
-
-    @media (min-width: 1024px) {
-      gap: 48px;
-    }
-
-    @media (min-width: 1280px) {
-      gap: 32px;
-    }
   }
 }
 
 .about-section__descr {
   max-width: 258px;
 
-  @media (min-width: 1024px) {
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.02em;
+  color: var(--text-primary);
+
+  @media screen and (min-width: $tablet) {
     max-width: 439px;
 
-    &--accent {
-      max-width: 312px;
-    }
+    font-size: 16px;
   }
 
-  @media (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     max-width: 518px;
+  }
 
-    &--accent {
+  &--accent {
+    max-width: 163px;
+
+    color: var(--secondary-dark);
+
+    @media screen and (min-width: $tablet) {
       max-width: 312px;
     }
   }
@@ -105,43 +118,31 @@
   //   box-shadow: 2px 2px 60px 2px var((--primary-dark) / 0.25);
   border-radius: 2px;
 
+  @media screen and (min-width: $tablet) {
+    box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+  }
+
   &--bigger {
-    @media (max-width: 1023px) {
-      max-width: 244px;
+    @media screen and (max-width: calc($tablet - 1px)) {
       margin-left: auto;
     }
 
-    @media (min-width: 1024px) {
-      position: absolute;
-      top: -32px;
-      right: 112px;
-
-      width: 400px;
-      height: 524px;
-    }
-
-    @media (min-width: 1280px) {
-      right: 180px;
-
-      width: 460px;
-      height: 574px;
+    @media screen and (min-width: $tablet) {
+      transform: translateY(-32px);
     }
   }
 
   &--normal {
-    @media (max-width: 1023px) {
-      max-width: 200px;
-      margin-left: auto;
+    @media screen and (min-width: $tablet) {
+      position: absolute;
+      top: -196px;
+      left: 0;
     }
 
-    @media (min-width: 1024px) {
-      width: 350px;
-      height: 500px;
-    }
-
-    @media (min-width: 1280px) {
-      width: 460px;
-      height: 574px;
+    @media screen and (min-width: $desktop) {
+      position: absolute;
+      top: -188px;
+      left: 0;
     }
   }
 }
