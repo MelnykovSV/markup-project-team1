@@ -9,9 +9,9 @@
   transform: translate(-50%, -50%);
   background-color: #fffdee;
   height: 668px;
-  // visibility: hidden;
-  // opacity: 0;
-  // pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
 
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -141,9 +141,9 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.329);
   z-index: 41;
-  // visibility: hidden;
-  // opacity: 0;
-  // pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
   overflow: scroll;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -156,7 +156,6 @@
 }
 
 .nice-select::after {
-  // background-color: aqua;
   top: 50%;
 
   display: block;
