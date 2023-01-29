@@ -1,5 +1,5 @@
 .room-hero {
-    max-width: 1500px;
+    max-width: 1280px;
     margin-left: auto;
     margin-right: auto;
     background-image:
@@ -82,6 +82,16 @@
     text-transform: uppercase;
 }
 
+.room-hero__content {
+    @media screen and (min-width: 1280px) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        padding-bottom: 48px;
+    }
+}
+
 .room-hero__text {
     margin-bottom: 17px;
     width: 325px;
@@ -97,6 +107,10 @@
         margin-bottom: 24px;
         font-size: 16px;
         width: 400px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 0;
     }
 }
 
@@ -128,6 +142,10 @@
         margin-right: 41px;
         font-size: 16px;
     }
+
+    @media screen and (min-width: 1280px) {
+        display: none;
+    }
 }
 
 .room-hero__list {
@@ -135,8 +153,7 @@
     align-items: center;
 
     @media screen and (min-width: 1024px) {
-        margin-left: 41px;
-        margin-bottom: 22px;
+        padding-bottom: 22px;  
     }
 }
 
@@ -147,6 +164,10 @@
     
     @media screen and (min-width: 1024px) {
         display: flex;   
+    }
+
+    @media screen and (min-width: 1280px) {
+        display: none;
     }
 }
 
@@ -182,6 +203,10 @@
         position: absolute;
         right: 47px;
         bottom: 62px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        position: static;
     }
 }
 
