@@ -10,8 +10,8 @@
     @media (min-width: $mobile) {
       justify-content: center;
       gap: 85px;
-    padding-left: 41px;
-    padding-right: 30px;
+      padding-left: 41px;
+      padding-right: 30px;
     }
     @media (min-width: $tablet) {
       gap: 163px;
@@ -53,6 +53,7 @@
     font-weight: 700;
     font-size: 40px;
     line-height: 1.075;
+    text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 0.3em;
     color: var(--secondary);
@@ -106,7 +107,6 @@
       display: block;
     }
   }
-
 
   &__networks-item {
     display: flex;
