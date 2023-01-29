@@ -1,0 +1,121 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 100%;
+
+  @media screen and (min-width: 414px) {
+    width: 414px;
+  }
+  @media screen and (min-width: 1024px) {
+    width: 1024px;
+    padding: 0 47px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+    padding: 0 85px;
+  }
+}
+
+.header-room {
+  background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.55) 54.17%, rgba(0, 0, 0, 0) 100%);
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 16px;
+}
+
+.logo {
+  font-family: 'FilmP3';
+  font-style: normal;
+  font-weight: 700;
+
+  font-size: 36px;
+  line-height: 1.083;
+  color: var(--primary-light);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+}
+
+.header__list {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  @media screen and (min-width: 1024px) {
+    gap: 72px;
+  }
+}
+
+.header__item {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  @media screen and (min-width: 1024px) {
+    gap: 32px;
+  }
+}
+
+.header__link {
+  text-decoration: none;
+  color: var(--secondary);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  @media screen and (min-width: 1024px) {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+.header__icon {
+  fill: var(--secondary);
+}
+
+.header__link-tel {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  text-decoration: none;
+  @media screen and (min-width: 1024px) {
+    border: 1px solid rgba(243, 198, 83, 0.7);
+    border-radius: 2px;
+    padding: 8px;
+  }
+}
+
+.header__tel {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.214;
+  color: var(--primary-light);
+  @media screen and (max-width: 1023px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1024px) {
+    display: flex;
+  }
+}
+.header-soc {
+  display: none;
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    gap: 20px;
+    align-items: center;
+  }
+}
+
+.header-soc__icon {
+  fill: rgba(243, 198, 83, 0.7);
+}
