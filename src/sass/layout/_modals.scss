@@ -27,11 +27,20 @@
 .modal__input-block {
   margin-bottom: 40px;
   display: flex;
-  gap: 16px;
+  gap: 20px;
+
+  flex-direction: column;
+  @media screen and (min-width: $tablet) {
+    gap: 16px;
+    flex-direction: row;
+  }
+
   // flex-direction: column;
 }
 .modal__input-subblock {
+  display: flex;
   flex-direction: column;
+  gap: 20px;
   @media screen and (min-width: $tablet) {
     display: flex;
     width: 100%;
@@ -132,10 +141,7 @@
   height: 54px;
   padding: 16px;
   padding-right: 40px;
-  // border: 1px solid #c79002;
   border: none;
-  // border-radius: 2px;
-  // margin-bottom: 8px;
 }
 
 .modal__select.js-select.nice-select {
@@ -168,18 +174,9 @@
   color: #c79002;
   padding-left: 12px;
 
-  // margin-bottom: 20px;
-  // &:not(:last-of-type) {
-  //   margin-bottom: 40px;
-  // }
-
   @media screen and (min-width: $tablet) {
     font-size: 16px;
     line-height: calc(20 / 16);
-    // margin-bottom: 28px;
-    // &:last-of-type {
-    //   margin-bottom: 40px;
-    // }
   }
 }
 
