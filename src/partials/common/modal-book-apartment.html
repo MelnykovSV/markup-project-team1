@@ -6,60 +6,80 @@
       </svg>
     </button>
     <h2 class="modal_title">Забронювати номер</h2>
-    <div class="modal__input-block">
+    <div class="modal__input-block--alt">
       <div class="modal__input-subblock">
-        <input
-          type="text"
-          id="apartment-book-name"
-          class="modal__input"
-          placeholder="Ваше ім’я"
-        />
+        <div class="input-container">
+          <input
+            type="text"
+            id="apartment-book-name"
+            class="modal__input"
+            placeholder="Ваше ім’я"
+          />
 
-        <label class="modal__text" for="apartment-book-name"
-          >На кого забронювати столик?</label
-        >
-        <input
-          type="text"
-          id="apartment-book-phone"
-          class="modal__input js-inputmask"
-        />
-        <label class="modal__text" for="apartment-book-phone"
-          >Номер телефону</label
-        >
+          <label class="modal__text" for="apartment-book-name"
+            >На кого забронювати столик?</label
+          >
+        </div>
 
-        <select
-          name=""
-          id="apartment-book-type"
-          class="modal__select js-select"
-        >
-          <option value="Двомісний люкс">Двомісний люкс</option>
-          <option value="Трьохмісний номер">Трьохмісний номер</option>
-          <option value="Двомісний номер">Двомісний номер</option>
-        </select>
-        <label for="apartment-book-type" class="modal__text"
-          >Категорія номеру</label
-        >
+        <div class="input-container">
+          <input
+            type="text"
+            id="apartment-book-phone"
+            class="modal__input js-inputmask"
+          />
+          <label class="modal__text" for="apartment-book-phone"
+            >Номер телефону</label
+          >
+        </div>
+
+        <div class="input-container">
+          <select
+            name=""
+            id="apartment-book-type"
+            class="modal__select js-select"
+          >
+            <option value="Двомісний люкс">Двомісний люкс</option>
+            <option value="Трьохмісний номер">Трьохмісний номер</option>
+            <option value="Двомісний номер">Двомісний номер</option>
+          </select>
+          <label for="apartment-book-type" class="modal__text"
+            >Категорія номеру</label
+          >
+        </div>
       </div>
 
       <div class="modal__input-subblock">
-        <select name="" id="apartment-book-in" class="modal__select js-select">
-          <option value="Двомісний люкс">Сьогодні</option>
-          <option value="Трьохмісний номер">Завтра</option>
-          <option value="Двомісний номер">Післязавтра</option>
-        </select>
-        <label for="apartment-book-in" class="modal__text">Дата заїзду</label>
+        <div class="input-container">
+          <select
+            name=""
+            id="apartment-book-in"
+            class="modal__select js-select"
+          >
+            <option value="Двомісний люкс">Сьогодні</option>
+            <option value="Трьохмісний номер">Завтра</option>
+            <option value="Двомісний номер">Післязавтра</option>
+          </select>
+          <label for="apartment-book-in" class="modal__text">Дата заїзду</label>
+        </div>
 
-        <select name="" id="apartment-book-out" class="modal__select js-select">
-          <option value="Двомісний люкс">Сьогодні</option>
-          <option value="Трьохмісний номер">Завтра</option>
-          <option value="Двомісний номер">Післязавтра</option>
-        </select>
-        <label for="apartment-book-out" class="modal__text">Дата виїзду</label>
+        <div class="input-container">
+          <select
+            name=""
+            id="apartment-book-out"
+            class="modal__select js-select"
+          >
+            <option value="Двомісний люкс">Сьогодні</option>
+            <option value="Трьохмісний номер">Завтра</option>
+            <option value="Двомісний номер">Післязавтра</option>
+          </select>
+          <label for="apartment-book-out" class="modal__text"
+            >Дата виїзду</label
+          >
+        </div>
       </div>
-
-      <button class="modal__button-submit" type="submit">
-        Оформити бронювання
-      </button>
     </div>
+    <button class="modal__button-submit" type="submit">
+      Оформити бронювання
+    </button>
   </form>
 </div>

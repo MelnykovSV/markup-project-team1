@@ -34,9 +34,20 @@
     gap: 16px;
     flex-direction: row;
   }
-
-  // flex-direction: column;
 }
+
+.modal__input-block--alt {
+  margin-bottom: 40px;
+  display: flex;
+  gap: 20px;
+
+  flex-direction: column;
+  @media screen and (min-width: $tablet) {
+    gap: 16px;
+    flex-direction: column;
+  }
+}
+
 .modal__input-subblock {
   display: flex;
   flex-direction: column;
@@ -44,6 +55,22 @@
   @media screen and (min-width: $tablet) {
     display: flex;
     width: 100%;
+    gap: 28px;
+  }
+}
+.input-container {
+  width: 100%;
+}
+
+.modal__input-block--alt .modal__input-subblock {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
     gap: 28px;
   }
 }
