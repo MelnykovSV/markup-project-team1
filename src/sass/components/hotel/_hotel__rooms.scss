@@ -1,11 +1,14 @@
 .hotel-rooms-section {
   overflow: hidden;
+  // padding-top: 130px;
 }
 
-.test {
-  height: 100px;
-  background-color: aqua;
-}
+// .test {
+//   margin-bottom: -130px;
+
+//   height: 400px;
+//   background-color: aqua;
+// }
 
 .list-rooms {
   &__item {
@@ -184,62 +187,6 @@
   }
 }
 
-.room-gallery-slider {
-  margin-bottom: 72px;
-  width: 404px;
-
-  transform: translateX(-135px);
-
-  @media screen and (min-width: $tablet) {
-    margin-bottom: 0;
-    width: 428px;
-
-    transform: translateX(0);
-  }
-
-  @media screen and (min-width: $desktop) {
-    margin-bottom: 0;
-    width: 548px;
-  }
-
-  &__item {
-    background-color: var(--bg-image);
-    border-radius: 2px;
-    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-    overflow: hidden;
-  }
-
-  & .slick-small-prev {
-    bottom: -52px;
-    left: 135px;
-
-    @media screen and (min-width: $tablet) {
-      bottom: -64px;
-      left: 330px;
-    }
-
-    @media screen and (min-width: $desktop) {
-      bottom: -72px;
-      left: 450px;
-    }
-  }
-
-  & .slick-small-next {
-    bottom: -52px;
-    left: 199px;
-
-    @media screen and (min-width: $tablet) {
-      bottom: -64px;
-      left: 394px;
-    }
-
-    @media screen and (min-width: $desktop) {
-      bottom: -72px;
-      left: 514px;
-    }
-  }
-}
-
 .list-rooms__item:nth-child(2n) {
   background-color: var(--bg-dark);
 
@@ -290,34 +237,6 @@
     @media screen and (min-width: $tablet) {
       margin-left: 0;
       margin-right: auto;
-    }
-  }
-
-  & .room-gallery-slider {
-    transform: translateX(calc(100vw - 299px));
-
-    @media screen and (min-width: $mobile) {
-      transform: translateX(115px);
-    }
-
-    @media screen and (min-width: $tablet) {
-      transform: translateX(0);
-    }
-
-    & .slick-small-prev {
-      left: 171px;
-
-      @media screen and (min-width: $tablet) {
-        left: 0;
-      }
-    }
-
-    & .slick-small-next {
-      left: 235px;
-
-      @media screen and (min-width: $tablet) {
-        left: 64px;
-      }
     }
   }
 }
