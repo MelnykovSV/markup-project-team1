@@ -52,7 +52,7 @@
 
         @media (min-width:1024px){
         column-count: 2;
-        column-gap: 88px;
+        // column-gap: 88px;
         }
       
     }
@@ -83,6 +83,7 @@
             padding-bottom: 4px;
             width: 220px;
             text-align: left;
+            // width: 140px;
     
         @media (min-width:1280px){
             font-size: 16px;
@@ -149,7 +150,11 @@
     }
 
     @media (min-width:1024px){
-        margin-left: 00px;
+        margin-left: 630px;
+    }
+
+    @media (min-width:1200px){
+        margin-left: 730px;
     }
 } 
 
