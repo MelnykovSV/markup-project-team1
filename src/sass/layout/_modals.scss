@@ -71,7 +71,7 @@
     width: 100%;
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 28px;
+    gap: 16px;
   }
 }
 .input-container {
@@ -156,6 +156,18 @@
     height: 64px;
   }
 }
+
+.modal__input-block--alt .modal__input-subblock .input-container {
+  @media screen and (min-width: $tablet) {
+    max-width: 288px;
+  }
+}
+
+// .modal__input-block--alt .modal__input-subblock .nice-select {
+//   @media screen and (min-width: $tablet) {
+//     max-width: 288px;
+//   }
+// }
 
 .modal-select {
   position: relative;
