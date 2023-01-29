@@ -1,6 +1,6 @@
-.hotel-rooms-section {
-  overflow: hidden;
-}
+// .hotel-rooms-section {
+// overflow-y: hidden;
+// }
 
 .list-rooms {
   &__item {
@@ -76,12 +76,16 @@
     text-transform: uppercase;
 
     @media screen and (min-width: $tablet) {
+      margin-bottom: 16px;
+
       font-size: 30px;
       line-height: 1.33;
       letter-spacing: 0.05em;
     }
 
     @media screen and (min-width: $desktop) {
+      margin-bottom: 24px;
+
       font-size: 36px;
       line-height: 1.138;
       letter-spacing: 0.05em;
@@ -159,24 +163,18 @@
     color: var(--secondary);
 
     background-color: var(--primary-dark);
-    border: 2px solid var(--bg);
+    border: 2px solid var(--primary-light);
     border-radius: 25px;
 
     cursor: pointer;
 
-    @media screen and (min-width: $tablet) {
-      border-color: var(--bg-dark);
-    }
+    transition: background-color var(--time) var(--cubic),
+      border-color var(--time) var(--cubic);
 
-    @media screen and (min-width: $desktop) {
-      transition: background-color var(--time) var(--cubic),
-        border-color var(--time) var(--cubic);
-
-      &:hover,
-      &:focus {
-        background-color: var(--primary-light);
-        border-color: var(--secondary);
-      }
+    &:hover,
+    &:focus {
+      background-color: var(--primary-light);
+      border-color: var(--secondary);
     }
   }
 }
@@ -190,6 +188,8 @@
   @media screen and (min-width: $tablet) {
     margin-bottom: 0;
     width: 428px;
+
+    transform: translateX(0);
   }
 
   @media screen and (min-width: $desktop) {
@@ -200,18 +200,38 @@
   &__item {
     background-color: var(--bg-image);
     border-radius: 2px;
-    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    // box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
     overflow: hidden;
   }
 
   & .slick-small-prev {
     bottom: -52px;
     left: 135px;
+
+    @media screen and (min-width: $tablet) {
+      bottom: -64px;
+      left: 330px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      bottom: -72px;
+      left: 450px;
+    }
   }
 
   & .slick-small-next {
     bottom: -52px;
     left: 199px;
+
+    @media screen and (min-width: $tablet) {
+      bottom: -64px;
+      left: 394px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      bottom: -72px;
+      left: 514px;
+    }
   }
 }
 
@@ -232,8 +252,18 @@
 
     @media screen and (min-width: $tablet) {
       margin-right: 0;
-      margin-left: 42px;
+      margin-left: 45px;
       padding-right: 20px;
+
+      @media screen and (min-width: $desktop) {
+        padding-right: 57px;
+      }
+    }
+  }
+
+  & .list-rooms__text-box {
+    @media screen and (min-width: $desktop) {
+      width: 455px;
     }
   }
 
@@ -258,25 +288,31 @@
     }
   }
 
-  & .list-btns__btn {
-    border-color: var(--bg-dark);
-
-    @media screen and (min-width: $tablet) {
-      border-color: var(--primary-light);
-    }
-  }
-
   & .room-gallery-slider {
     transform: translateX(115px);
 
+    @media screen and (max-width: calc($mobile - 1px)) {
+      transform: translateX(calc(100vw - 284px - 15px));
+    }
+
+    @media screen and (min-width: $tablet) {
+      transform: translateX(0);
+    }
+
     & .slick-small-prev {
-      bottom: -52px;
       left: 171px;
+
+      @media screen and (min-width: $tablet) {
+        left: 0;
+      }
     }
 
     & .slick-small-next {
-      bottom: -52px;
       left: 235px;
+
+      @media screen and (min-width: $tablet) {
+        left: 64px;
+      }
     }
   }
 }
