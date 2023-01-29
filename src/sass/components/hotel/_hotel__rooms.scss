@@ -267,7 +267,10 @@
   }
 
   & .room-gallery-slider {
-    transform: translateX(115px);
+    transform: translateX(calc(100vw - 299px));
+    @media screen and (min-width: $mobile) {
+      transform: translateX(115px);
+    }
 
     & .slick-small-prev {
       bottom: -52px;
