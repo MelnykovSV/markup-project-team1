@@ -6,27 +6,34 @@
       </svg>
     </button>
     <h2 class="modal_title">Ціни на номер</h2>
-    <div class="modal__input-block">
-      <select
-        name=""
-        id="apartment-price-nights"
-        class="modal__select js-select"
-      >
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-      </select>
-      <label for="apartment-price-nights" class="modal__text"
-        >Кількість ночей</label
-      >
+    <p class="modal__appartment-type">Двомісний люкс</p>
+    <p class="appartment-type-desc">Категорія номеру</p>
 
-      <input
-        type="number"
-        id="apartment-price-price"
-        class="modal__input"
-        placeholder="1000"
-      />
-      <label class="modal__text" for="apartment-price-price">грн</label>
+    <div class="modal__input-block">
+      <div class="input-container">
+        <select
+          name=""
+          id="apartment-price-nights"
+          class="modal__select js-select"
+        >
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+        <label for="apartment-price-nights" class="modal__text"
+          >Кількість ночей</label
+        >
+      </div>
+
+      <div class="input-container">
+        <input
+          type="number"
+          id="apartment-price-price"
+          class="modal__input"
+          placeholder="1000"
+        />
+        <label class="modal__text" for="apartment-price-price">грн</label>
+      </div>
     </div>
     <button class="modal__button-submit" type="submit">
       Забронювати номер
