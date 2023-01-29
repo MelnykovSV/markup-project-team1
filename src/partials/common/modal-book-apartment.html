@@ -7,32 +7,47 @@
     </button>
     <h2 class="modal_title">Забронювати номер</h2>
     <div class="modal_container">
-      <input type="text" class="modal__input" placeholder="Ваше ім’я" />
+      <input
+        type="text"
+        id="apartment-book-name"
+        class="modal__input"
+        placeholder="Ваше ім’я"
+      />
 
-      <label class="modal__text">На кого забронювати столик?</label>
-      <input type="text" class="modal__input js-inputmask" />
-      <label class="modal__text">Номер телефону</label>
+      <label class="modal__text" for="apartment-book-name"
+        >На кого забронювати столик?</label
+      >
+      <input
+        type="text"
+        id="apartment-book-phone"
+        class="modal__input js-inputmask"
+      />
+      <label class="modal__text" for="apartment-book-phone"
+        >Номер телефону</label
+      >
 
-      <select name="" id="appartment-cat" class="modal__select js-select">
+      <select name="" id="apartment-book-type" class="modal__select js-select">
         <option value="Двомісний люкс">Двомісний люкс</option>
         <option value="Трьохмісний номер">Трьохмісний номер</option>
         <option value="Двомісний номер">Двомісний номер</option>
       </select>
-      <label for="appartment-cat" class="modal__text">Категорія номеру</label>
+      <label for="apartment-book-type" class="modal__text"
+        >Категорія номеру</label
+      >
 
-      <select name="" id="appartment-cat" class="modal__select js-select">
+      <select name="" id="apartment-book-in" class="modal__select js-select">
         <option value="Двомісний люкс">Сьогодні</option>
         <option value="Трьохмісний номер">Завтра</option>
         <option value="Двомісний номер">Післязавтра</option>
       </select>
-      <label for="appartment-cat" class="modal__text">Дата заїзду</label>
+      <label for="apartment-book-in" class="modal__text">Дата заїзду</label>
 
-      <select name="" id="appartment-cat" class="modal__select js-select">
+      <select name="" id="apartment-book-out" class="modal__select js-select">
         <option value="Двомісний люкс">Сьогодні</option>
         <option value="Трьохмісний номер">Завтра</option>
         <option value="Двомісний номер">Післязавтра</option>
       </select>
-      <label for="appartment-cat" class="modal__text">Дата виїзду</label>
+      <label for="apartment-book-out" class="modal__text">Дата виїзду</label>
 
       <button class="modal__button-submit" type="submit">
         Оформити бронювання
