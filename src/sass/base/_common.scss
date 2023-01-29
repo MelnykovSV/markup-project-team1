@@ -68,6 +68,11 @@ body {
   letter-spacing: 0.3em;
   color: var(--text-mimino-dark);
 
+  &--light {
+    color: var(--primary-light);
+    margin-bottom: 12px;
+  }
+
   @media (min-width: $tablet) {
     font-size: 64px;
   }
