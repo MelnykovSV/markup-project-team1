@@ -62,7 +62,7 @@
         margin-bottom: 16px;
     
         &:last-child{
-            margin-bottom: 0;
+        margin-bottom: 0;
         }
     
         @media (min-width:1024px){
@@ -113,6 +113,7 @@
             letter-spacing: 0.02em;
             text-align: center;
             margin-right: 32px;
+            width: 85px;
         }
     
         &__price{
@@ -122,6 +123,7 @@
             line-height: 1.2;
             letter-spacing: 0.02em;
             text-align: center;
+            width: 85px;
     
         @media (min-width:1200px){
             font-size: 16px;
@@ -147,12 +149,7 @@
     }
 
     @media (min-width:1024px){
-        margin-left: a;
-       
-
-        // margin-top: 0;
-        // margin-left: 0;    
-        // right: 0;
+        margin-left: 00px;
     }
 } 
 
