@@ -23,6 +23,9 @@
       padding-left: 216px;
       padding-right: 186px;
     }
+    & .complex__logo {
+      text-align: end;
+    }
   }
 
   &__position-nav {
@@ -53,10 +56,12 @@
     text-transform: uppercase;
     letter-spacing: 0.3em;
     color: var(--secondary);
-    text-decoration: none;
     @media (min-width: $tablet) {
       font-size: 64px;
     }
+  }
+  &__item:not(:last-child) {
+    margin-bottom: 16px;
   }
 
   &__nav-link {
@@ -94,6 +99,8 @@
 
   &__span {
     display: none;
+    font-size: 16px;
+    line-height: 1.25;
     color: var(--secondary);
     @media (min-width: $tablet) {
       display: block;
