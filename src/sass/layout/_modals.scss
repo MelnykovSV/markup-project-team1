@@ -1,21 +1,19 @@
 .modal {
-  position: absolute;
-  width: 414px;
+  position: fixed;
+  width: min(100%, 414px);
   border-radius: 2px;
   z-index: 52;
-  overflow-y: scroll;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #fffdee;
-  height: 668px;
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
 
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 15px;
+  transition: opacity var(--time) var(--cubic),
+    visibility var(--time) var(--cubic);
+  padding: 60px 15px;
 }
 
 .modal1.active {
@@ -56,7 +54,6 @@
 }
 
 .modal_title {
-  margin-top: 60px;
   margin-bottom: 40px;
   font-weight: 700;
   font-size: 24px;
@@ -66,9 +63,9 @@
   text-align: center;
 }
 
-.modal_container {
-  display: block;
-}
+// .modal_container {
+//   display: block;
+// }
 
 .modal__input {
   width: 100%;
@@ -120,7 +117,6 @@
 
 .modal__button-submit {
   margin-top: 40px;
-  margin-bottom: 60px;
   width: 100%;
   height: 64px;
   background-color: #000000;
@@ -217,18 +213,17 @@
 
   max-width: 414px;
   width: 100%;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-              0px 1px 1px rgba(0, 0, 0, 0.14),
-              0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
   background-color: var(--bg);
 
   @media screen and (min-width: 1024px) {
-      max-width: 712px;
-      width: 100%;
-      padding: 60px;
- }
+    max-width: 712px;
+    width: 100%;
+    padding: 60px;
+  }
 }
 
 .modal-room__close {
@@ -258,8 +253,8 @@
   margin: 0;
 
   @media screen and (min-width: 1024px) {
-      display: flex;
- }
+    display: flex;
+  }
 }
 
 .modal-room__title {
@@ -305,8 +300,8 @@
 
 .modal-item:last-child {
   @media screen and (min-width: 1024px) {
-      margin-left: 16px;
- }   
+    margin-left: 16px;
+  }
 }
 
 .modal-item__input {
@@ -314,14 +309,14 @@
   width: 384px;
   height: 64px;
   border: 1px solid var(--secondary-dark);
-  
+
   text-align: left;
   background-color: var(--bg);
 
   @media screen and (min-width: 1024px) {
-      width: 288px;
-      padding-left: 12px;
- } 
+    width: 288px;
+    padding-left: 12px;
+  }
 }
 
 .modal-item__label {
@@ -339,7 +334,7 @@
 .modal-room__btn {
   display: block;
   padding: 20px 64px;
-  
+
   border: 1px solid var(--secondary);
   border-radius: 2px;
   max-width: 384px;
@@ -356,16 +351,16 @@
 
   &:hover,
   &:focus {
-      background-color: var(--secondary);
-      color: var(--primary-dark);
+    background-color: var(--secondary);
+    color: var(--primary-dark);
   }
 
   @media screen and (min-width: 1024px) {
-      padding: 18px 142px;
-      max-width: 592px;
-      width: 100%;
+    padding: 18px 142px;
+    max-width: 592px;
+    width: 100%;
 
-      font-size: 24px;
-      line-height: 1.21;
-  } 
+    font-size: 24px;
+    line-height: 1.21;
+  }
 }
