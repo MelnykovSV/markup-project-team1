@@ -294,7 +294,10 @@
   }
 
   & .room-gallery-slider {
-    transform: translateX(115px);
+    transform: translateX(calc(100vw - 299px));
+    @media screen and (min-width: $mobile) {
+      transform: translateX(115px);
+    }
 
     @media screen and (max-width: calc($mobile - 1px)) {
       transform: translateX(calc(100vw - 284px - 15px));
