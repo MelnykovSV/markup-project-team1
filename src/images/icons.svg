@@ -28,5 +28,8 @@
 <symbol id="icon-arrow-left" viewBox="0 0 32 32">
 <path d="M31 15.49h-26.16l6.019-6.061-1.419-1.429-8.44 8.5 8.44 8.5 1.419-1.429-6.019-6.061h26.16v-2.021z"></path>
 </symbol>
+<symbol id="icon-cil-arrow-right" viewBox="0 0 32 32">
+<path d="M22.492 7.586l-1.414 1.414 6 6h-26.078v2h26.077l-6 6 1.414 1.414 8.414-8.414-8.414-8.414z"></path>
+</symbol>
 </defs>
 </svg>
