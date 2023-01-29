@@ -25,11 +25,13 @@
 }
 
 .modal__input-block {
+  margin-bottom: 40px;
 }
 .modal__input-subblock {
   @media screen and (min-width: $tablet) {
     display: flex;
     width: 100%;
+    margin-bottom: 28px;
     gap: 16px;
   }
 }
@@ -75,13 +77,20 @@
 }
 
 .modal_title {
+  font-family: 'Times New Roman';
   margin-bottom: 40px;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
-  color: #000000;
+  color: var(--primaty-color);
   text-align: center;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 40px;
+    line-height: calc(46 / 40);
+    letter-spacing: 0.05em;
+  }
 }
 
 // .modal_container {
@@ -150,9 +159,16 @@
   color: #c79002;
   padding-left: 12px;
 
-  margin-bottom: 20px;
-  &:last-of-type {
-    margin-bottom: 40px;
+  // margin-bottom: 20px;
+  // &:not(:last-of-type) {
+  //   margin-bottom: 40px;
+  // }
+
+  @media screen and (min-width: $tablet) {
+    // margin-bottom: 28px;
+    // &:last-of-type {
+    //   margin-bottom: 40px;
+    // }
   }
 }
 
@@ -167,6 +183,11 @@
   font-size: 20px;
   line-height: 24px;
   text-transform: uppercase;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 24px;
+    line-height: calc(29 / 24);
+  }
 }
 
 .backdrop {
