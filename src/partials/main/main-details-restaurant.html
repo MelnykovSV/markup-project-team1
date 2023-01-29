@@ -1,40 +1,58 @@
-<!DOCTYPE html>
-<html lang="en">
+<!-- <div class="container"> -->
+<section class="details-restaurant">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
-<body>
-    <div class="container">
-        <section class="details-restaurant">
-            <div class="details-restaurant__flex-container">
-                <div class="details-restaurant__flex--desktop-margin">
-                    <div class="details-restaurant__title-box">
-                        <div class="complex">
-                            <span class="complex__logo" aria-label="Міміно">Mimino</span>о</span></span>
-                        </div>
-                        <h2 class="details-title">Ресторан</h2>
-                        <p class="details-restaurant__descr">Amet minim mollit non deserunt ullamco est sit aliqua dolor
-                            do
-                            amet
-                            sint.
-                            Velit
-                            officia consequat duis enim velit
-                            mollit.</p>
-                    </div>
-                    <div class="plug"></div>
+    <div class="details-restaurant__flex-container">
+        <div class="details-restaurant__flex--desktop-margin">
+            <div class="details-restaurant__title-box">
+                <div class="complex">
+                    <span class="complex__logo" aria-label="Міміно">Mimino</span>
                 </div>
-                <div class="details-buttons">
-                    <button class="details-button" type="button">Забронювати столик</button>
-                    <button class="details-button" type="button">Переглянути меню</button>
+                <h2 class="details-title">Ресторан</h2>
+                <p class="details-restaurant__descr">Amet minim mollit non deserunt ullamco est sit aliqua dolor
+                    do
+                    amet
+                    sint.
+                    Velit
+                    officia consequat duis enim velit
+                    mollit.</p>
+            </div>
+
+
+            <div class="plug ">
+                <ul class="plug-jpg">
+                    <li class="plug-jpg__item">
+                        <img class="img" width="270" src="./images/frame21.jpg" alt="Стейк">
+                    </li>
+                    <li class="plug-jpg__item">
+                        <img class="img" width="162" src="./images/frame28.jpg" alt="Стейк">
+                    </li>
+                    <li class="plug-jpg__item">
+                        <img class="img" width="270" src="./images/frame27.jpg" alt="Стейк">
+                    </li>
+                </ul>
+                <div class="plug-arrows">
+                    <button type="button">
+                        <svg class="plug-arrows__next" width="30" height="17">
+                            <use href="./images/icons.svg#icon-arrow-left">
+                            </use>
+                        </svg>
+                    </button>
+                    <button type="button">
+                        <svg class="plug-arrows__next" width="30" height="17">
+                            <use href="./images/icons.svg#icon-arrow-right">
+                            </use>
+                        </svg>
+                    </button>
                 </div>
+            </div>
+        </div>
+        <div class="details-buttons">
+            <button class="details-button" type="button">Забронювати столик</button>
+            <button class="details-button" type="button">Переглянути меню</button>
+        </div>
 
 
-                <!-- <section class="slick" id='details-restaurant__gallery'>
+        <!-- <section class="slick" id='details-restaurant__gallery'>
                 <div class="container">
                     <h2 class="visually-hidden">details-restaurant__gallery</h2>
                     <div class="slick__list responsive list">
@@ -67,10 +85,6 @@
                     </div>
                 </div>
             </section> -->
-            </div>
-        </section>
-
     </div>
-</body>
-
-</html>
+    <!-- </div> -->
+</section>

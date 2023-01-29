@@ -1,40 +1,70 @@
-<!DOCTYPE html>
-<html lang="en">
+<section class="details-hotel">
+    <div class="details-hotel__container">
+        <div class="details-hotel__flex-container">
+            <div class="details-hotel__flex--desktop-margin">
+                <div class="details-hotel__title-box">
+                    <div class="complex">
+                        <span class="complex__logo" aria-label="Міміно">Mimin<span>o</span></span>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
-<body>
-    <div class="container">
-        <section class="details-hotel">
-            <div class="details-hotel__flex-container">
-                <div class="details-hotel__flex--desktop-margin">
-                    <div class="details-hotel__title-box">
-                        <div class="complex">
-                            <span class="complex__logo" aria-label="Міміно">Mimino</span>о</span></span>
-                        </div>
-                        <h2 class="details-title">Готель</h2>
-                        <p class="details-hotel__descr">Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                            amet
-                            sint.
-                            Velit
-                            officia consequat duis enim velit
-                            mollit.</p>
                     </div>
-                    <div class="plug"></div>
+                    <h2 class="details-title">Готель</h2>
+                    <p class="details-hotel__descr">Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                        amet
+                        sint.
+                        Velit
+                        officia consequat duis enim velit
+                        mollit.</p>
                 </div>
-                <div class="details-buttons">
-                    <button class="details-button" type="button">Забронювати номер</button>
-                    <button class="details-button" type="button">Переглянути ціни</button>
+                <div class="details-hotel__plug">
+                    <ul class="details-hotel__plug-list">
+                        <li class="details-hotel__plug-item">
+                            <img class="img" width="270" src="./images/frame22.jpg" alt="Стейк">
+                        </li>
+                        <li class="details-hotel__plug-item">
+                            <img class="img" width="162" src="./images/frame25.jpg" alt="Стейк">
+                        </li>
+                        <li class="details-hotel__plug-item">
+                            <img class="img" width="270" src="./images/frame26.jpg" alt="Стейк">
+                        </li>
+                    </ul>
+                    <div class="details-hotel__plug-arrows">
+                        <button type="button">
+                            <svg class="plug-arrows__next" width="30" height="17">
+                                <use href="./images/icons.svg#icon-arrow-left">
+                                </use>
+                            </svg>
+                        </button>
+                        <button type="button">
+                            <svg class="plug-arrows__next" width="30" height="17">
+                                <use href="./images/icons.svg#icon-arrow-right">
+                                </use>
+                            </svg>
+                        </button>
+                    </div>
+                    <!-- <button type="button">
+                        <svg class="plug-arrows__next" width="30" height="17">
+                            <use href="./images/icons.svg#icon-arrow-left">
+                            </use>
+                        </svg>
+                    </button>
+                    <button type="button">
+                        <svg class="plug-arrows__next" width="30" height="17">
+                            <use href="./images/icons.svg#icon-arrow-right">
+                            </use>
+                        </svg>
+                    </button> -->
                 </div>
             </div>
+        </div>
+        <div class="details-buttons">
+            <button class="details-button" type="button">Забронювати номер</button>
+            <button class="details-button" type="button">Переглянути ціни</button>
+        </div>
+    </div>
 
 
-            <!-- <section class="slick" id='details-hotel__gallery'>
+    <!-- <section class="slick" id='details-hotel__gallery'>
+
     <div class="container">
         <h2 class="visually-hidden">details-hotel__gallery</h2>
         <div class="slick__list responsive list">
@@ -58,9 +88,5 @@
         </div>
     </div>
 </section> -->
-        </section>
-    </div>
-
-</body>
-
-</html>
+    <!-- </div> -->
+</section>

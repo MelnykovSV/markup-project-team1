@@ -1,7 +1,3 @@
-// .container.details-restaurant {
-//     padding: 0;
-// }
-
 .details-restaurant__flex-container {
     @media screen and (min-width: $tablet) {
         display: flex;
@@ -13,11 +9,14 @@
 .details-restaurant__flex--desktop-margin {
     @media screen and (min-width: $desktop) {
         margin-left: 17px;
-        flex-grow: 2;
+        // flex-grow: 2;
+        max-width: 942px;
     }
 }
 
 .details-restaurant {
+    margin: 0 auto;
+    max-width: 414px;
     padding: 30px;
     background-position: center;
     background-size: cover;
@@ -37,6 +36,10 @@
     }
 
     @media screen and (min-width: $tablet) {
+        max-width: 1024px;
+        padding-left: 50px;
+        padding-right: 50px;
+
         & {
             background-image: linear-gradient(to right, rgba(var(--primary-dark-rgb), 0.65),
                     rgba(var(--primary-dark-rgb), 0.65)), url(../images/details-restaurant-bg-tablet.jpg);
@@ -55,6 +58,8 @@
     }
 
     @media screen and (min-width: $desktop) {
+        max-width: 1280px;
+
         & {
             background-image: linear-gradient(to right, rgba(var(--primary-dark-rgb), 0.65),
                     rgba(var(--primary-dark-rgb), 0.65)), url(../images/details-restaurant-bg-desktop.jpg);
@@ -110,40 +115,65 @@
     letter-spacing: 0.02em;
     color: var(--bg-image-secondary);
 
+    @media screen and (min-width: $tablet) {
+        width: 404px;
+        // margin-right: 130px;
+    }
+
+
     @media screen and (min-width: $desktop) {
         max-width: 600px;
     }
 }
 
-.plug {
-    width: 100%;
-    height: 312px;
-    background-color: gray;
-}
 
 .details-buttons {
+
     text-align: center;
-    margin-top: 32px;
+    // margin-top: 32px;
 
     @media screen and (min-width: $tablet) {
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
+        margin-bottom: 70px;
 
+    }
+
+    // @media screen and (min-width: $desktop) {
+    //     max-width: 338px;
+    // }
+}
+
+.details-button {
+    @include button-dark();
+    //  cursor: pointer;
+    transition: background-color var(--time) var(--cubic);
+
+    // margin-bottom: 16px;
+    &:not(:last-child) {
+        margin-bottom: 16px;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+        background: var(--primary-light);
+        border: 2px solid var(--secondary);
+        border-radius: 25px;
     }
 }
 
-.details-button {
-    @include button-dark();
-    margin-bottom: 16px;
-}
 
-.details-button {
-    @include button-dark();
-}
+
+// .details-button {
+//     @include button-dark();
+// }
 
 
 .details-hotel {
+    max-width: 414px;
+    margin: 0 auto;
     padding: 30px;
     background-position: center;
     background-size: cover;
@@ -163,6 +193,10 @@
     }
 
     @media screen and (min-width: $tablet) {
+        max-width: 1024px;
+        padding-left: 50px;
+        padding-right: 50px;
+
         & {
             background-image: linear-gradient(to right, rgba(var(--primary-dark-rgb), 0.65),
                     rgba(var(--primary-dark-rgb), 0.65)), url(../images/details-hotel-bg-tablet.jpg);
@@ -181,6 +215,8 @@
     }
 
     @media screen and (min-width: $desktop) {
+        max-width: 1280px;
+
         & {
             background-image: linear-gradient(to right, rgba(var(--primary-dark-rgb), 0.65),
                     rgba(var(--primary-dark-rgb), 0.65)), url(../images/details-hotel-bg-desktop.jpg);
@@ -208,7 +244,7 @@
 }
 
 .details-hotel__title-box {
-    margin-right: 80px;
+    margin-right: 108px;
     margin-bottom: 48px;
     text-align: right;
 
@@ -229,21 +265,34 @@
     text-align: left;
 
     @media screen and (min-width: $tablet) {
-        margin-left: 197px;
+        width: 408px;
+        // margin-left: 197px;
     }
 
     @media screen and (min-width: $desktop) {
         // max-width: 600px;
-        margin-left: 347px;
+        // margin-left: 347px;
+        width: 446px;
     }
 }
 
 .details-hotel__flex--desktop-margin {
+
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        // width: 747px;
+    }
+
     @media screen and (min-width: $desktop) {
         margin-right: 17px;
-        flex-grow: 2;
+        // flex-grow: 2;
+        width: 890px;
     }
 }
+
+
 
 
 .slick {
@@ -316,3 +365,121 @@
         right: 350px;
     }
 }
+
+.swiper-wrapper {
+    display: flex;
+    list-style: none;
+}
+
+
+.swiper {
+    width: 600px;
+    height: 300px;
+}
+
+.swiper-slide {
+    width: 270px;
+    background-color: green;
+}
+
+.plug {
+    width: 100%;
+
+    // height: 312px;
+    // background-color: gray;
+
+
+    @media screen and (min-width: $desktop) {
+        width: 890px;
+    }
+}
+
+.plug-jpg {
+    padding: 0;
+    display: flex;
+    list-style: none;
+}
+
+.plug-jpg__item {
+    @media screen and (min-width: $desktop) {
+        // width: 270px;
+
+        &:nth-child(1) {
+            margin-left: 15px;
+        }
+
+
+        &:not(:last-child) {
+            margin-right: 87px;
+        }
+
+    }
+}
+
+
+// .img {
+//     height: 100%;
+
+
+// }
+
+.plug__details-hotel {
+    margin-right: 16px;
+}
+
+.details-hotel__plug-list {
+    // margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+}
+
+.details-hotel__plug-item {
+    @media screen and (min-width: $desktop) {
+        // width: 270px;
+
+        &:nth-child(3) {
+            margin-right: 15px;
+        }
+
+
+        &:not(:last-child) {
+            margin-right: 87px;
+        }
+
+    }
+}
+
+.plug-arrows {
+    margin-top: 24px;
+    margin-bottom: 32px;
+
+    @media screen and (min-width: $tablet) {
+        margin-bottom: 17px;
+        margin-left: 15px;
+    }
+
+}
+
+.details-hotel__container {
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        ;
+    }
+}
+
+.details-hotel__plug-arrows {
+    margin-top: 24px;
+    margin-bottom: 32px;
+
+    @media screen and (min-width: $tablet) {
+        margin-bottom: 17px;
+        text-align: right;
+        margin-right: 17px;
+    }
+}
+
+// .plug-arrows__next {
+//     fill: var(--primary-light);
+//     background-color: transparent;
+// }
