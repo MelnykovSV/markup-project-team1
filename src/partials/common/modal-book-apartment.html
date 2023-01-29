@@ -11,6 +11,7 @@
         <div class="input-container">
           <input
             type="text"
+            name="name"
             id="apartment-book-name"
             class="modal__input"
             placeholder="Ваше ім’я"
@@ -25,6 +26,7 @@
           <input
             type="text"
             id="apartment-book-phone"
+            name="phone"
             class="modal__input js-inputmask"
           />
           <label class="modal__text" for="apartment-book-phone"
@@ -34,7 +36,7 @@
 
         <div class="input-container">
           <select
-            name=""
+            name="apartment-type"
             id="apartment-book-type"
             class="modal__select js-select"
           >
@@ -51,26 +53,26 @@
       <div class="modal__input-subblock">
         <div class="input-container">
           <select
-            name=""
+            name="in-date"
             id="apartment-book-in"
             class="modal__select js-select"
           >
-            <option value="Двомісний люкс">Сьогодні</option>
-            <option value="Трьохмісний номер">Завтра</option>
-            <option value="Двомісний номер">Післязавтра</option>
+            <option value="Сьогодні">Сьогодні</option>
+            <option value="Завтра">Завтра</option>
+            <option value="Післязавтра">Післязавтра</option>
           </select>
           <label for="apartment-book-in" class="modal__text">Дата заїзду</label>
         </div>
 
         <div class="input-container">
           <select
-            name=""
+            name="out-date"
             id="apartment-book-out"
             class="modal__select js-select"
           >
-            <option value="Двомісний люкс">Сьогодні</option>
-            <option value="Трьохмісний номер">Завтра</option>
-            <option value="Двомісний номер">Післязавтра</option>
+            <option value="Сьогодні">Сьогодні</option>
+            <option value="Завтра">Завтра</option>
+            <option value="Післязавтра">Післязавтра</option>
           </select>
           <label for="apartment-book-out" class="modal__text"
             >Дата виїзду</label

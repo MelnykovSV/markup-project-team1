@@ -24,6 +24,10 @@
   }
 }
 
+.nice-select-dropdown {
+  width: 100%;
+}
+
 .modal__input-block {
   margin-bottom: 40px;
   display: flex;
@@ -203,12 +207,6 @@
     max-width: 288px;
   }
 }
-
-// .modal__input-block--alt .modal__input-subblock .nice-select {
-//   @media screen and (min-width: $tablet) {
-//     max-width: 288px;
-//   }
-// }
 
 .modal-select {
   position: relative;

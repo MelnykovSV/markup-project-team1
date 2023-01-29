@@ -11,6 +11,7 @@
         <div class="input-container">
           <input
             type="text"
+            name="name"
             id="book-table-name"
             class="modal__input"
             placeholder="Ваше ім’я"
@@ -24,36 +25,17 @@
         <div class="input-container">
           <input
             type="text"
+            name="phone"
             id="book-table-num"
             class="modal__input js-inputmask"
           />
           <label class="modal__text" for="book-table-num">Номер телефону</label>
         </div>
       </div>
-
-      <!-- <div class="modal-select">
-        <select name="" id="" class="modal__select js-select">
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-        </select>
-        <p class="modal__text">Столик на яку кількість осіб?</p>
-      </div>
-      <div class="modal-select">
-        <select name="" id="" class="modal__select js-select">
-          <option value="1">Сьогодні</option>
-          <option value="2">Завтра</option>
-          <option value="3">Післязавтра</option>
-        </select>
-
-        <p class="modal__text">На яку дату бронювати?</p>
-      </div> -->
-
       <div class="modal__input-subblock">
         <div class="input-container">
           <select
-            name=""
+            name="persons-number"
             id="book-table-persons"
             class="modal__select js-select"
           >
@@ -68,7 +50,11 @@
         </div>
 
         <div class="input-container">
-          <select name="" id="book-table-date" class="modal__select js-select">
+          <select
+            name="apartment-type"
+            id="book-table-date"
+            class="modal__select js-select"
+          >
             <option value="Двомісний люкс">Сьогодні</option>
             <option value="Трьохмісний номер">Завтра</option>
             <option value="Двомісний номер">Післязавтра</option>
