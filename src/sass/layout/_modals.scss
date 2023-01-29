@@ -87,6 +87,7 @@
   line-height: calc(28 / 24);
   letter-spacing: 0.05em;
   color: var(--text-modal);
+  margin-bottom: 28px;
 }
 .appartment-type-desc {
   font-family: 'Montserrat';
@@ -98,6 +99,7 @@
   letter-spacing: 0.02em;
 
   color: var(--secondary-dark);
+  margin-bottom: 20px;
 }
 
 .modal1.active {
@@ -150,6 +152,23 @@
   @media screen and (min-width: $tablet) {
     font-size: 40px;
     line-height: calc(46 / 40);
+    letter-spacing: 0.05em;
+  }
+}
+
+.modal_title-alt {
+  font-family: 'Times New Roman';
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: var(--primaty-color);
+  text-align: center;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 32px;
+    line-height: calc(37 / 32);
     letter-spacing: 0.05em;
   }
 }
