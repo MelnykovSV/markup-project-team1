@@ -21,7 +21,12 @@
 }
 
 .header-room {
-  background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.55) 54.17%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(
+    180deg,
+    #000000 0%,
+    rgba(0, 0, 0, 0.55) 54.17%,
+    rgba(0, 0, 0, 0) 100%
+  );
 }
 
 .header__container {
@@ -48,7 +53,13 @@
   padding: 0;
   list-style: none;
   display: flex;
-  gap: 20px;
+  flex-direction: column;
+  gap: 10px;
+
+  @media screen and (min-width: 370px) {
+    gap: 20px;
+    flex-direction: row;
+  }
   @media screen and (min-width: 1024px) {
     gap: 72px;
   }
