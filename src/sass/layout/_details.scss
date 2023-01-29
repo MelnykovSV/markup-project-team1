@@ -112,7 +112,9 @@
     color: var(--bg-image-secondary);
 
     @media screen and (min-width: $tablet) {
-        width: 404px;
+        font-size: 16px;
+        line-height: 1.25;
+        width: 545px;
         // margin-right: 130px;
     }
 
@@ -142,11 +144,10 @@
 }
 
 .details-button {
-    @include button-dark();
+    @include button-transparent();
     //  cursor: pointer;
     transition: background-color var(--time) var(--cubic);
 
-    // margin-bottom: 16px;
     &:not(:last-child) {
         margin-bottom: 16px;
     }
@@ -162,9 +163,6 @@
 
 
 
-// .details-button {
-//     @include button-dark();
-// }
 
 
 .details-hotel {
@@ -261,14 +259,16 @@
     text-align: left;
 
     @media screen and (min-width: $tablet) {
-        width: 408px;
+        font-size: 16px;
+        line-height: 1.25;
+        width: 545px;
         // margin-left: 197px;
     }
 
     @media screen and (min-width: $desktop) {
         // max-width: 600px;
         // margin-left: 347px;
-        width: 446px;
+        width: 547px;
     }
 }
 
@@ -291,99 +291,95 @@
 
 
 
-.slick {
-    padding-bottom: 100px;
-}
+// .slick {
+//     padding-bottom: 100px;
+// }
 
-.slick__list {
-    width: 100%;
-    max-width: 1000px;
-    margin: 0 auto;
-    display: flex;
-}
+// .slick__list {
+//     width: 100%;
+//     max-width: 1000px;
+//     margin: 0 auto;
+//     display: flex;
+// }
 
-.slick__item {
-    margin: 15px;
-}
+// .slick__item {
+//     margin: 15px;
+// }
 
-.slick__box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 200px;
-    margin: 0 auto;
-    background-color: green;
-    font-size: 58px;
-}
+// .slick__box {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     width: 100%;
+//     height: 200px;
+//     margin: 0 auto;
+//     background-color: green;
+//     font-size: 58px;
+// }
 
-.my-slick-prev,
-.my-slick-next {
-    position: absolute;
-    bottom: -40px;
-    background-color: red;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-    width: 50px;
-    height: 40px;
-    cursor: pointer;
-    font-family: inherit;
-    font-weight: 900;
-    font-size: 36px;
-    line-height: 1;
-    border: none;
-    color: green;
-    background-color: transparent;
-}
+// .my-slick-prev,
+// .my-slick-next {
+//     position: absolute;
+//     bottom: -40px;
+//     background-color: red;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     padding: 0;
+//     width: 50px;
+//     height: 40px;
+//     cursor: pointer;
+//     font-family: inherit;
+//     font-weight: 900;
+//     font-size: 36px;
+//     line-height: 1;
+//     border: none;
+//     color: green;
+//     background-color: transparent;
+// }
 
-.my-slick-prev {
-    left: 50px;
+// .my-slick-prev {
+//     left: 50px;
 
-    @media screen and(min-width: 768px) {
-        left: 250px;
-    }
+//     @media screen and(min-width: 768px) {
+//         left: 250px;
+//     }
 
-    @media screen and(min-width: 1200px) {
-        left: 350px;
-    }
-}
+//     @media screen and(min-width: 1200px) {
+//         left: 350px;
+//     }
+// }
 
-.my-slick-next {
-    right: 50px;
+// .my-slick-next {
+//     right: 50px;
 
-    @media screen and(min-width: 768px) {
-        right: 250px;
-    }
+//     @media screen and(min-width: 768px) {
+//         right: 250px;
+//     }
 
-    @media screen and(min-width: 1200px) {
-        right: 350px;
-    }
-}
+//     @media screen and(min-width: 1200px) {
+//         right: 350px;
+//     }
+// }
 
-.swiper-wrapper {
-    display: flex;
-    list-style: none;
-}
+// .swiper-wrapper {
+//     display: flex;
+//     list-style: none;
+// }
 
 
-.swiper {
-    width: 600px;
-    height: 300px;
-}
+// .swiper {
+//     width: 600px;
+//     height: 300px;
+// }
 
-.swiper-slide {
-    width: 270px;
-    background-color: green;
-}
+// .swiper-slide {
+//     width: 270px;
+//     background-color: green;
+// }
 
 .plug {
     width: 100%;
-
-    // height: 312px;
-    // background-color: gray;
-
 
     @media screen and (min-width: $desktop) {
         width: 890px;
@@ -398,12 +394,11 @@
 
 .plug-jpg__item {
     @media screen and (min-width: $desktop) {
-        // width: 270px;
+
 
         &:nth-child(1) {
             margin-left: 15px;
         }
-
 
         &:not(:last-child) {
             margin-right: 87px;
@@ -411,13 +406,6 @@
 
     }
 }
-
-
-// .img {
-//     height: 100%;
-
-
-// }
 
 .plug__details-hotel {
     margin-right: 16px;
@@ -432,12 +420,10 @@
 
 .details-hotel__plug-item {
     @media screen and (min-width: $desktop) {
-        // width: 270px;
 
         &:nth-child(3) {
             margin-right: 15px;
         }
-
 
         &:not(:last-child) {
             margin-right: 87px;
@@ -474,8 +460,3 @@
         margin-right: 17px;
     }
 }
-
-// .plug-arrows__next {
-//     fill: var(--primary-light);
-//     background-color: transparent;
-// }
