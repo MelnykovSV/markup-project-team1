@@ -89,7 +89,20 @@
   position: relative;
 }
 
-.modal__select {
+.modal__select.js-select {
+  appearance: none;
+  display: block;
+  width: 100%;
+  height: 54px;
+  padding: 16px;
+  padding-right: 40px;
+  // border: 1px solid #c79002;
+  border: none;
+  // border-radius: 2px;
+  // margin-bottom: 8px;
+}
+
+.modal__select.js-select.nice-select {
   appearance: none;
   display: block;
   width: 100%;
@@ -98,7 +111,7 @@
   padding-right: 40px;
   border: 1px solid #c79002;
   border-radius: 2px;
-  // margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .modal__icon-select {
