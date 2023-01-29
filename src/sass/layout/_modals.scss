@@ -1,6 +1,6 @@
 .modal {
   position: fixed;
-  width: min(100%, 414px);
+  width: min(100vw, 414px);
   max-height: 100vh;
   border-radius: 2px;
   overflow-y: auto;
