@@ -133,3 +133,71 @@
 .slick-slide.slick-active.gallery-small-slider__item {
   opacity: 1;
 }
+
+// secondary slider
+.gallery-small-slider.gallery-small-slider--secondary {
+  margin-bottom: 0;
+  width: 514px;
+
+  transform: translateX(0);
+
+  @media screen and (min-width: calc($mobile - 68px)) {
+    transform: translateX(calc(100vw - 345px));
+  }
+
+  @media screen and (min-width: $mobile) {
+    transform: translateX(69px);
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin-left: calc(534px - 47px);
+    width: 428px;
+
+    transform: translateX(0);
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-left: auto;
+    width: 548px;
+  }
+
+  & .slick-track {
+    gap: 24px;
+
+    @media screen and (min-width: $tablet) {
+      gap: 40px;
+    }
+  }
+
+  .slick-small-prev {
+    left: calc(100vw - 135px);
+
+    @media screen and (min-width: calc($mobile - 68px)) {
+      left: 217px;
+    }
+
+    @media screen and (min-width: $tablet) {
+      left: 330px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      left: 450px;
+    }
+  }
+
+  .slick-small-next {
+    left: calc(100vw - 71px);
+
+    @media screen and (min-width: calc($mobile - 68px)) {
+      left: 281px;
+    }
+
+    @media screen and (min-width: $tablet) {
+      left: 394px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      left: 514px;
+    }
+  }
+}
