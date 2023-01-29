@@ -6,23 +6,26 @@
       </svg>
     </button>
     <h2 class="modal_title">Забронювати столик</h2>
-    <div class="modal_container">
-      <input
-        type="text"
-        id="book-table-name"
-        class="modal__input"
-        placeholder="Ваше ім’я"
-      />
+    <div class="modal__input-block">
+      <div class="modal__input-subblock">
+        <input
+          type="text"
+          id="book-table-name"
+          class="modal__input"
+          placeholder="Ваше ім’я"
+        />
 
-      <label class="modal__text" for="book-table-name"
-        >На кого забронювати столик?</label
-      >
-      <input
-        type="text"
-        id="book-table-num"
-        class="modal__input js-inputmask"
-      />
-      <label class="modal__text" for="book-table-num">Номер телефону</label>
+        <label class="modal__text" for="book-table-name"
+          >На кого забронювати столик?</label
+        >
+        <input
+          type="text"
+          id="book-table-num"
+          class="modal__input js-inputmask"
+        />
+        <label class="modal__text" for="book-table-num">Номер телефону</label>
+      </div>
+
       <!-- <div class="modal-select">
         <select name="" id="" class="modal__select js-select">
           <option value="1">1</option>
@@ -42,24 +45,26 @@
         <p class="modal__text">На яку дату бронювати?</p>
       </div> -->
 
-      <select name="" id="book-table-persons" class="modal__select js-select">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-      </select>
-      <label for="book-table-persons" class="modal__text"
-        >Столик на яку кількість осіб?</label
-      >
+      <div class="modal__input-subblock">
+        <select name="" id="book-table-persons" class="modal__select js-select">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+        <label for="book-table-persons" class="modal__text"
+          >Столик на яку кількість осіб?</label
+        >
 
-      <select name="" id="book-table-date" class="modal__select js-select">
-        <option value="Двомісний люкс">Сьогодні</option>
-        <option value="Трьохмісний номер">Завтра</option>
-        <option value="Двомісний номер">Післязавтра</option>
-      </select>
-      <label for="book-table-date" class="modal__text"
-        >На яку дату бронювати?</label
-      >
+        <select name="" id="book-table-date" class="modal__select js-select">
+          <option value="Двомісний люкс">Сьогодні</option>
+          <option value="Трьохмісний номер">Завтра</option>
+          <option value="Двомісний номер">Післязавтра</option>
+        </select>
+        <label for="book-table-date" class="modal__text"
+          >На яку дату бронювати?</label
+        >
+      </div>
 
       <button class="modal__button-submit" type="submit">
         Оформити бронювання

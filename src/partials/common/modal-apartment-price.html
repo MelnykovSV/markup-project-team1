@@ -1,20 +1,35 @@
 <div class="modal modal1" data-modal="3">
-    <form action="">
-        <button class="modal__button js-modal-close" type="button">
-            <svg width="24" height="24" class="modal__icon">
-              <use href="./images/icons.svg#icon-cross"></use>
-            </svg>
-          </button>
-          <h2 class="modal_title">Ціни на номер</h2>
-          <div class="modal_container">
-              <input type="number" id="apartment-price-nights" class="modal__input" placeholder="1" />
-            <label class="modal__text" for="apartment-price-nights">Кількість ночей</label>
-              <input type="number" id="apartment-price-price" class="modal__input" placeholder="1000" />
-            <label class="modal__text" for="apartment-price-price">грн</label>
-            <button class="modal__button-submit" type="submit">
-              Забронювати номер
-            </button>
-    </form>
- 
-  </div>
+  <form action="">
+    <button class="modal__button js-modal-close" type="button">
+      <svg width="24" height="24" class="modal__icon">
+        <use href="./images/icons.svg#icon-cross"></use>
+      </svg>
+    </button>
+    <h2 class="modal_title">Ціни на номер</h2>
+    <div class="modal__input-block">
+      <select
+        name=""
+        id="apartment-price-nights"
+        class="modal__select js-select"
+      >
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
+      <label for="apartment-price-nights" class="modal__text"
+        >Кількість ночей</label
+      >
+
+      <input
+        type="number"
+        id="apartment-price-price"
+        class="modal__input"
+        placeholder="1000"
+      />
+      <label class="modal__text" for="apartment-price-price">грн</label>
+    </div>
+    <button class="modal__button-submit" type="submit">
+      Забронювати номер
+    </button>
+  </form>
 </div>

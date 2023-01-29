@@ -16,6 +16,20 @@
   transition: opacity var(--time) var(--cubic),
     visibility var(--time) var(--cubic);
   padding: 60px 15px;
+
+  @media screen and (min-width: $tablet) {
+    width: min(100%, 712px);
+  }
+}
+
+.modal__input-block {
+}
+.modal__input-subblock {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
+}
+.input-container {
 }
 
 .modal1.active {
