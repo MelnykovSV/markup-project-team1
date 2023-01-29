@@ -10,7 +10,7 @@
         padding-top: 32px;
         padding-bottom: 32px;
     
-        @media (max-width:414px){
+        @media (max-width: 414px){
             font-size: 29px;
         }
         @media (min-width: 1024px){
@@ -24,7 +24,7 @@
 .table{
     width: 384px;
 
-    @media (min-width:1024px){
+    @media (min-width: 1024px){
     width: 410px;
     break-inside: avoid;
     margin-right: 45px;
@@ -51,12 +51,12 @@
         margin: 0;
     
 
-        @media (min-width:1024px){
+        @media (min-width: 1024px){
             column-count: 2;
             column-gap: 89px;
         }
 
-        @media (min-width:1200px){
+        @media (min-width: 1200px){
             column-gap: 143px;
         }
       
@@ -83,11 +83,11 @@
         width: 243px;
         text-align: left;
 
-        @media (min-width:1024px){
+        @media (min-width: 1024px){
             width: 229px;
         }
 
-        @media (min-width:1280px){
+        @media (min-width: 1200px){
             font-size: 16px;
             width: 300px;
             }
@@ -125,7 +125,7 @@
         text-align: center;
         width: 85px;
 
-    @media (min-width:1200px){
+    @media (min-width: 1200px){
         font-size: 16px;
         }
     }
@@ -150,13 +150,13 @@
 .div-button{
         display: flex;
 
-    @media (min-width:1024px){
+    @media (min-width: 1024px){
         justify-content: right;
         margin-right: 25px;
     }
 
    
-    @media (min-width:1200px){
+    @media (min-width: 1200px){
     justify-content: right;
     margin-right: 85px;
     }
