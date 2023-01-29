@@ -26,13 +26,16 @@
 
 .modal__input-block {
   margin-bottom: 40px;
+  display: flex;
+  gap: 16px;
+  // flex-direction: column;
 }
 .modal__input-subblock {
+  flex-direction: column;
   @media screen and (min-width: $tablet) {
     display: flex;
     width: 100%;
-    margin-bottom: 28px;
-    gap: 16px;
+    gap: 28px;
   }
 }
 .input-container {
@@ -113,6 +116,9 @@
   letter-spacing: 0.05em;
 
   color: #808080;
+  @media screen and (min-width: $tablet) {
+    height: 64px;
+  }
 }
 
 .modal-select {
@@ -142,6 +148,9 @@
   border: 1px solid #c79002;
   border-radius: 2px;
   margin-bottom: 8px;
+  @media screen and (min-width: $tablet) {
+    height: 64px;
+  }
 }
 
 .modal__icon-select {
