@@ -1,295 +1,333 @@
 .details-restaurant__flex-container {
-    @media screen and (min-width: $tablet) {
-        display: flex;
-        flex-direction: row-reverse;
-    }
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
 }
 
-
 .details-restaurant__flex--desktop-margin {
-    @media screen and (min-width: $desktop) {
-        margin-left: 17px;
-        // flex-grow: 2;
-        max-width: 942px;
-    }
+  @media screen and (min-width: $desktop) {
+    // margin-left: 17px;
+    // flex-grow: 2;
+    max-width: 942px;
+  }
 }
 
 .details-restaurant {
-    margin: 0 auto;
-    max-width: 414px;
-    padding: 30px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: linear-gradient(to right, rgba(var(--primary-dark-rgb), 0.65), rgba(var(--primary-dark-rgb), 0.65)),
-        url(../images/details-restaurant-bg-mobile.jpg);
+  margin: 0 auto;
+  max-width: 414px;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 0;
+  padding-bottom: 30px;
+  // padding: 30px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(
+      to right,
+      rgba(var(--primary-dark-rgb), 0.65),
+      rgba(var(--primary-dark-rgb), 0.65)
+    ),
+    url(../images/details-restaurant-bg-mobile.jpg);
 
-
-
-    @media screen and (min-device-pixel-ratio: 2),
+  @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-        & {
-            background-image: linear-gradient(to right, rgba(var(--primary-dark-rgb), 0.65),
-                    rgba(var(--primary-dark-rgb), 0.65)), url(../images/details-restaurant-bg-mobile@2x.jpg);
-        }
+    & {
+      background-image: linear-gradient(
+          to right,
+          rgba(var(--primary-dark-rgb), 0.65),
+          rgba(var(--primary-dark-rgb), 0.65)
+        ),
+        url(../images/details-restaurant-bg-mobile@2x.jpg);
+    }
+  }
+
+  @media screen and (min-width: $tablet) {
+    max-width: 1024px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 96px;
+    padding-top: 48px;
+
+    & {
+      background-image: linear-gradient(
+          to right,
+          rgba(var(--primary-dark-rgb), 0.65),
+          rgba(var(--primary-dark-rgb), 0.65)
+        ),
+        url(../images/details-restaurant-bg-tablet.jpg);
     }
 
-    @media screen and (min-width: $tablet) {
-        max-width: 1024px;
-        padding-left: 50px;
-        padding-right: 50px;
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      & {
+        background-image: linear-gradient(
+            to right,
+            rgba(var(--primary-dark-rgb), 0.65),
+            rgba(var(--primary-dark-rgb), 0.65)
+          ),
+          url(../images/details-restaurant-bg-tablet@2x.jpg);
+      }
+    }
+  }
 
-        & {
-            background-image: linear-gradient(to right, rgba(var(--primary-dark-rgb), 0.65),
-                    rgba(var(--primary-dark-rgb), 0.65)), url(../images/details-restaurant-bg-tablet.jpg);
-        }
+  @media screen and (min-width: $desktop) {
+    max-width: 1280px;
 
-
-        @media screen and (min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
-            & {
-                background-image: linear-gradient(to right, rgba(var(--primary-dark-rgb), 0.65),
-                        rgba(var(--primary-dark-rgb), 0.65)), url(../images/details-restaurant-bg-tablet@2x.jpg);
-            }
-        }
-
+    & {
+      background-image: linear-gradient(
+          to right,
+          rgba(var(--primary-dark-rgb), 0.65),
+          rgba(var(--primary-dark-rgb), 0.65)
+        ),
+        url(../images/details-restaurant-bg-desktop.jpg);
     }
 
-    @media screen and (min-width: $desktop) {
-        max-width: 1280px;
-
-        & {
-            background-image: linear-gradient(to right, rgba(var(--primary-dark-rgb), 0.65),
-                    rgba(var(--primary-dark-rgb), 0.65)), url(../images/details-restaurant-bg-desktop.jpg);
-        }
-
-
-        @media screen and (min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
-            & {
-                background-image: linear-gradient(to right, rgba(var(--primary-dark-rgb), 0.65),
-                        rgba(var(--primary-dark-rgb), 0.65)), url(../images/details-restaurant-bg-desktop@2x.jpg);
-
-            }
-        }
-
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      & {
+        background-image: linear-gradient(
+            to right,
+            rgba(var(--primary-dark-rgb), 0.65),
+            rgba(var(--primary-dark-rgb), 0.65)
+          ),
+          url(../images/details-restaurant-bg-desktop@2x.jpg);
+      }
     }
+  }
 }
 
 .details-restaurant__title-box {
-    margin-left: 80px;
-    margin-bottom: 48px;
+  margin-left: 80px;
+  margin-bottom: 48px;
+  padding-right: 30px;
 
-    @media screen and (min-width: $tablet) {
-        margin-left: 0;
+  @media screen and (min-width: $tablet) {
+    margin-left: 0;
+    margin-bottom: 40px;
+    padding-right: 0;
 
-    }
+    transform: translateX(-34px);
+  }
 
+  @media screen and (min-width: $desktop) {
+    transform: translateX(-15px);
+  }
 }
 
-
-
 .details-title {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.21;
-    letter-spacing: 0.02em;
-    color: var(--primary-light);
-    margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.21;
+  letter-spacing: 0.02em;
+  color: var(--primary-light);
+  margin-bottom: 20px;
 
-
-
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 8px;
+  }
 }
 
 .details-restaurant__descr {
-    font-weight: 600;
-    font-size: 12px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: var(--bg-image-secondary);
+
+  @media screen and (min-width: $tablet) {
+    font-size: 16px;
     line-height: 1.25;
-    letter-spacing: 0.02em;
-    color: var(--bg-image-secondary);
+    width: 545px;
+    // margin-right: 130px;
+  }
 
-    @media screen and (min-width: $tablet) {
-        font-size: 16px;
-        line-height: 1.25;
-        width: 545px;
-        // margin-right: 130px;
-    }
-
-
-    @media screen and (min-width: $desktop) {
-        max-width: 600px;
-    }
+  @media screen and (min-width: $desktop) {
+    max-width: 600px;
+  }
 }
 
-
 .details-buttons {
+  text-align: center;
+  // margin-top: 32px;
 
-    text-align: center;
-    // margin-top: 32px;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    // margin-bottom: 70px;
+  }
 
-    @media screen and (min-width: $tablet) {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        margin-bottom: 70px;
+  &--is-right-padding {
+    padding-right: 30px;
 
+    @media screen and (min-width: $desktop) {
+      padding-right: 32px;
     }
-
-    // @media screen and (min-width: $desktop) {
-    //     max-width: 338px;
-    // }
+  }
+  // @media screen and (min-width: $desktop) {
+  //     max-width: 338px;
+  // }
 }
 
 .details-button {
-    @include button-transparent();
-    //  cursor: pointer;
-    transition: background-color var(--time) var(--cubic);
+  @include button-transparent();
+  //  cursor: pointer;
+  transition: background-color var(--time) var(--cubic);
 
-    &:not(:last-child) {
-        margin-bottom: 16px;
-    }
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
 
-    &:hover,
-    &:focus,
-    &:active {
-        background: var(--primary-light);
-        border: 2px solid var(--secondary);
-        border-radius: 25px;
-    }
+  &:hover,
+  &:focus,
+  &:active {
+    background: var(--primary-light);
+    border: 2px solid var(--secondary);
+    border-radius: 25px;
+  }
 }
 
-
-
-
-
 .details-hotel {
-    max-width: 414px;
-    margin: 0 auto;
-    padding: 30px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: linear-gradient(to right, rgba(var(--primary-dark-rgb), 0.65), rgba(var(--primary-dark-rgb), 0.65)),
-        url(../images/details-hotel-bg-mobile.jpg);
+  max-width: 414px;
+  margin: 0 auto;
+  padding: 30px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(
+      to right,
+      rgba(var(--primary-dark-rgb), 0.65),
+      rgba(var(--primary-dark-rgb), 0.65)
+    ),
+    url(../images/details-hotel-bg-mobile.jpg);
 
-
-
-    @media screen and (min-device-pixel-ratio: 2),
+  @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-        & {
-            background-image: linear-gradient(to right, rgba(var(--primary-dark-rgb), 0.65),
-                    rgba(var(--primary-dark-rgb), 0.65)), url(../images/details-hotel-bg-mobile@2x.jpg);
-        }
+    & {
+      background-image: linear-gradient(
+          to right,
+          rgba(var(--primary-dark-rgb), 0.65),
+          rgba(var(--primary-dark-rgb), 0.65)
+        ),
+        url(../images/details-hotel-bg-mobile@2x.jpg);
+    }
+  }
+
+  @media screen and (min-width: $tablet) {
+    max-width: 1024px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+    & {
+      background-image: linear-gradient(
+          to right,
+          rgba(var(--primary-dark-rgb), 0.65),
+          rgba(var(--primary-dark-rgb), 0.65)
+        ),
+        url(../images/details-hotel-bg-tablet.jpg);
     }
 
-    @media screen and (min-width: $tablet) {
-        max-width: 1024px;
-        padding-left: 50px;
-        padding-right: 50px;
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      & {
+        background-image: linear-gradient(
+            to right,
+            rgba(var(--primary-dark-rgb), 0.65),
+            rgba(var(--primary-dark-rgb), 0.65)
+          ),
+          url(../images/details-hotel-bg-tablet@2x.jpg);
+      }
+    }
+  }
 
-        & {
-            background-image: linear-gradient(to right, rgba(var(--primary-dark-rgb), 0.65),
-                    rgba(var(--primary-dark-rgb), 0.65)), url(../images/details-hotel-bg-tablet.jpg);
-        }
+  @media screen and (min-width: $desktop) {
+    max-width: 1280px;
 
-
-        @media screen and (min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
-            & {
-                background-image: linear-gradient(to right, rgba(var(--primary-dark-rgb), 0.65),
-                        rgba(var(--primary-dark-rgb), 0.65)), url(../images/details-hotel-bg-tablet@2x.jpg);
-            }
-        }
-
+    & {
+      background-image: linear-gradient(
+          to right,
+          rgba(var(--primary-dark-rgb), 0.65),
+          rgba(var(--primary-dark-rgb), 0.65)
+        ),
+        url(../images/details-hotel-bg-desktop.jpg);
     }
 
-    @media screen and (min-width: $desktop) {
-        max-width: 1280px;
-
-        & {
-            background-image: linear-gradient(to right, rgba(var(--primary-dark-rgb), 0.65),
-                    rgba(var(--primary-dark-rgb), 0.65)), url(../images/details-hotel-bg-desktop.jpg);
-        }
-
-
-        @media screen and (min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
-            & {
-                background-image: linear-gradient(to right, rgba(var(--primary-dark-rgb), 0.65),
-                        rgba(var(--primary-dark-rgb), 0.65)), url(../images/details-hotel-bg-desktop@2x.jpg);
-
-            }
-        }
-
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      & {
+        background-image: linear-gradient(
+            to right,
+            rgba(var(--primary-dark-rgb), 0.65),
+            rgba(var(--primary-dark-rgb), 0.65)
+          ),
+          url(../images/details-hotel-bg-desktop@2x.jpg);
+      }
     }
+  }
 }
 
 .details-hotel__flex-container {
-    @media screen and (min-width: $tablet) {
-        display: flex;
-        // flex-direction: row-reverse;
-    }
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    // flex-direction: row-reverse;
+  }
 }
 
 .details-hotel__title-box {
-    margin-right: 108px;
-    margin-bottom: 48px;
-    text-align: right;
+  margin-right: 108px;
+  margin-bottom: 48px;
+  text-align: right;
 
-    @media screen and (min-width: $tablet) {
-        margin-right: 0;
-        // max-width: 550px;
-
-    }
-
+  @media screen and (min-width: $tablet) {
+    margin-right: 0;
+    // max-width: 550px;
+  }
 }
 
 .details-hotel__descr {
-    font-weight: 600;
-    font-size: 12px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: var(--bg-image-secondary);
+  text-align: left;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 16px;
     line-height: 1.25;
-    letter-spacing: 0.02em;
-    color: var(--bg-image-secondary);
-    text-align: left;
+    width: 545px;
+    // margin-left: 197px;
+  }
 
-    @media screen and (min-width: $tablet) {
-        font-size: 16px;
-        line-height: 1.25;
-        width: 545px;
-        // margin-left: 197px;
-    }
-
-    @media screen and (min-width: $desktop) {
-        // max-width: 600px;
-        // margin-left: 347px;
-        width: 547px;
-    }
+  @media screen and (min-width: $desktop) {
+    // max-width: 600px;
+    // margin-left: 347px;
+    width: 547px;
+  }
 }
 
 .details-hotel__flex--desktop-margin {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    // width: 747px;
+  }
 
-    @media screen and (min-width: $tablet) {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        // width: 747px;
-    }
-
-    @media screen and (min-width: $desktop) {
-        margin-right: 17px;
-        // flex-grow: 2;
-        width: 890px;
-    }
+  @media screen and (min-width: $desktop) {
+    margin-right: 17px;
+    // flex-grow: 2;
+    width: 890px;
+  }
 }
-
-
-
 
 // .slick {
 //     padding-bottom: 100px;
@@ -367,7 +405,6 @@
 //     list-style: none;
 // }
 
-
 // .swiper {
 //     width: 600px;
 //     height: 300px;
@@ -378,85 +415,80 @@
 //     background-color: green;
 // }
 
-.plug {
-    width: 100%;
+// add at last
 
-    @media screen and (min-width: $desktop) {
-        width: 890px;
-    }
-}
+// .plug {
+//   width: 100%;
 
-.plug-jpg {
-    padding: 0;
-    display: flex;
-    list-style: none;
-}
+//   @media screen and (min-width: $desktop) {
+//     width: 890px;
+//   }
+// }
 
-.plug-jpg__item {
-    @media screen and (min-width: $desktop) {
+// .plug-jpg {
+//   padding: 0;
+//   display: flex;
+//   list-style: none;
+// }
 
+// .plug-jpg__item {
+//   @media screen and (min-width: $desktop) {
+//     &:nth-child(1) {
+//       margin-left: 15px;
+//     }
 
-        &:nth-child(1) {
-            margin-left: 15px;
-        }
+//     &:not(:last-child) {
+//       margin-right: 87px;
+//     }
+//   }
+// }
 
-        &:not(:last-child) {
-            margin-right: 87px;
-        }
+// .plug__details-hotel {
+//   margin-right: 16px;
+// }
 
-    }
-}
+// .details-hotel__plug-list {
+//   // margin: 0;
+//   padding: 0;
+//   display: flex;
+//   list-style: none;
+// }
 
-.plug__details-hotel {
-    margin-right: 16px;
-}
+// .details-hotel__plug-item {
+//   @media screen and (min-width: $desktop) {
+//     &:nth-child(3) {
+//       margin-right: 15px;
+//     }
 
-.details-hotel__plug-list {
-    // margin: 0;
-    padding: 0;
-    display: flex;
-    list-style: none;
-}
+//     &:not(:last-child) {
+//       margin-right: 87px;
+//     }
+//   }
+// }
 
-.details-hotel__plug-item {
-    @media screen and (min-width: $desktop) {
+// .plug-arrows {
+//   margin-top: 24px;
+//   margin-bottom: 32px;
 
-        &:nth-child(3) {
-            margin-right: 15px;
-        }
+//   @media screen and (min-width: $tablet) {
+//     margin-bottom: 17px;
+//     margin-left: 15px;
+//   }
+// }
 
-        &:not(:last-child) {
-            margin-right: 87px;
-        }
+// .details-hotel__container {
+//   @media screen and (min-width: $tablet) {
+//     display: flex;
+//   }
+// }
 
-    }
-}
+// .details-hotel__plug-arrows {
+//   margin-top: 24px;
+//   margin-bottom: 32px;
 
-.plug-arrows {
-    margin-top: 24px;
-    margin-bottom: 32px;
-
-    @media screen and (min-width: $tablet) {
-        margin-bottom: 17px;
-        margin-left: 15px;
-    }
-
-}
-
-.details-hotel__container {
-    @media screen and (min-width: $tablet) {
-        display: flex;
-        ;
-    }
-}
-
-.details-hotel__plug-arrows {
-    margin-top: 24px;
-    margin-bottom: 32px;
-
-    @media screen and (min-width: $tablet) {
-        margin-bottom: 17px;
-        text-align: right;
-        margin-right: 17px;
-    }
-}
+//   @media screen and (min-width: $tablet) {
+//     margin-bottom: 17px;
+//     text-align: right;
+//     margin-right: 17px;
+//   }
+// }

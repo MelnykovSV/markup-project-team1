@@ -16,6 +16,19 @@
     width: 548px;
   }
 
+  & .slick-list {
+    overflow: visible;
+  }
+
+  & .slick-track {
+    display: flex;
+    gap: 16px;
+
+    @media screen and (min-width: $tablet) {
+      gap: 40px;
+    }
+  }
+
   &__item {
     background-color: var(--bg-image);
     border-radius: 2px;
@@ -49,19 +62,6 @@
     @media screen and (min-width: $tablet) {
       left: 64px;
     }
-  }
-}
-
-.slick-list {
-  overflow: visible;
-}
-
-.slick-track {
-  display: flex;
-  gap: 16px;
-
-  @media screen and (min-width: $tablet) {
-    gap: 40px;
   }
 }
 
