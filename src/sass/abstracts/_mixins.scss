@@ -27,9 +27,10 @@
   border-radius: 25px;
   min-width: 232px;
   max-width: 300px;
-  padding: 14px 35px;
+  padding: 12px 35px;
   color: var(--secondary);
   text-align: center;
+  cursor: pointer;
   @media screen and (max-width: 1280px) {
     padding-left: 24px;
     padding-right: 24px;
