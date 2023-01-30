@@ -83,6 +83,7 @@
   @media screen and (min-width: $tablet) {
     font-size: 36px;
     line-height: calc(41 / 36);
+    margin-bottom: 137px;
   }
 
   // @media screen and (max-width: 414px) {
@@ -98,6 +99,9 @@
 
 .hero__adress-buttons {
   margin-bottom: 58px;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
   // @media screen and (min-width: 414px) {
   //   margin-bottom: 58px;
   // }
@@ -124,12 +128,20 @@
   letter-spacing: 0.01em;
   color: var(--text-address);
   padding: 8px;
+  z-index: 10;
 
   border: 1px solid rgba(243, 198, 83, 0.7);
   border-radius: 2px;
 
   @media screen and (min-width: 370px) {
     top: 64px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 285px;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    position: static;
   }
 
   // @media screen and (max-width: 414px) {
@@ -147,13 +159,14 @@
 }
 
 .hero__address-location {
-  fill: var(--secondary);
   margin-right: 8px;
 }
 
 .hero__address-icon {
-  @media screen and (min-width: 414px) {
-    display: flex;
+  fill: var(--secondary);
+  @media screen and (min-width: $tablet) {
+    width: 24px;
+    height: 24px;
   }
 }
 
@@ -169,6 +182,11 @@
   align-items: center;
 
   flex-direction: column;
+
+  @media screen and (min-width: $tablet) {
+    flex-direction: row;
+    align-items: end;
+  }
 
   // @media screen and (max-width: 414px) {
   //   display: block;
