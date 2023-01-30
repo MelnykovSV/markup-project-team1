@@ -34,7 +34,7 @@
   & > span {
     letter-spacing: normal;
   }
-  @media screen and (min-width: 370px) {
+  @media screen and (min-width: 380px) {
     font-size: 96px;
   }
 
@@ -118,8 +118,9 @@
   border: 1px solid rgba(243, 198, 83, 0.7);
   border-radius: 2px;
 
-  @media screen and (min-width: 370px) {
+  @media screen and (min-width: 380px) {
     // top: 64px;
+    top: -117px;
   }
 
   @media screen and (min-width: $tablet) {
