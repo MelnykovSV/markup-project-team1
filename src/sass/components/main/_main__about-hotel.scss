@@ -1,0 +1,105 @@
+.about-section__complex {
+  &--reversed {
+    text-align: end;
+  }
+}
+
+.about-section__first-box--reversed {
+  @media (min-width: 1024px) {
+    flex-direction: row-reverse;
+  }
+}
+
+.about-section__text-box.about-section__text-box--reversed {
+  @media (min-width: 1024px) {
+    margin-left: 46px;
+    margin-right: 0;
+  }
+
+  @media (min-width: 1280px) {
+    margin-left: 67px;
+    margin-right: 0;
+  }
+}
+
+.about-section__descr {
+  &--reversed {
+    margin-left: auto;
+
+    @media (min-width: 1024px) {
+      transform: translateX(20px);
+    }
+
+    @media (min-width: 1280px) {
+      transform: translateX(0);
+    }
+  }
+}
+
+.about-section__img--bigger.about-section__img--bigger-reversed {
+  @media screen and (max-width: 1023px) {
+    margin-left: 0;
+  }
+}
+
+.about-section__second-box.about-section__second-box--reversed {
+  @media screen and (max-width: 1023px) {
+    flex-direction: row;
+  }
+
+  @media (min-width: 1024px) {
+    padding-left: 220px;
+  }
+
+  @media (min-width: 1280px) {
+    padding-left: 294px;
+  }
+}
+.about-section__img--normal.about-section__img--normal--reversed {
+  left: initial;
+  right: 0;
+}
+
+.gallery-small-slider.gallery-small-slider--reversed {
+  transform: translateX(-180px);
+
+  @media (max-width: 346px) {
+    transform: translateX(-225px);
+  }
+}
+
+.gallery-small-slider.gallery-small-slider--secondary--reversed {
+  @media (min-width: 1024px) {
+    margin-left: 196px;
+  }
+}
+
+.gallery-small-slider--reversed.gallery-small-slider--secondary
+  .slick-small-prev--reversed {
+  left: calc(100vw - 105px);
+
+  @media (min-width: 346px) {
+    left: 180px;
+  }
+
+  @media (min-width: 1024px) {
+    left: 0;
+  }
+}
+
+.gallery-small-slider--reversed.gallery-small-slider--secondary
+  .slick-small-next--reversed {
+  left: calc(100vw - 41px);
+
+  @media (min-width: 346px) {
+    left: 242px;
+  }
+
+  @media (min-width: 1024px) {
+    left: 62px;
+  }
+}
+
+// .gallery-small-slider.gallery-small-slider--secondary-reversed {
+//     transform: translateX(calc(100vw - 590px));
+// }
