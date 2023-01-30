@@ -24,7 +24,7 @@
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
         & {
-            background-image:
+            background-image: 
                 url(./../images/hero_room1-tablet@2x.jpg);  
         }
     }
@@ -94,7 +94,7 @@
 
 .room-hero__text {
     margin-bottom: 17px;
-    width: 325px;
+    width: min(325px, 100%);
 
     font-weight: 700;
     font-size: 12px;
@@ -210,11 +210,8 @@
         right: 47px;
         bottom: 62px;
     }
+}
 
-<<<<<<< Updated upstream
-    @media screen and (min-width: $desktop) {
-        position: static;
-=======
 .room-hero__item {
     cursor: pointer;
 }
@@ -222,7 +219,6 @@
 .room-hero__item:not(:last-child) {
     @media screen and (min-width: 1024px) {
         margin-right: 23px;
->>>>>>> Stashed changes
     }
 }
 
