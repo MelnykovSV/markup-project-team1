@@ -10,10 +10,10 @@
     padding-top: 32px;
     padding-bottom: 32px;
 
-    @media (max-width: 414px) {
+    @media screen and (max-width: $mobile) {
       font-size: 29px;
     }
-    @media (min-width: 1024px) {
+    @media screen and (min-width: $tablet) {
       padding-bottom: 40px;
       padding-top: 58px;
     }
@@ -23,7 +23,7 @@
 .table {
   width: min(100%, 384px);
 
-  @media (min-width: 1024px) {
+  @media screen and (min-width: $tablet) {
     width: 410px;
     break-inside: avoid;
     margin-right: 45px;
@@ -37,7 +37,7 @@
     text-align: left;
     padding-bottom: 16px;
 
-    @media (min-width: 1024px) {
+    @media screen and (min-width: $tablet) {
       font-size: 24px;
       line-height: 1.16;
       padding-bottom: 20px;
@@ -49,12 +49,12 @@
     padding: 0;
     margin: 0;
 
-    @media (min-width: 1024px) {
+    @media screen and (min-width: $tablet) {
       column-count: 2;
       column-gap: 89px;
     }
 
-    @media (min-width: 1200px) {
+    @media screen and (min-width: $desktop) {
       column-gap: 143px;
     }
   }
@@ -79,11 +79,11 @@
     width: 243px;
     text-align: left;
 
-    @media (min-width: 1024px) {
+    @media screen and (min-width: $tablet) {
       width: 229px;
     }
 
-    @media (min-width: 1200px) {
+    @media screen and (min-width: $desktop) {
       font-size: 16px;
       width: 300px;
     }
@@ -121,7 +121,7 @@
     text-align: center;
     width: 85px;
 
-    @media (min-width: 1200px) {
+    @media screen and (min-width: $desktop) {
       font-size: 16px;
     }
   }
@@ -151,12 +151,12 @@
 .div-button {
   display: flex;
 
-  @media (min-width: 1024px) {
+  @media screen and (min-width: $tablet) {
     justify-content: right;
     margin-right: 25px;
   }
 
-  @media (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     justify-content: right;
     margin-right: 85px;
   }
