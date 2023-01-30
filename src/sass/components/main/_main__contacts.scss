@@ -22,12 +22,19 @@
 .contacts__item {
   display: flex;
   align-items: center;
-  height: 40px;
+  // height: 40px;
   margin-bottom: 16px;
 }
 
 .contacts__item:last-child {
   margin-bottom: 32px;
+
+  @media screen and (min-width: $tablet) {
+    margin-left: 0;
+    margin-bottom: 0;
+    // margin-left: 123px;
+
+  }
 }
 
 .contacts__text {
@@ -36,6 +43,7 @@
   line-height: calc(24 / 20);
   letter-spacing: 0.02em;
   color: var(--secondary-dark);
+  margin-right: 22px;
 }
 
 .contacts__fild {
@@ -48,6 +56,10 @@
   padding-left: 14px;
   padding-top: 12px;
   padding-bottom: 11px;
+}
+
+.text-hotel{
+  margin-right: 54px;
 }
 .contacts__icon {
   fill: var(--secondary-dark);
@@ -76,21 +88,51 @@
   display: block;
   width: min(100%, 394px);
   height: 220px;
+
+  @media screen and (min-width: $tablet) {
+    width: 535px;
+    height: 412px;
+  }
+
+  @media screen and (min-width: $desktop){
+    width: 634px;
+  }
 }
 
 .contacts__fild-address {
   width: 260px;
+  height: 76px;
+  padding-right: 44px;
+
+  @media screen and (min-width: $tablet) {
+    padding-right: 0;
+    width: 285px;
+    height: 56px;
+    padding-left: 8px;
+    
+  }
+
+
 }
 // @media screen and (min-width: $mobile){
 //     .contacts__iframe{
 //         display: none;
 //     }
 // }
-@media screen and (min-width: $tablet) {
   .contacts__container {
+
+    @media screen and (min-width: $tablet) {
     display: flex;
     justify-content: space-between;
+    padding-top: 56px;
+    padding-bottom: 44px;
   }
+
+    @media screen and (min-width: $desktop) {
+      padding-top: 56px;
+      padding-bottom: 73px;
+    }
+  
   .contacts__complex {
     font-weight: 700;
     font-size: 64px;
@@ -104,28 +146,58 @@
   }
   .contacts__complex {
     margin-bottom: 12px;
+
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 8px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 16px;
+    }
   }
+
   .contacts__deskript {
-    margin-bottom: 52px;
+    margin-bottom: 24px;
+
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 52px;
+
+    }
+
+    @media screen and (min-width: $desktop){
+    margin-bottom: 40px;
+    }  
   }
   .contacts__text {
     margin-bottom: 8px;
   }
   .contacts__item:first-child {
     margin-bottom: 35px;
+
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 24px;
+    }
   }
   .contacts__item:nth-child(2) {
     margin-bottom: 48px;
   }
   .contacts__fild {
-    margin-bottom: 48px;
+    // margin-bottom: 48px;
+
+    @media screen and (min-width: $tablet) {
+      // margin-bottom: 35px;
+      
+    }
   }
 }
-@media screen and (min-width: $desktop) {
-  .contacts__map {
-    display: none;
-  }
+
+  
+  
   .contacts__item {
     margin-bottom: 30px;
   }
+
+
+.mup-link{
+  font-size: 16px;
 }
