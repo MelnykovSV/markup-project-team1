@@ -19,17 +19,19 @@
   </head>
   <body>
     <!-- ==================Оля==================-->
-    <include src="./partials/common/header.html"></include>
+    <include src="./partials/common/header-room.html"></include>
     <!-- ==================Люда==================-->
     <include src="./partials/room/room-hero.html"></include>
-    <!-- ==================___==================-->
+    <!-- ==================Надя==================-->
     <include src="./partials/room/room-amenities.html"></include>
     <!-- ==================Катя==================-->
     <include src="./partials/common/footer.html"></include>
-    <!-- ==================___==================-->
-    <include src="./partials/common/modal-book-apartment.html"></include>
-    <!-- ==================___==================-->
-    <include src="./partials/common/modal-apartment-price.html"></include>
+
+    <div class="js-backdrop-modal">
+      <include src="./partials/common/modal-book-apartment.html"></include>
+      <!-- ==================___==================-->
+      <include src="./partials/common/modal-apartment-price.html"></include>
+    </div>
     <script
       type="text/javascript"
       src="//code.jquery.com/jquery-1.11.0.min.js"
@@ -43,5 +45,7 @@
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
     <script src="./index.js" type="module"></script>
+    <script src="./js/vendors/swiper-bundle.min.js"></script>
+    <script src="./js/vendors/nice-select2.js"></script>
   </body>
 </html>

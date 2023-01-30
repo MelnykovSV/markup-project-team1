@@ -1,0 +1,43 @@
+<div class="modal modal1" data-modal="3">
+  <form>
+    <button class="modal__button js-modal-close" type="button">
+      <svg width="24" height="24" class="modal__icon">
+        <use href="./images/icons.svg#icon-cross"></use>
+      </svg>
+    </button>
+    <h2 class="modal_title-alt">Ціни на номер</h2>
+    <p class="modal__appartment-type">Двомісний люкс</p>
+    <p class="appartment-type-desc">Категорія номеру</p>
+
+    <div class="modal__input-block">
+      <div class="input-container">
+        <select
+          name="days"
+          id="apartment-price-nights"
+          class="modal__select js-select"
+        >
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+        <label for="apartment-price-nights" class="modal__text"
+          >Кількість ночей</label
+        >
+      </div>
+
+      <div class="input-container">
+        <input
+          type="number"
+          id="apartment-price-price"
+          class="modal__input"
+          name="price"
+          placeholder="1000"
+        />
+        <label class="modal__text" for="apartment-price-price">грн</label>
+      </div>
+    </div>
+    <button class="modal__button-submit" type="submit">
+      Забронювати номер
+    </button>
+  </form>
+</div>
