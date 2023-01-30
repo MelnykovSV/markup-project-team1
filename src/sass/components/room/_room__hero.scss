@@ -57,7 +57,7 @@
     position: relative;
     padding-top: 483px;
 
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: $tablet) {
         padding-top: 468px;
     }
 }
@@ -72,7 +72,7 @@
 
     color: var(--primary-light);
 
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: $tablet) {
         margin-bottom: 24px;
         font-size: 36px;
     }
@@ -83,7 +83,7 @@
 }
 
 .room-hero__content {
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: $desktop) {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -103,13 +103,13 @@
 
     color: var(--primary-light);
 
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: $tablet) {
         margin-bottom: 24px;
         font-size: 16px;
         width: 400px;
     }
 
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: $desktop) {
         margin-bottom: 0;
     }
 }
@@ -119,8 +119,9 @@
     top: 65px;
     right: 15px;
     display: flex;
-    text-align: right;
+
     text-decoration: none;
+    align-items: center;
 
     padding: 8px 3px 9px 0;
 
@@ -135,7 +136,7 @@
     border: 1px solid rgba(243, 198, 83, 0.7);
     border-radius: 2px;
 
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: $tablet) {
         position: static;
         max-width: 285px;
         padding: 8px;
@@ -143,7 +144,7 @@
         font-size: 16px;
     }
 
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: $desktop) {
         display: none;
     }
 }
@@ -152,7 +153,7 @@
     display: flex;
     align-items: center;
 
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: $tablet) {
         padding-bottom: 22px;  
     }
 }
@@ -162,17 +163,18 @@
     padding-left: 0;
     margin-right: 72px;
     
-    @media screen and (min-width: 1024px) {
-        display: flex;   
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        margin: 0;   
     }
 
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: $desktop) {
         display: none;
     }
 }
 
 .room-hero__item:not(:last-child) {
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: $tablet) {
         margin-right: 23px;
     }
 }
@@ -191,7 +193,10 @@
     letter-spacing: 0.02em;
 
     color: var(--secondary);
-    background-color: rgba(0, 0, 0, 0.4);;
+    background-color: rgba(0, 0, 0, 0.4);
+
+    transition: background-color var(--time) var(--cubic),
+        color var(--time) var(--cubic);
 
     &:hover,
     &:focus {
@@ -199,13 +204,13 @@
         border: 2px solid var(--secondary);
     }
 
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: $tablet) {
         position: absolute;
         right: 47px;
         bottom: 62px;
     }
 
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: $desktop) {
         position: static;
     }
 }
@@ -216,4 +221,11 @@
 
 .room-hero__icon-location {
     fill: var(--secondary);
+    margin: 0 8px 0 6px;
+
+    @media screen and (min-width: $tablet) {
+        margin: 0 10px 0 2px;
+        width: 24px;
+        height: 24px;
+    }
 }
