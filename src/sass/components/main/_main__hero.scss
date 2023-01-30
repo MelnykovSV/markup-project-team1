@@ -88,7 +88,7 @@
   letter-spacing: 0.3em;
   color: var(--primary-light);
 
-  & > span{
+  & > span {
     letter-spacing: normal;
   }
 
@@ -148,12 +148,12 @@
 }
 
 .hero__adress-buttons {
-    display: flex;
+  display: flex;
 
   @media screen and (min-width: 414px) {
     margin-bottom: 58px;
   }
-  
+
   @media screen and (min-width: 1024px) {
     margin-bottom: 25px;
   }
@@ -162,7 +162,6 @@
     padding-bottom: 64px;
   }
 }
-
 
 .hero__address {
   width: 233px;
@@ -198,11 +197,11 @@
 }
 
 .hero__address-location {
-   margin-right: 8px;
+  margin-right: 8px;
 }
 
 .hero__address-icon {
-   @media screen and (min-width: 414px) {
+  @media screen and (min-width: 414px) {
     display: flex;
     fill: var(--secondary);
   }
@@ -214,26 +213,26 @@
 }
 
 .hero__buttons-list {
-    margin-left: auto;
-    display: flex;
+  margin-left: auto;
+  display: flex;
+  flex-wrap: wrap;
 
-      @media screen and (max-width: 414px) {
-      display: block;
-      margin-left: 0;
-    }
+  @media screen and (max-width: 414px) {
+    display: block;
+    margin-left: 0;
+  }
 }
 
-
 .hero__item {
-    margin-left: 60px;
+  margin-left: 60px;
 
-    &:not(:last-child) {
-      margin-bottom: 24px;
-    }
+  &:not(:last-child) {
+    margin-bottom: 24px;
+  }
 
-    @media screen and (max-width: 414px) {
-      display: flex;
-    }
+  @media screen and (max-width: 414px) {
+    display: flex;
+  }
 }
 
 .hero__button {
@@ -252,11 +251,11 @@
     background-color: var(--primary-light);
   }
 
-  @media screen and (max-width: 414px)  {
+  @media screen and (max-width: 414px) {
     padding: 14px 24px;
   }
 
-  @media screen and (max-width: 1024px)  {
+  @media screen and (max-width: 1024px) {
     padding: 14px 24px;
   }
 }
@@ -283,11 +282,8 @@
   @media screen and (min-width: 1200px) {
     display: none;
   }
-
 }
 
 .hero__soc-icon {
   fill: rgba(243, 198, 83, 0.7);
 }
-
-
