@@ -1,0 +1,237 @@
+.room-hero {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(./../images/hero_room1-mobile.jpg);
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    & {
+      background-image: url(./../images/hero_room1-mobile@2x.jpg);
+    }
+  }
+
+  @media screen and (min-width: 415px) {
+    & {
+      background-image: url(./../images/hero_room1-tablet.jpg);
+    }
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      & {
+        background-image: url(./../images/hero_room1-tablet@2x.jpg);
+      }
+    }
+  }
+
+  @media screen and (min-width: 1025px) {
+    & {
+      background-image: url(./../images/hero_room1-desktop.jpg);
+    }
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      & {
+        background-image: url(./../images/hero_room1-desktop@2x.jpg);
+      }
+    }
+  }
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  background-color: var(--primary-dark);
+}
+
+.room-body {
+  position: relative;
+  padding-top: 483px;
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 468px;
+  }
+}
+
+.room-hero__title {
+  margin-bottom: 14px;
+
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.14;
+  letter-spacing: 0.05em;
+
+  color: var(--primary-light);
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 24px;
+    font-size: 36px;
+  }
+}
+
+.room-hero__title1 {
+  text-transform: uppercase;
+}
+
+.room-hero__content {
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-bottom: 48px;
+  }
+}
+
+.room-hero__text {
+  margin-bottom: 17px;
+  width: min(325px, 100%);
+
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+
+  color: var(--primary-light);
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 24px;
+    font-size: 16px;
+    width: 400px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 0;
+  }
+}
+
+.room-hero__map {
+  position: absolute;
+  top: 100px;
+  right: 15px;
+  display: flex;
+
+  text-decoration: none;
+  align-items: center;
+
+  padding: 8px 3px 9px 0;
+
+  max-width: 210px;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+
+  color: var(--text-address);
+  border: 1px solid rgba(243, 198, 83, 0.7);
+  border-radius: 2px;
+
+  @media screen and (min-width: 370px) {
+    top: 65px;
+    right: 15px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    position: static;
+    max-width: 285px;
+    padding: 8px;
+    margin-right: 41px;
+    font-size: 16px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
+}
+
+.room-hero__list {
+  display: flex;
+  align-items: center;
+
+  @media screen and (min-width: $tablet) {
+    padding-bottom: 22px;
+  }
+}
+
+.room-hero__social {
+  list-style: none;
+  padding-left: 0;
+  margin-right: 72px;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    margin: 0;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
+}
+
+.room-hero__item:not(:last-child) {
+  @media screen and (min-width: $tablet) {
+    margin-right: 23px;
+  }
+}
+
+.room-hero__btn {
+  border: 2px solid var(--primary-light);
+  border-radius: 25px;
+  width: 232px;
+  height: 48px;
+
+  text-align: center;
+  cursor: pointer;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+
+  color: var(--secondary);
+  background-color: rgba(0, 0, 0, 0.4);
+
+  transition: background-color var(--time) var(--cubic),
+    color var(--time) var(--cubic);
+
+  &:hover,
+  &:focus {
+    background-color: var(--primary-light);
+    border: 2px solid var(--secondary);
+  }
+
+  @media screen and (min-width: $tablet) {
+    position: absolute;
+    right: 47px;
+    bottom: 62px;
+  }
+}
+
+.room-hero__item {
+  cursor: pointer;
+}
+
+.room-hero__item:not(:last-child) {
+  @media screen and (min-width: 1024px) {
+    margin-right: 23px;
+  }
+}
+
+.room-hero__icon {
+  fill: var(--secondary);
+}
+
+.room-hero__icon-location {
+  fill: var(--secondary);
+  margin: 0 8px 0 6px;
+
+  @media screen and (min-width: $tablet) {
+    margin: 0 10px 0 2px;
+    width: 24px;
+    height: 24px;
+  }
+}

@@ -8,6 +8,16 @@
   padding: 14px 24px;
   color: var(--secondary);
   text-align: center;
+  cursor: pointer;
+
+  transition: background-color var(--time) var(--cubic),
+    border-color var(--time) var(--cubic);
+
+  &:hover,
+  &:focus {
+    background-color: var(--primary-light);
+    border-color: var(--secondary);
+  }
 }
 
 @mixin button-transparent() {

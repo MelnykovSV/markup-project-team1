@@ -107,3 +107,39 @@ min-width:1440px для звичайних дисплеїв та ретини. �
           sizes=""
           type="image/webp"
         />
+
+<!-- ==========================КАСТОМНИЙ СЕЛЕКТ========================== -->
+
+Додати клас .js-select
+
+<div class="flex-box js-inputmask">
+    <select name="testselect" class="js-select">
+      <option value="1">option1</option>
+      <option value="11">option11</option>
+      <option value="111">option111</option>
+      <option value="1111">option1111</option>
+      <option value="test">test</option>
+      <option value="test1">test1</option>
+      <option value="car">car</option>
+      <option value="car1">car1</option>
+    </select>
+    <select name="testselect" class="js-select">
+      <option value="1">option1</option>
+      <option value="11">option11</option>
+      <option value="111">option111</option>
+      <option value="1111">option1111</option>
+    </select>
+    <select name="testselect" class="js-select"></select>
+      <option value="1">option1</option>
+      <option value="11">option11</option>
+      <option value="111">option111</option>
+      <option value="1111">option1111</option>
+    </select>
+  </div>
+
+<!-- ==========================МАСКА ДЛЯ ІНПУТА========================== -->
+
+Обов'язково використовувати інпут з type="text", інші бібліотека не підтримує!
+Додаємо клас .js-inputmask
+
+<input type="text" class="tel js-inputmask" name="tel" />
