@@ -28,17 +28,9 @@
     font-size: 96px;
   }
 
-  // @media screen and (max-width: 414px) {
-  //   font-size: 96px;
-  //   line-height: 1.1;
-  //   padding-top: 181px;
-  //   margin-bottom: 24px;
-  // }
-
-  // @media screen and (max-width: 1024px) {
-  //   margin-bottom: 16px;
-  //   padding-top: 88px;
-  // }
+  @media screen and (min-width: 500px) {
+    font-size: 128px;
+  }
 }
 
 .hero__title {
@@ -50,6 +42,9 @@
   color: var(--primary-light);
   margin-left: auto;
   margin-right: auto;
+
+  @media screen and (min-width: $tablet) {
+  }
 
   // @media screen and (max-width: 414px) {
   //   margin-bottom: 40px;
