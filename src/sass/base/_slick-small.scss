@@ -24,7 +24,7 @@
   }
 }
 
-.gallery-small-slider--revers {
+.gallery-small-slider--reversed {
   transform: translateX(calc(100vw - 299px));
 
   @media screen and (min-width: $mobile) {
@@ -117,11 +117,9 @@
 
   transition: fill var(--time) var(--cubic);
 
-  @media screen and (min-width: $desktop) {
-    &:hover,
-    &:focus {
-      fill: var(--secondary);
-    }
+  &:hover,
+  &:focus {
+    fill: var(--secondary);
   }
 }
 
@@ -169,7 +167,7 @@
     }
   }
 
-  .slick-small-prev {
+  & .slick-small-prev {
     left: calc(100vw - 135px);
 
     @media screen and (min-width: calc($mobile - 68px)) {
@@ -185,7 +183,7 @@
     }
   }
 
-  .slick-small-next {
+  & .slick-small-next {
     left: calc(100vw - 71px);
 
     @media screen and (min-width: calc($mobile - 68px)) {
@@ -198,6 +196,45 @@
 
     @media screen and (min-width: $desktop) {
       left: 514px;
+    }
+  }
+}
+
+//revers
+.gallery-small-slider.gallery-small-slider--secondary.gallery-small-slider--secondary-reversed {
+  transform: translateX(calc(-180px - (364px - 100vw)));
+
+  @media screen and (min-width: 365px) {
+    transform: translateX(-180px);
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin-left: 0;
+
+    transform: translateX(0);
+  }
+
+  & .slick-small-prev {
+    left: calc(180px + (364px - 100vw));
+
+    @media screen and (min-width: 365px) {
+      left: 180px;
+    }
+
+    @media screen and (min-width: $tablet) {
+      left: 0;
+    }
+  }
+
+  & .slick-small-next {
+    left: calc(244px + (364px - 100vw));
+
+    @media screen and (min-width: 365px) {
+      left: 244px;
+    }
+
+    @media screen and (min-width: $tablet) {
+      left: 64px;
     }
   }
 }
