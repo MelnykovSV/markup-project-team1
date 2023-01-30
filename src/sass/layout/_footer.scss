@@ -8,14 +8,14 @@
     justify-content: space-between;
     padding-left: 15px;
     padding-right: 15px;
-    @media (min-width: 380px) {
+    @media (min-width: $mobile) {
       flex-direction: row;
     }
     @media (min-width: $mobile) {
       justify-content: center;
-      gap: 85px;
-      padding-left: 41px;
-      padding-right: 30px;
+      gap: 75px;
+      padding-left: 59px;
+      padding-right: 20px;
     }
     @media (min-width: $tablet) {
       gap: 163px;
@@ -61,6 +61,10 @@
     text-transform: uppercase;
     letter-spacing: 0.3em;
     color: var(--secondary);
+    padding-top: 40px;
+    @media (min-width: $mobile) {
+      padding-top: 0;
+    }
     @media (min-width: $tablet) {
       font-size: 64px;
     }
@@ -69,6 +73,20 @@
     margin-bottom: 16px;
   }
 
+  &__nav-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 35px;
+    @media (min-width: $mobile) {
+      margin-left: 10px;
+      display: block;
+    }
+
+    @media (min-width: $tablet) {
+      margin-left: 0;
+    }
+  }
   &__nav-link {
     color: var(--secondary);
     font-family: 'Montserrat';
@@ -83,6 +101,9 @@
     align-items: center;
     justify-content: center;
     gap: 20px;
+    @media (min-width: $mobile) {
+      gap: 0;
+    }
     @media (min-width: $tablet) {
       flex-direction: column-reverse;
       gap: 12px;
@@ -96,12 +117,8 @@
     justify-content: space-between;
     width: 100%;
     height: 100%;
-    padding: 10px 12px;
+    padding: 10px;
     fill: var(--secondary);
-    transition-property: background-color, fill;
-    transition-duration: 250ms;
-
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   &__span {
