@@ -158,7 +158,8 @@
   align-items: center;
 
   @media screen and (min-width: $tablet) {
-    display: block;
+    display: flex;
+    justify-content: start;
     padding-bottom: 22px;
   }
 }
