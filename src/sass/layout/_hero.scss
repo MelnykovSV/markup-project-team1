@@ -1,5 +1,6 @@
 .hero {
   text-align: center;
+  padding-top: 181px;
 }
 
 .hero__body {
@@ -9,13 +10,13 @@
 .hero__logo {
   font-family: 'FilmP3';
   text-transform: uppercase;
-  padding-top: 64px;
+
   margin-bottom: 32px;
   margin-left: auto;
   margin-right: auto;
   font-weight: 700;
-  font-size: 128px;
-  line-height: 1.1;
+  font-size: 96px;
+  line-height: calc(103 / 96);
   letter-spacing: 0.3em;
   color: var(--primary-light);
 
