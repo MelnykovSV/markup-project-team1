@@ -8,6 +8,10 @@
     padding-top: 181px;
     padding-bottom: 15px;
   }
+  @media screen and (min-width: $tablet) {
+    padding-top: 164px;
+    padding-bottom: 64px;
+  }
 }
 
 .hero__body {
@@ -38,6 +42,10 @@
     line-height: calc(138 / 128);
     margin-bottom: 16px;
   }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 32px;
+  }
 }
 
 .hero__title {
@@ -55,17 +63,9 @@
     line-height: calc(24 / 20);
     margin-bottom: 56px;
   }
-
-  // @media screen and (min-width: $tablet) {
-  // }
-
-  // @media screen and (max-width: 414px) {
-  //   margin-bottom: 40px;
-  // }
-
-  // @media acreen and (max-width: 1024px) {
-  //   margin-bottom: 56px;
-  // }
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 64px;
+  }
 }
 
 .hero__text {
@@ -83,6 +83,9 @@
   @media screen and (min-width: $tablet) {
     font-size: 36px;
     line-height: calc(41 / 36);
+    margin-bottom: 137px;
+  }
+  @media screen and (min-width: $desktop) {
     margin-bottom: 137px;
   }
 
