@@ -10,8 +10,8 @@
     @media (min-width: $mobile) {
       justify-content: center;
       gap: 85px;
-    padding-left: 41px;
-    padding-right: 30px;
+      padding-left: 41px;
+      padding-right: 30px;
     }
     @media (min-width: $tablet) {
       gap: 163px;
@@ -22,6 +22,9 @@
       gap: 231px;
       padding-left: 216px;
       padding-right: 186px;
+    }
+    & .complex__logo {
+      text-align: end;
     }
   }
 
@@ -50,13 +53,16 @@
     font-weight: 700;
     font-size: 40px;
     line-height: 1.075;
+    text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 0.3em;
     color: var(--secondary);
-    text-decoration: none;
     @media (min-width: $tablet) {
       font-size: 64px;
     }
+  }
+  &__item:not(:last-child) {
+    margin-bottom: 16px;
   }
 
   &__nav-link {
@@ -94,12 +100,13 @@
 
   &__span {
     display: none;
+    font-size: 16px;
+    line-height: 1.25;
     color: var(--secondary);
     @media (min-width: $tablet) {
       display: block;
     }
   }
-
 
   &__networks-item {
     display: flex;

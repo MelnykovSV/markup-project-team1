@@ -1,46 +1,72 @@
 <div class="modal modal1" data-modal="1">
-  <button class="modal__button js-modal-close" type="button" data-modal-close>
-    <svg width="24" height="24" class="modal__icon">
-      <use href="./images/icons.svg#icon-cross"></use>
-    </svg>
-  </button>
-  <h2 class="modal_title">Забронювати столик</h2>
-  <div class="modal_container">
-    <form action="">
-      <input type="text" class="modal__input" placeholder="Ваше ім’я" />
-    </form>
-    <p class="modal__text">На кого забронювати столик?</p>
-    <form action="">
-      <input type="text" class="modal__input js-inputmask" />
-    </form>
-    <p class="modal__text">Номер телефону</p>
-    <div class="modal-select">
-      <select name="" id="" class="modal__select js-select">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-      </select>
-      <p class="modal__text">Столик на яку кількість осіб?</p>
-      <!-- <svg class="modal__icon-select" width="24" height="24">
-        <use href="./images/icons.svg#icon-angle-arrow-down"></use>
-      </svg> -->
-    </div>
-    <div class="modal-select">
-      <select name="" id="" class="modal__select js-select">
-        <option value="1">Сьогодні</option>
-        <option value="2">Завтра</option>
-        <option value="3">Післязавтра</option>
-      </select>
+  <form action="">
+    <button class="modal__button js-modal-close" type="button">
+      <svg width="24" height="24" class="modal__icon">
+        <use href="./images/icons.svg#icon-cross"></use>
+      </svg>
+    </button>
+    <h2 class="modal_title">Забронювати столик</h2>
+    <div class="modal__input-block">
+      <div class="modal__input-subblock">
+        <div class="input-container">
+          <input
+            type="text"
+            name="name"
+            id="book-table-name"
+            class="modal__input"
+            placeholder="Ваше ім’я"
+          />
 
-      <p class="modal__text">На яку дату бронювати?</p>
-      <!-- <svg class="modal__icon-select" width="24" height="24">
-        <use href="./images/icons.svg#icon-angle-arrow-down"></use>
-      </svg> -->
-    </div>
+          <label class="modal__text" for="book-table-name"
+            >На кого забронювати столик?</label
+          >
+        </div>
 
+        <div class="input-container">
+          <input
+            type="text"
+            name="phone"
+            id="book-table-num"
+            class="modal__input js-inputmask"
+          />
+          <label class="modal__text" for="book-table-num">Номер телефону</label>
+        </div>
+      </div>
+      <div class="modal__input-subblock">
+        <div class="input-container">
+          <select
+            name="persons-number"
+            id="book-table-persons"
+            class="modal__select js-select"
+          >
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+          <label for="book-table-persons" class="modal__text"
+            >Столик на яку кількість осіб?</label
+          >
+        </div>
+
+        <div class="input-container">
+          <select
+            name="apartment-type"
+            id="book-table-date"
+            class="modal__select js-select"
+          >
+            <option value="Двомісний люкс">Сьогодні</option>
+            <option value="Трьохмісний номер">Завтра</option>
+            <option value="Двомісний номер">Післязавтра</option>
+          </select>
+          <label for="book-table-date" class="modal__text"
+            >На яку дату бронювати?</label
+          >
+        </div>
+      </div>
+    </div>
     <button class="modal__button-submit" type="submit">
       Оформити бронювання
     </button>
-  </div>
+  </form>
 </div>
