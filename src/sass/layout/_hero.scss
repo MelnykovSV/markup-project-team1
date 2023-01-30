@@ -49,6 +49,37 @@
   }
 }
 
+.hero__logo--hotel {
+  font-family: 'FilmP3';
+  text-transform: uppercase;
+
+  margin-bottom: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: calc(103 / 96);
+  letter-spacing: 0.3em;
+  color: var(--primary-light);
+
+  & > span {
+    letter-spacing: normal;
+  }
+  @media screen and (min-width: 380px) {
+    font-size: 96px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    font-size: 128px;
+    line-height: calc(138 / 128);
+    margin-bottom: 16px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 32px;
+  }
+}
+
 .hero__title {
   margin-bottom: 40px;
   font-weight: 600;
@@ -69,7 +100,7 @@
   }
 }
 
-.hero__title-hotel {
+.hero__title--hotel {
   margin-bottom: 178px;
   font-weight: 600;
   font-size: 20px;

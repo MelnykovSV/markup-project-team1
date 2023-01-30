@@ -129,8 +129,9 @@
   color: var(--text-address);
   border: 1px solid rgba(243, 198, 83, 0.7);
   border-radius: 2px;
+  z-index: 10;
 
-  @media screen and (min-width: 370px) {
+  @media screen and (min-width: 380px) {
     top: 65px;
     right: 15px;
   }
