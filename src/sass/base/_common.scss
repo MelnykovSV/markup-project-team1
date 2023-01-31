@@ -71,6 +71,10 @@ body {
   &--light {
     color: var(--primary-light);
     margin-bottom: 12px;
+
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 16px;
+    }
   }
 
   @media (min-width: $tablet) {

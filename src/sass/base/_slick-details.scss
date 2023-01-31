@@ -1,0 +1,131 @@
+.gallery-details-slider {
+  margin-bottom: 80px;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 0;
+    width: 662px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 876px;
+  }
+
+  &__item {
+    max-height: 270px;
+    object-fit: cover;
+    background-color: var(--bg-image);
+    border-radius: 2px;
+    overflow: hidden;
+
+    @media screen and (max-width: calc($tablet - 1px)) {
+      opacity: 0.6;
+
+      transition: opacity var(--time) var(--cubic);
+
+      &.slick-current {
+        opacity: 1;
+      }
+    }
+  }
+
+  & .slick-track {
+    display: flex;
+    gap: 20px;
+
+    @media screen and (min-width: $tablet) {
+      gap: 34px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      gap: 87px;
+    }
+  }
+}
+
+.slick-details-prev,
+.slick-details-next {
+  position: absolute;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+}
+
+.slick-details-prev {
+  bottom: -48px;
+  left: 0;
+
+  @media screen and (min-width: $tablet) {
+    bottom: -56px;
+  }
+}
+
+.slick-details-next {
+  bottom: -48px;
+  left: 64px;
+
+  @media screen and (min-width: $tablet) {
+    bottom: -56px;
+  }
+}
+
+.details-slick-arrow {
+  fill: var(--primary-light);
+
+  transition: fill var(--time) var(--cubic);
+
+  &:hover,
+  &:focus {
+    fill: var(--secondary);
+  }
+}
+
+.gallery-details-slider.gallery-details-slider--reversed {
+  width: 568;
+
+  transform: translateX(calc(-194px - (404px - 100vw)));
+
+  @media screen and (min-width: $mobile) {
+    transform: translateX(-194px);
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 662px;
+
+    transform: translateX(0);
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 876px;
+  }
+
+  //   transform: translateX(0);
+
+  & .gallery-details-slider__item {
+    @media screen and (max-width: calc($tablet - 1px)) {
+      opacity: 1;
+
+      transition: opacity var(--time) var(--cubic);
+
+      &.slick-current {
+        opacity: 0.6;
+      }
+    }
+  }
+
+  & .slick-details-prev {
+    left: calc(100% - 96px);
+  }
+
+  & .slick-details-next {
+    left: calc(100% - 32px);
+  }
+}
