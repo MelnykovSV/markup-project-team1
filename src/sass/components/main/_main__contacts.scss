@@ -33,7 +33,6 @@
     margin-left: 0;
     margin-bottom: 0;
     // margin-left: 123px;
-
   }
 }
 
@@ -56,14 +55,17 @@
   padding-left: 14px;
   padding-top: 12px;
   padding-bottom: 11px;
+  gap: 4px;
 }
 
-.text-hotel{
+.text-hotel {
   margin-right: 54px;
 }
 .contacts__icon {
   fill: var(--secondary-dark);
   // margin-right: 14px;
+  min-width: 24px;
+  min-height: 24px;
 }
 
 .contacts__link {
@@ -75,9 +77,9 @@
   color: var(--text-mimino-dark);
 }
 
-.contacts__tel {
-  margin-left: 12px;
-}
+// .contacts__tel {
+//   margin-left: 12px;
+// }
 
 .contacts__map {
   border: 1px solid var(--bg-image-secondary);
@@ -94,7 +96,7 @@
     height: 412px;
   }
 
-  @media screen and (min-width: $desktop){
+  @media screen and (min-width: $desktop) {
     width: 634px;
   }
 }
@@ -103,31 +105,30 @@
   width: 260px;
   height: 76px;
   padding-right: 44px;
-  margin-left: 123px;
+  margin-left: auto;
 
   @media screen and (min-width: $tablet) {
     padding-right: 0;
     width: 285px;
     height: 56px;
     padding-left: 8px;
-    margin-left: 0; 
+    margin-left: 0;
   }
 }
 
-  .contacts__container {
-
-    @media screen and (min-width: $tablet) {
+.contacts__container {
+  @media screen and (min-width: $tablet) {
     display: flex;
     justify-content: space-between;
     padding-top: 56px;
     padding-bottom: 44px;
   }
 
-    @media screen and (min-width: $desktop) {
-      padding-top: 56px;
-      padding-bottom: 73px;
-    }
-  
+  @media screen and (min-width: $desktop) {
+    padding-top: 56px;
+    padding-bottom: 73px;
+  }
+
   .contacts__complex {
     font-weight: 700;
     font-size: 64px;
@@ -142,7 +143,7 @@
     }
 
     @media screen and (min-width: $tablet) {
-    flex-direction: column; 
+      flex-direction: column;
     }
   }
   .contacts__complex {
@@ -162,12 +163,11 @@
 
     @media screen and (min-width: $tablet) {
       margin-bottom: 52px;
-
     }
 
-    @media screen and (min-width: $desktop){
-    margin-bottom: 40px;
-    }  
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 40px;
+    }
   }
   .contacts__text {
     margin-bottom: 8px;
@@ -188,21 +188,28 @@
   }
   .contacts__fild {
     // margin-bottom: 48px;
+    // flex-wrap: wrap;
 
     @media screen and (min-width: $tablet) {
       // margin-bottom: 35px;
-      
     }
   }
 }
 
-  
-  
-  .contacts__item {
-    margin-bottom: 16px;
+.tel-box {
+  width: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: left;
+  @media screen and (min-width: $mobile) {
   }
+}
 
+.contacts__item {
+  margin-bottom: 16px;
+}
 
-.mup-link{
+.mup-link {
   font-size: 16px;
 }
