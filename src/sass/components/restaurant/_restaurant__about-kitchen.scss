@@ -1,7 +1,7 @@
 .about-section {
   padding-bottom: 72px;
 
-  overflow: hidden;
+  overflow-x: clip;
 
   @media screen and (min-width: $tablet) {
     padding-bottom: 96px;
