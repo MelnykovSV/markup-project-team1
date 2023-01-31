@@ -123,6 +123,15 @@
   }
 }
 
+// Disabled
+
+.slick-disabled {
+  & .slick-small-prev-icon,
+  & .slick-small-next-icon {
+    fill: var(--text-secondary-light);
+  }
+}
+
 .slick-slide.gallery-small-slider__item {
   opacity: 0;
   transition: opacity 250ms linear;
