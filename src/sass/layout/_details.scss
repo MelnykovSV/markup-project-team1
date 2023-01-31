@@ -240,6 +240,10 @@
 .details-buttons {
   letter-spacing: 0.02em;
 
+  @media screen and (max-width: 1023px) {
+    text-align: center;
+  }
+
   // margin-top: 32px;
 
   @media screen and (min-width: $tablet) {
@@ -248,10 +252,6 @@
     justify-content: flex-end;
     // margin-bottom: 70px;
   }
-
-  // @media screen and (min-width: $desktop) {
-  //     max-width: 338px;
-  // }
 
   &--right-padding {
     padding-right: 30px;
@@ -278,6 +278,8 @@
   font-size: 16px;
   line-height: calc(20 / 16);
   @include button-transparent();
+  padding: 12px 0px;
+
   //  cursor: pointer;
   transition: background-color var(--time) var(--cubic);
 
