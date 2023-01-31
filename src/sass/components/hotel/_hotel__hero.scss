@@ -1,4 +1,69 @@
-.overlay-hotel {
+.webp.overlay-hotel {
+  max-width: 480px;
+  margin: 0 auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.65)
+    ),
+    url('./../images/hero_images/hero-hotel-mobile-img.jpg?as=webp');
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url('./../images/hero_images/hero-hotel-mobile-img-2x.jpg?as=webp');
+  }
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @media screen and (min-width: 415px) {
+    max-width: 1024px;
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url('./../images/hero_images/hero-hotel-tab-img.jpg?as=webp');
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url('./../images/hero_images/hero-hotel-tab-img-2x.jpg?as=webp');
+    }
+  }
+  @media screen and (min-width: 1025px) {
+    max-width: 1280px;
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url('./../images/hero_images/hero-hotel-img.jpg?as=webp');
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url('./../images/hero_images/hero-hotel-img-2x.jpg?as=webp');
+    }
+  }
+}
+
+.no-webp.overlay-hotel {
   max-width: 480px;
   margin: 0 auto;
   background-image: linear-gradient(
@@ -22,14 +87,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-
-  // @media screen and (max-width: 414px) {
-  //   max-width: 414px;
-  // }
-
-  // @media screen and (min-width: 415px) {
-  //   max-width: 414px;
-  // }
 
   @media screen and (min-width: 415px) {
     max-width: 1024px;
@@ -96,12 +153,8 @@
 //   background-size: cover;
 //   background-position: center;
 
-//   @media screen and (max-width: 414px) {
-//     max-width: 414px;
-//   }
-
-//   @media screen and (min-width: 1024px) {
-//     max-width: 1025px;
+//   @media screen and (min-width: 415px) {
+//     max-width: 1024px;
 //     background-image: linear-gradient(
 //         to right,
 //         rgba(0, 0, 0, 0.65),
@@ -119,8 +172,8 @@
 //         url('./../images/hero_images/hero-hotel-tab-img-2x.jpg');
 //     }
 //   }
-//   @media screen and (min-width: 1200px) {
-//     max-width: 1600px;
+//   @media screen and (min-width: 1025px) {
+//     max-width: 1280px;
 //     background-image: linear-gradient(
 //         to right,
 //         rgba(0, 0, 0, 0.65),
