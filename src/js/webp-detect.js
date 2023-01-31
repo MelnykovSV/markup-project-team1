@@ -3,11 +3,11 @@ Modernizr.on('webp', function (result) {
 
   if (result) {
     bgs.forEach(ele => {
-      ele.classList.add('.webp');
+      ele.classList.add('webp');
     });
   } else {
     bgs.forEach(ele => {
-      ele.classList.add('.no-webp');
+      ele.classList.add('no-webp');
     });
   }
 });

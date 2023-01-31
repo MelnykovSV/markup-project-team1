@@ -1,4 +1,3 @@
-import './js/webp-detect';
 import './js/slick';
 import './js/modal';
 import './js/mask-set';
