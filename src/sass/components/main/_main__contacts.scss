@@ -110,16 +110,10 @@
     width: 285px;
     height: 56px;
     padding-left: 8px;
-    
+    margin-left: 0; 
   }
-
-
 }
-// @media screen and (min-width: $mobile){
-//     .contacts__iframe{
-//         display: none;
-//     }
-// }
+
   .contacts__container {
 
     @media screen and (min-width: $tablet) {
@@ -142,7 +136,10 @@
   }
   .contacts__item {
     flex-wrap: nowrap;
-    // align-items: flex-start;
+
+    @media screen and (min-width: $tablet) {
+      align-items: flex-start;
+    }
 
     @media screen and (min-width: $tablet) {
     flex-direction: column; 
@@ -184,7 +181,10 @@
   }
   .contacts__item:nth-child(2) {
     margin-bottom: 16px;
-    // margin-bottom: 48px;
+
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 48px;
+    }
   }
   .contacts__fild {
     // margin-bottom: 48px;
