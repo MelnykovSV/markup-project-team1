@@ -248,11 +248,22 @@
   background-color: #000000;
   border: 1px solid #f3c653;
   border-radius: 2px;
-  color: #ffffff;
+  color: var(--primary-light);
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
   text-transform: uppercase;
+  cursor: pointer;
+
+  transition: background-color var(--time) var(--cubic),
+    color var(--time) var(--cubic), border-color var(--time) var(--cubic);
+
+  &:hover,
+  &:focus {
+    color: var(--primary-dark);
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+  }
 
   @media screen and (min-width: $tablet) {
     font-size: 24px;
