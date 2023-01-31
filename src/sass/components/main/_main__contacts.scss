@@ -202,7 +202,11 @@
   flex-wrap: wrap;
   gap: 8px;
   justify-content: left;
-  @media screen and (min-width: $mobile) {
+
+  & a {
+    @media screen and (max-width: 350px) {
+      font-size: 13px;
+    }
   }
 }
 
