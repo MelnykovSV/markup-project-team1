@@ -5,9 +5,9 @@
   border-radius: 2px;
   overflow-y: auto;
   z-index: 52;
-  top: 50%;
+  top: 170%;
   left: 50%;
-  transform: translate(-50%, 150%);
+  transform: translate(-50%, -50%);
   background-color: #fffdee;
 
   opacity: 0;
@@ -109,7 +109,7 @@
 .modal.active {
   opacity: 1;
   pointer-events: initial;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, calc(-120vh - 50%));
 }
 
 .modal__button {
