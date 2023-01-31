@@ -1,0 +1,236 @@
+.hero {
+  position: relative;
+  text-align: center;
+  padding-top: 181px;
+  padding-bottom: 20px;
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 181px;
+    padding-bottom: 15px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-top: 164px;
+    padding-bottom: 64px;
+  }
+}
+
+.hero__body {
+  position: relative;
+}
+
+.hero__logo {
+  font-family: 'FilmP3';
+  text-transform: uppercase;
+
+  margin-bottom: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: calc(103 / 96);
+  letter-spacing: 0.3em;
+  color: var(--primary-light);
+
+  & > span {
+    letter-spacing: normal;
+  }
+  @media screen and (min-width: 380px) {
+    font-size: 96px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    font-size: 128px;
+    line-height: calc(138 / 128);
+    margin-bottom: 16px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 32px;
+  }
+}
+
+.hero__logo--hotel {
+  font-family: 'FilmP3';
+  text-transform: uppercase;
+
+  margin-bottom: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: calc(103 / 96);
+  letter-spacing: 0.3em;
+  color: var(--primary-light);
+
+  & > span {
+    letter-spacing: normal;
+  }
+  @media screen and (min-width: 380px) {
+    font-size: 96px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    font-size: 128px;
+    line-height: calc(138 / 128);
+    margin-bottom: 16px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 32px;
+  }
+}
+
+.hero__title {
+  margin-bottom: 40px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  letter-spacing: 0.02em;
+  color: var(--primary-light);
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 20px;
+    line-height: calc(24 / 20);
+    margin-bottom: 56px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 64px;
+  }
+}
+
+.hero__title--hotel {
+  margin-bottom: 178px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: calc(24 / 20);
+  letter-spacing: 0.02em;
+  color: var(--primary-light);
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 218px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 242px;
+  }
+}
+
+.hero__text {
+  font-family: 'Times New Roman';
+  font-weight: 700;
+  font-size: 32px;
+  line-height: calc(37 / 32);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--primary-light);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 113px;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 36px;
+    line-height: calc(41 / 36);
+    margin-bottom: 137px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 137px;
+  }
+}
+
+.hero__adress-buttons {
+  margin-bottom: 58px;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    margin-bottom: 25px;
+  }
+}
+
+.hero__address {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 15px;
+  top: -81px;
+  width: 210px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: calc(15 / 12);
+  letter-spacing: 0.01em;
+  color: var(--text-address);
+  padding: 8px;
+  z-index: 10;
+
+  border: 1px solid rgba(243, 198, 83, 0.7);
+  border-radius: 2px;
+
+  @media screen and (min-width: 380px) {
+    top: -117px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 285px;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    position: static;
+  }
+}
+
+.hero__address-location {
+  margin-right: 8px;
+}
+
+.hero__address-icon {
+  fill: var(--secondary);
+  @media screen and (min-width: $tablet) {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.hero__address-map {
+  display: block;
+  text-align: start;
+}
+
+.hero__buttons-list {
+  margin-left: auto;
+  display: flex;
+  gap: 24px;
+  align-items: center;
+
+  flex-direction: column;
+
+  @media screen and (min-width: $tablet) {
+    flex-direction: row;
+    align-items: end;
+    gap: 40px;
+  }
+  @media screen and (min-width: $desktop) {
+    gap: 60px;
+  }
+}
+
+.hero__button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  letter-spacing: 0.02em;
+
+  @include button-transparent();
+}
+
+.hero__soc {
+  display: flex;
+  gap: 20px;
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
+}
+
+.hero__soc-icon {
+  fill: rgba(243, 198, 83, 0.7);
+  display: block;
+}

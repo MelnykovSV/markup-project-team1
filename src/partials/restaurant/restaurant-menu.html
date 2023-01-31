@@ -1,287 +1,279 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <div class="container">
-      <h1 class="menu__heading">Меню ресторану</h1>
-      <ul class="table__items">
-        <li class="table__list">
-          <table class="table">
-            <caption class="table__title">
-              Гарячі страви
-            </caption>
-            <thead class="table__thead">
-              <th>Назва</th>
-              <th>Вага</th>
-              <th>Вартість</th>
-            </thead>
-            <tbody>
-              <tr class="table__row">
-                <td class="table__row__name">Борщ з телятини з квасолею</td>
-                <td rowspan="2" class="table__row__weight">400 г</td>
-                <td rowspan="2" class="table__row__price">240 грн</td>
-              </tr>
-              <tr class="table__row">
-                <td class="table__row__aside">
-                  Телятина, картопля, капуста, морква, цибуля, квасоля,
-                  часник,помідори, зелень, сметана
-                </td>
-              </tr>
-              <tr class="table__row">
-                <td class="table__row__name">Суп сирний з куркою</td>
-                <td rowspan="2" class="table__row__weight">400 г</td>
-                <td rowspan="2" class="table__row__price">200 грн</td>
-              </tr>
-              <tr>
-                <td class="table__row__aside">
-                  Курятина, картопля, морква, цибуля, печериці, сир м’який,
-                  зелень
-                </td>
-              </tr>
-              <tr>
-                <td class="table__row__name">Паста карбонара</td>
-                <td rowspan="2" class="table__row__weight">350 г</td>
-                <td rowspan="2" class="table__row__price">430 грн</td>
-              </tr>
-              <tr>
-                <td class="table__row__aside">
-                  Паста тальятеле, бекон, вершки, сир пармезан, яйце, зелень
-                </td>
-              </tr>
-              <tr>
-                <td class="table__row__name">Стейк зі свинини</td>
-                <td rowspan="2" class="table__row__weight">400 г</td>
-                <td rowspan="2" class="table__row__price">500 грн</td>
-              </tr>
-              <tr>
-                <td class="table__row__aside">
-                  Свиняча вирізка, спеціі, подається з соусом солодкий чилі та
-                  овочами
-                </td>
-              </tr>
-              <tr>
-                <td class="table__row__name">Горбуша в соусі з білого вина</td>
-                <td rowspan="2" class="table__row__weight">400 г</td>
-                <td rowspan="2" class="table__row__price">400 грн</td>
-              </tr>
-              <tr>
-                <td class="table__row__aside">
-                  Ніжна горбуша, вершковий соус на основі білого вина
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </li>
-        <li class="table__list list">
-          <table class="table">
-            <caption class="table__title">
-              Гарніри та закуски
-            </caption>
-            <thead class="table__thead">
-              <th>Назва</th>
-              <th>Вага</th>
-              <th>Вартість</th>
-            </thead>
-            <tbody>
-              <tr class="table__row">
-                <td class="table__row__name">Запечені овочі</td>
-                <td rowspan="2" class="table__row__weight">200 г</td>
-                <td rowspan="2" class="table__row__price">230 грн</td>
-              </tr>
-              <tr class="table__row">
-                <td class="table__row__aside">
-                  Кабачок, перець, помідор, баклажан
-                </td>
-              </tr>
-              <tr class="table__row">
-                <td class="table__row__name">Картопля фрі</td>
-                <td rowspan="2" class="table__row__weight">150 г</td>
-                <td rowspan="2" class="table__row__price">160 грн</td>
-              </tr>
-              <tr class="table__row">
-                <td class="table__row__aside">Картопля, соус томатний</td>
-              </tr>
-              <tr class="table__row">
-                <td class="table__row__name">Картопля по-селянськи</td>
-                <td rowspan="2" class="table__row__weight">150 г</td>
-                <td rowspan="2" class="table__row__price">160 грн</td>
-              </tr>
-              <tr class="table__row">
-                <td class="table__row__aside">
-                  Картопля, спеції, соус пікантний
-                </td>
-              </tr>
-              <tr class="table__row">
-                <td class="table__row__name">Хрумкі соління з бочки</td>
-                <td rowspan="2" class="table__row__weight">250 г</td>
-                <td rowspan="2" class="table__row__price">350 грн</td>
-              </tr>
-              <tr class="table__row">
-                <td class="table__row__aside">
-                  Огірок солений, помідор квашений, квашена капуста, морква
-                  по-корейські
-                </td>
-              </tr>
-              <tr class="table__row">
-                <td class="table__row__name">
-                  Крильця курячі в медовому соусі
-                </td>
-                <td rowspan="2" class="table__row__weight">400 г</td>
-                <td rowspan="2" class="table__row__price">420 грн</td>
-              </tr>
-              <tr class="table__row">
-                <td class="table__row__aside">
-                  Крильця курячі, гірчично-медовий соус, подається з морквою,
-                  селерою і соусом блючиз
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </li>
-        <li class="table__list">
-          <table class="table">
-            <caption class="table__title">
-              Салати
-            </caption>
-            <thead class="table__thead">
-              <th>Назва</th>
-              <th>Вага</th>
-              <th>Вартість</th>
-            </thead>
-            <tbody>
-              <tr class="table__row">
-                <td class="table__row__name">Цезар з куркою</td>
-                <td rowspan="2" class="table__row__weight">230 г</td>
-                <td rowspan="2" class="table__row__price">450 грн</td>
-              </tr>
-              <tr class="table__row">
-                <td class="table__row__aside">
-                  Куряче філе, листя салату, помідори чері, сир пармезан,
-                  грінки, соус цезар
-                </td>
-              </tr>
-              <tr class="table__row">
-                <td class="table__row__name">Цезар з креветками</td>
-                <td rowspan="2" class="table__row__weight">230 г</td>
-                <td rowspan="2" class="table__row__price">300 грн</td>
-              </tr>
-              <tr class="table__row">
-                <td class="table__row__aside">
-                  Тигрові креветки, листя салату, помідори чері, сир пармезан,
-                  грінки, соус цезар
-                </td>
-              </tr>
-              <tr class="table__row">
-                <td class="table__row__name">Грецький салат</td>
-                <td rowspan="2" class="table__row__weight">230 г</td>
-                <td rowspan="2" class="table__row__price">280 грн</td>
-              </tr>
-              <tr class="table__row">
-                <td class="table__row__aside">
-                  Свіжі огірок, помідор, болгарський перець, оливки, сир бринза,
-                  листя салату, соус
-                </td>
-              </tr>
-              <tr class="table__row">
-                <td class="table__row__name">М’ясний салат</td>
-                <td rowspan="2" class="table__row__weight">230 г</td>
-                <td rowspan="2" class="table__row__price">300 грн</td>
-              </tr>
-              <tr class="table__row">
-                <td class="table__row__aside">
-                  Куряче філе або свиняча вирізка, свіжі огірок, помідор,
-                  болгарський перець, соус ранч
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </li>
-        <li class="table__list">
-          <table class="table">
-            <caption class="table__title">
-              Десерти
-            </caption>
-            <thead class="table__thead">
-              <th>Назва</th>
-              <th>Вага</th>
-              <th>Вартість</th>
-            </thead>
-            <tbody>
-              <tr class="table__row">
-                <td class="table__row__name-second">Торт наполеон</td>
-                <td class="table__row__weight">230 г</td>
-                <td class="table__row__price">300 грн</td>
-              </tr>
-              <tr class="table__row">
-                <td class="table__row__name-second">Торт маковий</td>
-                <td class="table__row__weight">230 г</td>
-                <td class="table__row__price">300 грн</td>
-              </tr>
-              <tr class="table__row">
-                <td class="table__row__name-second">Тірамісу</td>
-                <td class="table__row__weight">120 г</td>
-                <td class="table__row__price">260 грн</td>
-              </tr>
-            </tbody>
-          </table>
-        </li>
-        <li class="table__list list">
-          <table class="table">
-            <caption class="table__title">
-              Напої
-            </caption>
-            <thead class="table__thead">
-              <th>Назва</th>
-              <th>Вага</th>
-              <th>Вартість</th>
-            </thead>
-            <tbody>
-              <tr class="table__row">
-                <td class="table__row__name-second">Чай чорний/зелений</td>
-                <td class="table__row__weight">500 мл</td>
-                <td class="table__row__price">100 грн</td>
-              </tr>
-              <tr class="table__row">
-                <td class="table__row__name-second">Еспресо</td>
-                <td class="table__row__weight">30 мл</td>
-                <td class="table__row__price">100 грн</td>
-              </tr>
-              <tr class="table__row">
-                <td class="table__row__name-second">Американо</td>
-                <td class="table__row__weight">150 мл</td>
-                <td class="table__row__price">100 грн</td>
-              </tr>
-              <tr class="table__row">
-                <td class="table__row__name-second">Капучино</td>
-                <td class="table__row__weight">200 мл</td>
-                <td class="table__row__price">160 грн</td>
-              </tr>
-              <tr class="table__row">
-                <td class="table__row__name-second">Лате</td>
-                <td class="table__row__weight">200 мл</td>
-                <td class="table__row__price">160 грн</td>
-              </tr>
-            </tbody>
-          </table>
-        </li>
-      </ul>
+<div class="container">
+  <h1 class="menu__heading">Меню ресторану</h1>
+  <ul class="table__items">
+    <li class="table__list">
+      <table class="table">
+        <caption class="table__title">
+          Гарячі страви
+        </caption>
+        <thead class="table__thead">
+          <tr>
+            <th>Назва</th>
+            <th>Вага</th>
+            <th>Вартість</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="table__row">
+            <td class="table__row__name">Борщ з телятини з квасолею</td>
+            <td rowspan="2" class="table__row__weight">400 г</td>
+            <td rowspan="2" class="table__row__price">240 грн</td>
+          </tr>
+          <tr class="table__row">
+            <td class="table__row__aside">
+              Телятина, картопля, капуста, морква, цибуля, квасоля,
+              часник,помідори, зелень, сметана
+            </td>
+          </tr>
+          <tr class="table__row">
+            <td class="table__row__name">Суп сирний з куркою</td>
+            <td rowspan="2" class="table__row__weight">400 г</td>
+            <td rowspan="2" class="table__row__price">200 грн</td>
+          </tr>
+          <tr>
+            <td class="table__row__aside">
+              Курятина, картопля, морква, цибуля, печериці, сир м’який, зелень
+            </td>
+          </tr>
+          <tr>
+            <td class="table__row__name">Паста карбонара</td>
+            <td rowspan="2" class="table__row__weight">350 г</td>
+            <td rowspan="2" class="table__row__price">430 грн</td>
+          </tr>
+          <tr>
+            <td class="table__row__aside">
+              Паста тальятеле, бекон, вершки, сир пармезан, яйце, зелень
+            </td>
+          </tr>
+          <tr>
+            <td class="table__row__name">Стейк зі свинини</td>
+            <td rowspan="2" class="table__row__weight">400 г</td>
+            <td rowspan="2" class="table__row__price">500 грн</td>
+          </tr>
+          <tr>
+            <td class="table__row__aside">
+              Свиняча вирізка, спеціі, подається з соусом солодкий чилі та
+              овочами
+            </td>
+          </tr>
+          <tr>
+            <td class="table__row__name">Горбуша в соусі з білого вина</td>
+            <td rowspan="2" class="table__row__weight">400 г</td>
+            <td rowspan="2" class="table__row__price">400 грн</td>
+          </tr>
+          <tr>
+            <td class="table__row__aside">
+              Ніжна горбуша, вершковий соус на основі білого вина
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </li>
+    <li class="table__list list">
+      <table class="table">
+        <caption class="table__title">
+          Гарніри та закуски
+        </caption>
+        <thead class="table__thead">
+          <tr>
+            <th>Назва</th>
+            <th>Вага</th>
+            <th>Вартість</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="table__row">
+            <td class="table__row__name">Запечені овочі</td>
+            <td rowspan="2" class="table__row__weight">200 г</td>
+            <td rowspan="2" class="table__row__price">230 грн</td>
+          </tr>
+          <tr class="table__row">
+            <td class="table__row__aside">
+              Кабачок, перець, помідор, баклажан
+            </td>
+          </tr>
+          <tr class="table__row">
+            <td class="table__row__name">Картопля фрі</td>
+            <td rowspan="2" class="table__row__weight">150 г</td>
+            <td rowspan="2" class="table__row__price">160 грн</td>
+          </tr>
+          <tr class="table__row">
+            <td class="table__row__aside">Картопля, соус томатний</td>
+          </tr>
+          <tr class="table__row">
+            <td class="table__row__name">Картопля по-селянськи</td>
+            <td rowspan="2" class="table__row__weight">150 г</td>
+            <td rowspan="2" class="table__row__price">160 грн</td>
+          </tr>
+          <tr class="table__row">
+            <td class="table__row__aside">Картопля, спеції, соус пікантний</td>
+          </tr>
+          <tr class="table__row">
+            <td class="table__row__name">Хрумкі соління з бочки</td>
+            <td rowspan="2" class="table__row__weight">250 г</td>
+            <td rowspan="2" class="table__row__price">350 грн</td>
+          </tr>
+          <tr class="table__row">
+            <td class="table__row__aside">
+              Огірок солений, помідор квашений, квашена капуста, морква
+              по-корейські
+            </td>
+          </tr>
+          <tr class="table__row">
+            <td class="table__row__name">Крильця курячі в медовому соусі</td>
+            <td rowspan="2" class="table__row__weight">400 г</td>
+            <td rowspan="2" class="table__row__price">420 грн</td>
+          </tr>
+          <tr class="table__row">
+            <td class="table__row__aside">
+              Крильця курячі, гірчично-медовий соус, подається з морквою,
+              селерою і соусом блючиз
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </li>
+    <li class="table__list">
+      <table class="table">
+        <caption class="table__title">
+          Салати
+        </caption>
+        <thead class="table__thead">
+          <tr>
+            <th>Назва</th>
+            <th>Вага</th>
+            <th>Вартість</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="table__row">
+            <td class="table__row__name">Цезар з куркою</td>
+            <td rowspan="2" class="table__row__weight">230 г</td>
+            <td rowspan="2" class="table__row__price">450 грн</td>
+          </tr>
+          <tr class="table__row">
+            <td class="table__row__aside">
+              Куряче філе, листя салату, помідори чері, сир пармезан, грінки,
+              соус цезар
+            </td>
+          </tr>
+          <tr class="table__row">
+            <td class="table__row__name">Цезар з креветками</td>
+            <td rowspan="2" class="table__row__weight">230 г</td>
+            <td rowspan="2" class="table__row__price">300 грн</td>
+          </tr>
+          <tr class="table__row">
+            <td class="table__row__aside">
+              Тигрові креветки, листя салату, помідори чері, сир пармезан,
+              грінки, соус цезар
+            </td>
+          </tr>
+          <tr class="table__row">
+            <td class="table__row__name">Грецький салат</td>
+            <td rowspan="2" class="table__row__weight">230 г</td>
+            <td rowspan="2" class="table__row__price">280 грн</td>
+          </tr>
+          <tr class="table__row">
+            <td class="table__row__aside">
+              Свіжі огірок, помідор, болгарський перець, оливки, сир бринза,
+              листя салату, соус
+            </td>
+          </tr>
+          <tr class="table__row">
+            <td class="table__row__name">М’ясний салат</td>
+            <td rowspan="2" class="table__row__weight">230 г</td>
+            <td rowspan="2" class="table__row__price">300 грн</td>
+          </tr>
+          <tr class="table__row">
+            <td class="table__row__aside">
+              Куряче філе або свиняча вирізка, свіжі огірок, помідор,
+              болгарський перець, соус ранч
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </li>
+    <li class="table__list">
+      <table class="table">
+        <caption class="table__title">
+          Десерти
+        </caption>
+        <thead class="table__thead">
+          <tr>
+            <th>Назва</th>
+            <th>Вага</th>
+            <th>Вартість</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="table__row">
+            <td class="table__row__name-second">Торт наполеон</td>
+            <td class="table__row__weight">230 г</td>
+            <td class="table__row__price">300 грн</td>
+          </tr>
+          <tr class="table__row">
+            <td class="table__row__name-second">Торт маковий</td>
+            <td class="table__row__weight">230 г</td>
+            <td class="table__row__price">300 грн</td>
+          </tr>
+          <tr class="table__row">
+            <td class="table__row__name-second">Тірамісу</td>
+            <td class="table__row__weight">120 г</td>
+            <td class="table__row__price">260 грн</td>
+          </tr>
+        </tbody>
+      </table>
+    </li>
+    <li class="table__list list">
+      <table class="table">
+        <caption class="table__title">
+          Напої
+        </caption>
+        <thead class="table__thead">
+          <tr>
+            <th>Назва</th>
+            <th>Вага</th>
+            <th>Вартість</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="table__row">
+            <td class="table__row__name-second">Чай чорний/зелений</td>
+            <td class="table__row__weight">500 мл</td>
+            <td class="table__row__price">100 грн</td>
+          </tr>
+          <tr class="table__row">
+            <td class="table__row__name-second">Еспресо</td>
+            <td class="table__row__weight">30 мл</td>
+            <td class="table__row__price">100 грн</td>
+          </tr>
+          <tr class="table__row">
+            <td class="table__row__name-second">Американо</td>
+            <td class="table__row__weight">150 мл</td>
+            <td class="table__row__price">100 грн</td>
+          </tr>
+          <tr class="table__row">
+            <td class="table__row__name-second">Капучино</td>
+            <td class="table__row__weight">200 мл</td>
+            <td class="table__row__price">160 грн</td>
+          </tr>
+          <tr class="table__row">
+            <td class="table__row__name-second">Лате</td>
+            <td class="table__row__weight">200 мл</td>
+            <td class="table__row__price">160 грн</td>
+          </tr>
+        </tbody>
+      </table>
+    </li>
+  </ul>
 
-      <div class="div-button">
-        <button
-          type="button"
-          class="menu__button-open js-open-modal"
-          data-modal="1"
-        >
-          Забронювати столик
-        </button>
-      </div>
-    </div>
-
-    <script src="./js/modal.js"></script>
-  </body>
-</html>
+  <div class="div-button">
+    <button
+      type="button"
+      class="menu__button-open js-open-modal"
+      data-modal="1"
+    >
+      Забронювати столик
+    </button>
+  </div>
+</div>

@@ -54,6 +54,9 @@
   @media screen and (min-width: $tablet) {
     padding-top: 468px;
   }
+  @media screen and (min-width: $desktop) {
+    padding-top: 524px;
+  }
 }
 
 .room-hero__title {
@@ -129,8 +132,9 @@
   color: var(--text-address);
   border: 1px solid rgba(243, 198, 83, 0.7);
   border-radius: 2px;
+  z-index: 10;
 
-  @media screen and (min-width: 370px) {
+  @media screen and (min-width: 380px) {
     top: 65px;
     right: 15px;
   }
@@ -150,9 +154,12 @@
 
 .room-hero__list {
   display: flex;
+  justify-content: space-between;
   align-items: center;
 
   @media screen and (min-width: $tablet) {
+    display: flex;
+    justify-content: start;
     padding-bottom: 22px;
   }
 }
@@ -160,7 +167,9 @@
 .room-hero__social {
   list-style: none;
   padding-left: 0;
-  margin-right: 72px;
+  @media screen and (min-width: 380px) {
+    margin-right: 72px;
+  }
 
   @media screen and (min-width: $tablet) {
     display: flex;
