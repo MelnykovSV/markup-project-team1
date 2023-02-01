@@ -1,8 +1,6 @@
 .about-section {
   padding-bottom: 72px;
 
-  overflow-x: clip;
-
   @media screen and (min-width: $tablet) {
     padding-bottom: 96px;
   }
@@ -78,6 +76,10 @@
   @media screen and (min-width: $tablet) {
     padding-top: 0;
   }
+
+  @media screen and (min-width: $desktop) {
+    overflow-x: clip;
+  }
 }
 
 .about-section__complex {
@@ -129,6 +131,10 @@
 
   @media screen and (min-width: $tablet) {
     box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+
+    &--small-shadow {
+      box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    }
   }
 
   &--bigger {

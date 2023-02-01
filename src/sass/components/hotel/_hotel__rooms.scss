@@ -1,7 +1,7 @@
-.hotel-rooms-section {
-  overflow-x: clip;
-  // padding-top: 130px;
-}
+// .hotel-rooms-section {
+// overflow-x: clip;
+// padding-top: 130px;
+// }
 
 // .test {
 //   margin-bottom: -130px;
@@ -31,6 +31,10 @@
       flex-wrap: wrap;
       align-items: center;
       row-gap: 16px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      overflow-x: clip;
     }
   }
 
