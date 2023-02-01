@@ -1,0 +1,91 @@
+.gallery-hero-slider {
+  max-width: 414px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media screen and (min-width: calc($mobile + 1px)) {
+    max-width: 1024px;
+  }
+
+  @media screen and (min-width: calc($tablet + 1px)) {
+    max-width: 1280px;
+  }
+
+  &__item {
+    @media screen and (min-width: calc($mobile + 1px)) {
+      width: 1024px;
+      height: 719px;
+    }
+  }
+
+  &__img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.slick-hero-prev,
+.slick-hero-next {
+  position: absolute;
+  z-index: 10;
+  top: calc(50% - (384px - 100vw));
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+
+  background-color: rgba(var(--primary-dark-rgb), 0.65);
+  border: none;
+
+  transform: translateY(-50%);
+
+  @media screen and (min-width: $mobile) {
+    top: 50%;
+  }
+
+  @media screen and (min-width: $desktop) {
+    top: 412px;
+
+    transform: translateY(0);
+  }
+}
+
+.slick-hero-prev {
+  left: 15px;
+
+  @media screen and (min-width: $tablet) {
+    left: 47px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    left: 85px;
+  }
+}
+
+.slick-hero-next {
+  right: 15px;
+
+  @media screen and (min-width: $tablet) {
+    right: 47px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    right: 85px;
+  }
+}
+
+.hero-slick-arrow {
+  fill: var(--secondary);
+
+  transition: fill var(--time) var(--cubic);
+
+  &:hover,
+  &:focus {
+    fill: var(--primary-light);
+  }
+}
