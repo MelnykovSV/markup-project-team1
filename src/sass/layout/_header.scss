@@ -152,4 +152,7 @@
 
 .header-soc__icon {
   fill: rgba(243, 198, 83, 0.7);
+  &:hover, &:focus {
+    fill: var(--secondary);
+  }
 }
