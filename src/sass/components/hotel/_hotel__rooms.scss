@@ -26,13 +26,15 @@
   }
 
   &__container {
-    overflow-x: clip;
-
     @media screen and (min-width: $tablet) {
       display: flex;
       flex-wrap: wrap;
       align-items: center;
       row-gap: 16px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      overflow-x: clip;
     }
   }
 
