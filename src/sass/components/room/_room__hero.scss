@@ -184,9 +184,20 @@
   }
 }
 
-.room-hero__item:not(:last-child) {
-  @media screen and (min-width: $tablet) {
-    margin-right: 23px;
+.room-hero__item {
+  color: rgba(243, 198, 83, 0.7);
+
+  transition: color var(--time) var(--cubic);
+
+  &:hover,
+  &:focus {
+    color: var(--secondary);
+  }
+
+  &:not(:last-child) {
+    @media screen and (min-width: $tablet) {
+      margin-right: 23px;
+    }
   }
 }
 
@@ -234,7 +245,7 @@
 }
 
 .room-hero__icon {
-  fill: var(--secondary);
+  fill: currentColor;
 }
 
 .room-hero__icon-location {
