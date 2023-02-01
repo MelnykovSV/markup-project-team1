@@ -44,6 +44,8 @@
 
   transform: translateY(-50%);
 
+  cursor: pointer;
+
   @media screen and (min-width: $mobile) {
     top: 50%;
   }
