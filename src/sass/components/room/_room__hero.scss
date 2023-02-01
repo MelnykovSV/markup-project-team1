@@ -2,61 +2,97 @@
   max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
-  background-color: var(--text-mimino-dark);
-  background-image: url(./../images/hero_room1-mobile.jpg);
 
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    & {
-      background-image: url(./../images/hero_room1-mobile@2x.jpg);
-    }
+  &__container {
+    position: relative;
+
+    padding-left: 0;
+    padding-right: 0;
   }
+  // background-color: var(--text-mimino-dark);
+  // background-image: url(./../images/hero_room1-mobile.jpg);
 
-  @media screen and (min-width: 415px) {
-    & {
-      background-image: url(./../images/hero_room1-tablet.jpg);
-    }
+  // @media screen and (min-device-pixel-ratio: 2),
+  //   screen and (min-resolution: 192dpi),
+  //   screen and (min-resolution: 2dppx) {
+  //   & {
+  //     background-image: url(./../images/hero_room1-mobile@2x.jpg);
+  //   }
+  // }
 
-    @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
-      & {
-        background-image: url(./../images/hero_room1-tablet@2x.jpg);
-      }
-    }
-  }
+  // @media screen and (min-width: 415px) {
+  //   & {
+  //     background-image: url(./../images/hero_room1-tablet.jpg);
+  //   }
 
-  @media screen and (min-width: 1025px) {
-    & {
-      background-image: url(./../images/hero_room1-desktop.jpg);
-    }
+  //   @media screen and (min-device-pixel-ratio: 2),
+  //     screen and (min-resolution: 192dpi),
+  //     screen and (min-resolution: 2dppx) {
+  //     & {
+  //       background-image: url(./../images/hero_room1-tablet@2x.jpg);
+  //     }
+  //   }
+  // }
 
-    @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
-      & {
-        background-image: url(./../images/hero_room1-desktop@2x.jpg);
-      }
-    }
-  }
+  // @media screen and (min-width: 1025px) {
+  //   & {
+  //     background-image: url(./../images/hero_room1-desktop.jpg);
+  //   }
 
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  //   @media screen and (min-device-pixel-ratio: 2),
+  //     screen and (min-resolution: 192dpi),
+  //     screen and (min-resolution: 2dppx) {
+  //     & {
+  //       background-image: url(./../images/hero_room1-desktop@2x.jpg);
+  //     }
+  //   }
+  // }
+
+  // background-repeat: no-repeat;
+  // background-position: center;
+  // background-size: cover;
 
   background-color: var(--primary-dark);
 }
 
 .room-body {
-  position: relative;
-  padding-top: 483px;
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  height: 100%;
+  width: 100%;
+
+  // padding-top: 483px;
+
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+
+  pointer-events: none;
+
+  @media screen and (min-width: calc($mobile + 1px)) {
+    left: 50%;
+
+    transform: translateX(-50%);
+  }
 
   @media screen and (min-width: $tablet) {
-    padding-top: 468px;
+    // padding-top: 468px;
+    padding-left: 47px;
+    padding-right: 47px;
+    padding-bottom: 22px;
   }
+
   @media screen and (min-width: $desktop) {
-    padding-top: 524px;
+    // padding-top: 524px;
+    padding-left: 85px;
+    padding-right: 85px;
+    padding-bottom: 48px;
   }
 }
 
@@ -88,7 +124,7 @@
     align-items: center;
     justify-content: space-between;
 
-    padding-bottom: 48px;
+    // padding-bottom: 48px;
   }
 }
 
@@ -116,6 +152,7 @@
 
 .room-hero__map {
   position: absolute;
+  // z-index: 10;
   top: 100px;
   right: 15px;
   display: flex;
@@ -125,7 +162,7 @@
 
   padding: 8px 3px 9px 0;
 
-  max-width: 210px;
+  // min-width: 210px;
 
   font-weight: 400;
   font-size: 12px;
@@ -135,7 +172,8 @@
   color: var(--text-address);
   border: 1px solid rgba(243, 198, 83, 0.7);
   border-radius: 2px;
-  z-index: 10;
+
+  pointer-events: visible;
 
   @media screen and (min-width: 380px) {
     top: 65px;
@@ -144,9 +182,8 @@
 
   @media screen and (min-width: $tablet) {
     position: static;
-    max-width: 285px;
+    // min-width: 285px;
     padding: 8px;
-    margin-right: 41px;
     font-size: 16px;
   }
 
@@ -159,24 +196,34 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  // max-width: 326px;
+
+  @media screen and (min-width: calc($mobile - 54px)) {
+    justify-content: flex-start;
+    gap: 70px;
+  }
 
   @media screen and (min-width: $tablet) {
     display: flex;
     justify-content: start;
-    padding-bottom: 22px;
+    gap: 40px;
+    // padding-bottom: 22px;
   }
 }
 
 .room-hero__social {
   list-style: none;
-  padding-left: 0;
-  @media screen and (min-width: 380px) {
-    margin-right: 72px;
-  }
+  padding: 0;
+  margin: 0;
+  // margin-right: calc(70px - (414px - 100vw));
+
+  // @media screen and (min-width: 380px) {
+  //   margin-right: 72px;
+  // }
 
   @media screen and (min-width: $tablet) {
     display: flex;
-    margin: 0;
+    // margin: 0;
   }
 
   @media screen and (min-width: $desktop) {
@@ -221,6 +268,8 @@
   transition: background-color var(--time) var(--cubic),
     color var(--time) var(--cubic);
 
+  pointer-events: visible;
+
   &:hover,
   &:focus {
     background-color: var(--primary-light);
@@ -232,17 +281,22 @@
     right: 47px;
     bottom: 62px;
   }
-}
 
-.room-hero__item {
-  cursor: pointer;
-}
-
-.room-hero__item:not(:last-child) {
-  @media screen and (min-width: 1024px) {
-    margin-right: 23px;
+  @media screen and (min-width: $desktop) {
+    right: 85px;
+    bottom: 66px;
   }
 }
+
+// .room-hero__item {
+//   cursor: pointer;
+// }
+
+// .room-hero__item:not(:last-child) {
+//   @media screen and (min-width: $tablet) {
+//     margin-right: 23px;
+//   }
+// }
 
 .room-hero__icon {
   fill: currentColor;
@@ -256,5 +310,20 @@
     margin: 0 10px 0 2px;
     width: 24px;
     height: 24px;
+  }
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 8px 0 6px;
+  width: 24px;
+  height: 24px;
+
+  pointer-events: visible;
+
+  @media screen and (min-width: $tablet) {
+    margin: 0 10px 0 2px;
   }
 }
