@@ -125,20 +125,28 @@
 
 // Disabled
 
-.slick-disabled {
-  & .slick-small-prev-icon,
-  & .slick-small-next-icon {
-    fill: var(--text-secondary-light);
-  }
-}
+// .slick-disabled {
+//   & .slick-small-prev-icon,
+//   & .slick-small-next-icon {
+//     fill: var(--text-secondary-light);
+//   }
+// }
 
 .slick-slide.gallery-small-slider__item {
   opacity: 0;
-  transition: opacity 250ms linear;
+
+  transition: opacity 250ms var(--cubic);
+  transition-delay: 0.5s;
 }
 
 .slick-slide.slick-active.gallery-small-slider__item {
   opacity: 1;
+}
+
+.slick-slide.slick-active.slick-current.gallery-small-slider__item {
+  opacity: 1;
+
+  transition-delay: 0s;
 }
 
 // secondary slider
