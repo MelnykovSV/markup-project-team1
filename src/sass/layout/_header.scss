@@ -7,6 +7,10 @@
   padding: 0 15px;
   width: 100%;
   z-index: 5;
+
+  @media screen and (min-width: $desktop) {
+    padding: 0;
+  }
 }
 
 .header-room {
@@ -148,4 +152,7 @@
 
 .header-soc__icon {
   fill: rgba(243, 198, 83, 0.7);
+  &:hover, &:focus {
+    fill: var(--secondary);
+  }
 }
