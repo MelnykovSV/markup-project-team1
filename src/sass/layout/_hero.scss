@@ -230,7 +230,18 @@
   }
 }
 
+.hero__soc-item {
+  color: rgba(243, 198, 83, 0.7);
+
+  transition: color var(--time) var(--cubic);
+
+  &:hover,
+  &:focus {
+    color: var(--secondary);
+  }
+}
+
 .hero__soc-icon {
-  fill: rgba(243, 198, 83, 0.7);
+  fill: currentColor;
   display: block;
 }
