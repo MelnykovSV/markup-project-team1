@@ -1,8 +1,6 @@
 .about-section {
   padding-bottom: 72px;
 
-  overflow-x: clip;
-
   @media screen and (min-width: $tablet) {
     padding-bottom: 96px;
   }
@@ -74,6 +72,8 @@
 
 .about-section__container {
   padding-top: 16px;
+
+  overflow-x: clip;
 
   @media screen and (min-width: $tablet) {
     padding-top: 0;
