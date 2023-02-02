@@ -92,6 +92,7 @@
   gap: 12px;
   align-items: center;
   justify-content: space-between;
+
   @media screen and (min-width: 1024px) {
     gap: 32px;
   }
@@ -150,9 +151,17 @@
   }
 }
 
-.header-soc__icon {
-  fill: rgba(243, 198, 83, 0.7);
-  &:hover, &:focus {
-    fill: var(--secondary);
+.header-soc__item {
+  color: rgba(243, 198, 83, 0.7);
+
+  transition: color var(--time) var(--cubic);
+
+  &:hover,
+  &:focus {
+    color: var(--secondary);
   }
+}
+
+.header-soc__icon {
+  fill: currentColor;
 }
