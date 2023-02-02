@@ -4,7 +4,6 @@ body {
 
 .swiper-container {
   width: calc(588px);
-  // border: blue 1px solid;
 }
 
 .slider-section {
@@ -14,23 +13,13 @@ body {
     align-items: center;
     justify-content: center;
 
-    color: #fff;
-    font-size: 32px;
+    // color: #fff;
+    // font-size: 32px;
 
     height: 270px !important;
 
     transition: ease-in-out 0.5s;
     object-fit: cover;
-    &.swiper-slide-next ~ .swiper-slide {
-    }
-    &.swiper-slide-next ~ .swiper-slide img {
-      // transition: transform ;
-    }
-    &.swiper-slide-next ~ .swiper-slide .swiper-inner {
-    }
-
-    &.swiper-slide-next .swiper-inner {
-    }
   }
 }
 
@@ -51,25 +40,28 @@ body {
   width: fit-content;
 }
 
-/// tablet
+// =====================TABLET=====================
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
   .swiper-viewport {
     width: calc(696px);
-    overflow: hidden;
     border: red 1px solid;
   }
   .swiper-container {
     width: calc(588px);
     border: blue 1px solid;
   }
-  .swiper-inner {
+  .swiper-slide .swiper-inner {
     position: relative;
     width: 100%;
     height: 100%;
     overflow: hidden;
     justify-content: center;
-    transition: width 200ms linear;
+    transition: width 500ms linear !important;
     overflow: hidden !important;
+  }
+
+  .swiper-slide-next ~ .swiper-slide .swiper-inner {
+    transition: width 500ms linear !important;
   }
 
   .slider-section {
@@ -78,64 +70,96 @@ body {
       display: flex;
       align-items: center;
       justify-content: center;
-      // min-height: 300px;
-      // width: 380px !important;
+
       color: #fff;
       font-size: 32px;
       padding-left: 17px;
       padding-right: 17px;
-      // margin-left: 17px;
-      // margin-right: 17px;
       height: 270px !important;
-      // background-color: red;
       width: 196px !important;
       transition: ease-in-out 0.5s;
       object-fit: cover;
       &.swiper-slide-next ~ .swiper-slide {
-        // краще виставляти у %
-        // зараз 17.3%  дорівнює 200px
-        //width: 200px !important;
-        // width: 350px !important;
-        // transform: scaleX(60%);
-        // width: 304px !important;
         margin-right: 108px !important;
         transition: margin-right 300ms;
       }
       &.swiper-slide-next ~ .swiper-slide img {
-        // transition: transform ;
       }
       &.swiper-slide-next ~ .swiper-slide .swiper-inner {
         position: absolute;
         left: 20px;
         width: 270px;
         overflow: hidden !important;
-        // transition: width 200ms linear;
-      }
-
-      &.swiper-slide-next .swiper-inner {
-        // краще виставляти у %
-        // зараз 17.3%  дорівнює 200px
-        //width: 200px !important;
-        // width: 300px !important;
-        // transform: scaleX(60%);
-        // width: 60%;
       }
     }
   }
 
   .swiper {
     overflow: visible;
-    width: 100%;
-  }
-
-  .swiper-wrapper {
-    padding: 0;
-    display: flex;
-    width: fit-content;
   }
 }
 
-/// desktop
+// =====================TABLET-REVERSE=====================
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .swiper-viewport {
+    width: calc(696px);
+    border: red 1px solid;
+  }
+  .swiper-container {
+    width: calc(588px);
+    border: blue 1px solid;
+  }
+  .swiper-slide .swiper-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    justify-content: center;
+    transition: width 500ms linear !important;
+    overflow: hidden !important;
+  }
+
+  .swiper-slide-next ~ .swiper-slide .swiper-inner {
+    transition: width 500ms linear !important;
+  }
+
+  .slider-section {
+    .swiper-slide {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      color: #fff;
+      font-size: 32px;
+      padding-left: 17px;
+      padding-right: 17px;
+      height: 270px !important;
+      width: 196px !important;
+      transition: ease-in-out 0.5s;
+      object-fit: cover;
+      &.swiper-slide-next ~ .swiper-slide {
+        margin-right: 108px !important;
+        transition: margin-right 300ms;
+      }
+      &.swiper-slide-next ~ .swiper-slide img {
+      }
+      &.swiper-slide-next ~ .swiper-slide .swiper-inner {
+        position: absolute;
+        left: 20px;
+        width: 270px;
+        overflow: hidden !important;
+      }
+    }
+  }
+
+  .swiper {
+    overflow: visible;
+  }
+}
+
+// =====================DESKTOP=====================
 
 @media screen and (min-width: 1280px) {
   .swiper-viewport {
