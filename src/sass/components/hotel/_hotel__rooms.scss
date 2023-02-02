@@ -32,6 +32,10 @@
       align-items: center;
       row-gap: 16px;
     }
+
+    @media screen and (min-width: $desktop) {
+      overflow-x: clip;
+    }
   }
 
   &__box {
@@ -174,6 +178,7 @@
     border: 2px solid var(--primary-light);
     border-radius: 25px;
 
+    user-select: none;
     cursor: pointer;
 
     transition: background-color var(--time) var(--cubic),
