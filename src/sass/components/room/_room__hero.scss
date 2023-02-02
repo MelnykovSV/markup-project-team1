@@ -215,6 +215,10 @@
   list-style: none;
   padding: 0;
   margin: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
   // margin-right: calc(70px - (414px - 100vw));
 
   // @media screen and (min-width: 380px) {
@@ -222,8 +226,9 @@
   // }
 
   @media screen and (min-width: $tablet) {
-    display: flex;
     // margin: 0;
+    flex-direction: row;
+    gap: 20px;
   }
 
   @media screen and (min-width: $desktop) {
@@ -239,12 +244,6 @@
   &:hover,
   &:focus {
     color: var(--secondary);
-  }
-
-  &:not(:last-child) {
-    @media screen and (min-width: $tablet) {
-      margin-right: 23px;
-    }
   }
 }
 
@@ -317,13 +316,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 8px 0 6px;
+  // margin: 0 8px 0 6px;
   width: 24px;
   height: 24px;
 
   pointer-events: visible;
 
-  @media screen and (min-width: $tablet) {
-    margin: 0 10px 0 2px;
-  }
+  // @media screen and (min-width: $tablet) {
+  //   margin: 0 10px 0 2px;
+  // }
 }
