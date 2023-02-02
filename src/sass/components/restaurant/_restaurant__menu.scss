@@ -1,4 +1,8 @@
 .menu {
+  @media (min-width: $tablet) {
+    background-color: var(--bg-dark);
+  }
+
   &__heading {
     font-family: 'Times New Roman', Times, serif;
     font-weight: 700;
@@ -12,6 +16,7 @@
 
     @media screen and (max-width: $mobile) {
       font-size: 29px;
+      background-color: var(--bg-dark);
     }
     @media screen and (min-width: $tablet) {
       padding-bottom: 40px;
