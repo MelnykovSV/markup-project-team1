@@ -62,6 +62,15 @@ body {
     width: calc(588px);
     border: blue 1px solid;
   }
+  .swiper-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    justify-content: center;
+    transition: width 200ms linear;
+    overflow: hidden !important;
+  }
 
   .slider-section {
     .swiper-slide {
@@ -100,7 +109,7 @@ body {
         left: 20px;
         width: 270px;
         overflow: hidden !important;
-        transition: width 200ms linear;
+        // transition: width 200ms linear;
       }
 
       &.swiper-slide-next .swiper-inner {
@@ -119,15 +128,6 @@ body {
     width: 100%;
   }
 
-  .swiper-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    justify-content: center;
-    transition: width 200ms linear, transform 200ms linear;
-    overflow: hidden !important;
-  }
   .swiper-wrapper {
     padding: 0;
     display: flex;
@@ -168,6 +168,9 @@ body {
       // width: 196px !important;
       transition: ease-in-out 0.5s;
       object-fit: cover;
+      &.swiper-slide-active .swiper-inner {
+        transition: width 200ms linear;
+      }
       &.swiper-slide-next ~ .swiper-slide {
         // краще виставляти у %
         // зараз 17.3%  дорівнює 200px
@@ -186,8 +189,13 @@ body {
         // left: 20px;
         // width: 270px;
         overflow: hidden !important;
-        transition: width 200ms linear;
+        // transition: width 200ms linear;
         width: 60%;
+      }
+      &.swiper-slide .swiper-inner {
+        position: absolute;
+        transition: width 200ms linear;
+        // width: 60%;
       }
 
       &.swiper-slide-next .swiper-inner {
