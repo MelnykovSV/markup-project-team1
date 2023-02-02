@@ -1,6 +1,6 @@
 .modal {
   position: fixed;
-  width: min(100vw, 414px);
+  width: min(90vw, 414px);
   max-height: 100vh;
   border-radius: 2px;
   overflow-y: auto;
@@ -109,7 +109,7 @@
 .modal.active {
   opacity: 1;
   pointer-events: initial;
-  transform: translate(-50%, calc(-120vh - 50%));
+  transform: translate(-50%, calc(-120vh - 40%));
 }
 
 .modal__button {
