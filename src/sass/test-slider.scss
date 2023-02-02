@@ -85,8 +85,6 @@ body {
 //         margin-right: 108px !important;
 //         transition: margin-right 300ms;
 //       }
-//       &.swiper-slide-next ~ .swiper-slide img {
-//       }
 //       &.swiper-slide-next ~ .swiper-slide .swiper-inner {
 //         position: absolute;
 //         left: 20px;
@@ -143,17 +141,56 @@ body {
       width: 196px !important;
       transition: ease-in-out 0.5s;
       object-fit: cover;
-      &.swiper-slide-active {
-        margin-left: 108px !important;
-        transition: margin-left 300ms;
-      }
-      &.swiper-slide-active .swiper-inner {
-        position: absolute;
-        right: 20;
-        width: 270px;
-        overflow: hidden !important;
-      }
+
+      ////!
+      // &.swiper-slide-active {
+      //   margin-left: 108px !important;
+      //   transition: margin-left 300ms;
+      // }
+      // &.swiper-slide-active .swiper-inner {
+      //   position: absolute;
+      //   right: 20;
+      //   width: 270px;
+      //   overflow: hidden !important;
+      // }
+
+      // &.swiper-slide-next ~ .swiper-slide {
+      //   margin-right: 108px !important;
+      //   transition: margin-right 300ms;
+      // }
+      // &.swiper-slide-next ~ .swiper-slide .swiper-inner {
+      //   position: absolute;
+      //   left: 20px;
+      //   width: 270px;
+      //   overflow: hidden !important;
+      // }
     }
+  }
+
+  .swiper.reverse .swiper-slide.swiper-slide-active {
+    margin-left: 108px !important;
+    transition: margin-left 300ms;
+  }
+
+  .swiper.reverse .swiper-slide.swiper-slide-active .swiper-inner {
+    position: absolute;
+    right: 20;
+    width: 270px;
+    overflow: hidden !important;
+  }
+
+  .swiper.straight .swiper-slide.swiper-slide-next ~ .swiper-slide {
+    margin-right: 108px !important;
+    transition: margin-right 300ms;
+  }
+  .swiper.straight
+    .swiper-slide.swiper-slide-next
+    ~ .swiper-slide
+    .swiper-inner {
+    position: absolute;
+    left: 20px;
+    width: 270px;
+    overflow: hidden !important;
   }
 
   .swiper {
