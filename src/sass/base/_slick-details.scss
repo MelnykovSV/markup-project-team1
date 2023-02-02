@@ -114,8 +114,7 @@
       opacity: 1;
 
       transition: opacity var(--time) var(--cubic);
-
-      &.slick-current {
+      np &.slick-current {
         opacity: 0.6;
       }
     }
@@ -129,3 +128,11 @@
     left: calc(100% - 32px);
   }
 }
+
+// .slick-current.slick-active {
+//   width: 200px;
+// }
+
+// .slick-current.slick-active img {
+//   object-fit: cover;
+// }
