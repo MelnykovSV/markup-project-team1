@@ -8,14 +8,11 @@
   @media screen and (min-width: $desktop) {
     justify-content: normal;
   }
-
-
 }
 
 .details-restaurant__flex--desktop-margin {
   @media screen and (min-width: $tablet) {
     margin-left: 32px;
-
   }
 }
 
@@ -31,18 +28,22 @@
   background-size: cover;
   // background-size: auto 100%;
   background-repeat: no-repeat;
-  background-image: linear-gradient(to right,
+  background-image: linear-gradient(
+      to right,
       rgba(var(--primary-dark-rgb), 0.65),
-      rgba(var(--primary-dark-rgb), 0.65)),
+      rgba(var(--primary-dark-rgb), 0.65)
+    ),
     url(../images/details-restaurant-bg-mobile.jpg?as=webp);
 
   @media screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
     & {
-      background-image: linear-gradient(to right,
+      background-image: linear-gradient(
+          to right,
           rgba(var(--primary-dark-rgb), 0.65),
-          rgba(var(--primary-dark-rgb), 0.65)),
+          rgba(var(--primary-dark-rgb), 0.65)
+        ),
         url(../images/details-restaurant-bg-mobile@2x.jpg?as=webp);
     }
   }
@@ -55,19 +56,23 @@
     // padding-top: 48px;
 
     & {
-      background-image: linear-gradient(to right,
+      background-image: linear-gradient(
+          to right,
           rgba(var(--primary-dark-rgb), 0.65),
-          rgba(var(--primary-dark-rgb), 0.65)),
+          rgba(var(--primary-dark-rgb), 0.65)
+        ),
         url(../images/details-restaurant-bg-tablet.jpg?as=webp);
     }
 
     @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
       & {
-        background-image: linear-gradient(to right,
+        background-image: linear-gradient(
+            to right,
             rgba(var(--primary-dark-rgb), 0.65),
-            rgba(var(--primary-dark-rgb), 0.65)),
+            rgba(var(--primary-dark-rgb), 0.65)
+          ),
           url(../images/details-restaurant-bg-tablet@2x.jpg?as=webp);
       }
     }
@@ -78,19 +83,23 @@
     margin: 0 auto;
 
     & {
-      background-image: linear-gradient(to right,
+      background-image: linear-gradient(
+          to right,
           rgba(var(--primary-dark-rgb), 0.65),
-          rgba(var(--primary-dark-rgb), 0.65)),
+          rgba(var(--primary-dark-rgb), 0.65)
+        ),
         url(../images/details-restaurant-bg-desktop.jpg?as=webp);
     }
 
     @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
       & {
-        background-image: linear-gradient(to right,
+        background-image: linear-gradient(
+            to right,
             rgba(var(--primary-dark-rgb), 0.65),
-            rgba(var(--primary-dark-rgb), 0.65)),
+            rgba(var(--primary-dark-rgb), 0.65)
+          ),
           url(../images/details-restaurant-bg-desktop@2x.jpg?as=webp);
       }
     }
@@ -184,18 +193,22 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: linear-gradient(to right,
+  background-image: linear-gradient(
+      to right,
       rgba(var(--primary-dark-rgb), 0.65),
-      rgba(var(--primary-dark-rgb), 0.65)),
+      rgba(var(--primary-dark-rgb), 0.65)
+    ),
     url(../images/details-restaurant-bg-mobile.jpg);
 
   @media screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
     & {
-      background-image: linear-gradient(to right,
+      background-image: linear-gradient(
+          to right,
           rgba(var(--primary-dark-rgb), 0.65),
-          rgba(var(--primary-dark-rgb), 0.65)),
+          rgba(var(--primary-dark-rgb), 0.65)
+        ),
         url(../images/details-restaurant-bg-mobile@2x.jpg);
     }
   }
@@ -208,19 +221,23 @@
     // padding-top: 48px;
 
     & {
-      background-image: linear-gradient(to right,
+      background-image: linear-gradient(
+          to right,
           rgba(var(--primary-dark-rgb), 0.65),
-          rgba(var(--primary-dark-rgb), 0.65)),
+          rgba(var(--primary-dark-rgb), 0.65)
+        ),
         url(../images/details-restaurant-bg-tablet.jpg);
     }
 
     @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
       & {
-        background-image: linear-gradient(to right,
+        background-image: linear-gradient(
+            to right,
             rgba(var(--primary-dark-rgb), 0.65),
-            rgba(var(--primary-dark-rgb), 0.65)),
+            rgba(var(--primary-dark-rgb), 0.65)
+          ),
           url(../images/details-restaurant-bg-tablet@2x.jpg);
       }
     }
@@ -231,19 +248,23 @@
     margin: 0 auto;
 
     & {
-      background-image: linear-gradient(to right,
+      background-image: linear-gradient(
+          to right,
           rgba(var(--primary-dark-rgb), 0.65),
-          rgba(var(--primary-dark-rgb), 0.65)),
+          rgba(var(--primary-dark-rgb), 0.65)
+        ),
         url(../images/details-restaurant-bg-desktop.jpg);
     }
 
     @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
       & {
-        background-image: linear-gradient(to right,
+        background-image: linear-gradient(
+            to right,
             rgba(var(--primary-dark-rgb), 0.65),
-            rgba(var(--primary-dark-rgb), 0.65)),
+            rgba(var(--primary-dark-rgb), 0.65)
+          ),
           url(../images/details-restaurant-bg-desktop@2x.jpg);
       }
     }
@@ -276,18 +297,22 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: linear-gradient(to right,
+  background-image: linear-gradient(
+      to right,
       rgba(var(--primary-dark-rgb), 0.65),
-      rgba(var(--primary-dark-rgb), 0.65)),
+      rgba(var(--primary-dark-rgb), 0.65)
+    ),
     url(../images/details-hotel-bg-mobile.jpg?as=webp);
 
   @media screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
     & {
-      background-image: linear-gradient(to right,
+      background-image: linear-gradient(
+          to right,
           rgba(var(--primary-dark-rgb), 0.65),
-          rgba(var(--primary-dark-rgb), 0.65)),
+          rgba(var(--primary-dark-rgb), 0.65)
+        ),
         url(../images/details-hotel-bg-mobile@2x.jpg?as=webp);
     }
   }
@@ -300,19 +325,23 @@
     // padding-top: 48px;
 
     & {
-      background-image: linear-gradient(to right,
+      background-image: linear-gradient(
+          to right,
           rgba(var(--primary-dark-rgb), 0.65),
-          rgba(var(--primary-dark-rgb), 0.65)),
+          rgba(var(--primary-dark-rgb), 0.65)
+        ),
         url(../images/details-hotel-bg-tablet.jpg?as=webp);
     }
 
     @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
       & {
-        background-image: linear-gradient(to right,
+        background-image: linear-gradient(
+            to right,
             rgba(var(--primary-dark-rgb), 0.65),
-            rgba(var(--primary-dark-rgb), 0.65)),
+            rgba(var(--primary-dark-rgb), 0.65)
+          ),
           url(../images/details-hotel-bg-tablet@2x.jpg?as=webp);
       }
     }
@@ -323,19 +352,23 @@
     margin: 0 auto;
 
     & {
-      background-image: linear-gradient(to right,
+      background-image: linear-gradient(
+          to right,
           rgba(var(--primary-dark-rgb), 0.65),
-          rgba(var(--primary-dark-rgb), 0.65)),
+          rgba(var(--primary-dark-rgb), 0.65)
+        ),
         url(../images/details-hotel-bg-desktop.jpg?as=webp);
     }
 
     @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
       & {
-        background-image: linear-gradient(to right,
+        background-image: linear-gradient(
+            to right,
             rgba(var(--primary-dark-rgb), 0.65),
-            rgba(var(--primary-dark-rgb), 0.65)),
+            rgba(var(--primary-dark-rgb), 0.65)
+          ),
           url(../images/details-hotel-bg-desktop@2x.jpg?as=webp);
       }
     }
@@ -380,10 +413,9 @@
 .details-buttons {
   letter-spacing: 0.02em;
 
-
   @media screen and (max-width: 1023px) {
     text-align: center;
-    max-width: 400px;
+    // max-width: 400px;
   }
 
   // margin-top: 32px;
@@ -399,7 +431,7 @@
     padding-right: 30px;
     max-width: 400px;
 
-    @media screen and (min-width: 414px) {
+    @media screen and (min-width: calc($mobile + 1px)) {
       padding-right: 0;
     }
   }
@@ -407,7 +439,7 @@
   &--left-padding {
     padding-left: 30px;
 
-    @media screen and (min-width: 414px) {
+    @media screen and (min-width: calc($mobile + 1px)) {
       padding-left: 0;
     }
   }
@@ -445,7 +477,7 @@
   // min-width: 430px;
   margin: 0 auto;
   padding-top: 30px;
-
+  padding-right: 30px;
   padding-bottom: 30px;
   // overflow: hidden;
   // background-position: center;
@@ -535,18 +567,22 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: linear-gradient(to right,
+  background-image: linear-gradient(
+      to right,
       rgba(var(--primary-dark-rgb), 0.65),
-      rgba(var(--primary-dark-rgb), 0.65)),
+      rgba(var(--primary-dark-rgb), 0.65)
+    ),
     url(../images/details-hotel-bg-mobile.jpg);
 
   @media screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
     & {
-      background-image: linear-gradient(to right,
+      background-image: linear-gradient(
+          to right,
           rgba(var(--primary-dark-rgb), 0.65),
-          rgba(var(--primary-dark-rgb), 0.65)),
+          rgba(var(--primary-dark-rgb), 0.65)
+        ),
         url(../images/details-hotel-bg-mobile@2x.jpg);
     }
   }
@@ -559,19 +595,23 @@
     padding-bottom: 96px;
 
     & {
-      background-image: linear-gradient(to right,
+      background-image: linear-gradient(
+          to right,
           rgba(var(--primary-dark-rgb), 0.65),
-          rgba(var(--primary-dark-rgb), 0.65)),
+          rgba(var(--primary-dark-rgb), 0.65)
+        ),
         url(../images/details-hotel-bg-tablet.jpg);
     }
 
     @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
       & {
-        background-image: linear-gradient(to right,
+        background-image: linear-gradient(
+            to right,
             rgba(var(--primary-dark-rgb), 0.65),
-            rgba(var(--primary-dark-rgb), 0.65)),
+            rgba(var(--primary-dark-rgb), 0.65)
+          ),
           url(../images/details-hotel-bg-tablet@2x.jpg);
       }
     }
@@ -581,19 +621,23 @@
     max-width: 1280px;
 
     & {
-      background-image: linear-gradient(to right,
+      background-image: linear-gradient(
+          to right,
           rgba(var(--primary-dark-rgb), 0.65),
-          rgba(var(--primary-dark-rgb), 0.65)),
+          rgba(var(--primary-dark-rgb), 0.65)
+        ),
         url(../images/details-hotel-bg-desktop.jpg);
     }
 
     @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
       & {
-        background-image: linear-gradient(to right,
+        background-image: linear-gradient(
+            to right,
             rgba(var(--primary-dark-rgb), 0.65),
-            rgba(var(--primary-dark-rgb), 0.65)),
+            rgba(var(--primary-dark-rgb), 0.65)
+          ),
           url(../images/details-hotel-bg-desktop@2x.jpg);
       }
     }
