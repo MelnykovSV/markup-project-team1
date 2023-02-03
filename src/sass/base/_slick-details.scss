@@ -94,7 +94,7 @@
   transform: translateX(calc(-194px - (404px - 100vw)));
 
   @media screen and (min-width: $mobile) {
-    transform: translateX(-194px);
+    transform: translateX(-184px);
   }
 
   @media screen and (min-width: $tablet) {
