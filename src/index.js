@@ -5,3 +5,4 @@ import './js/select-set';
 import './js/slider-con';
 import './js/anchor-scroll';
 import './js/price.js';
+import './js/menu-link.js';
