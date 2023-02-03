@@ -1,6 +1,5 @@
 function swiperSlider() {
   const teamMain = document.querySelectorAll('[data-slider="team-slider"]');
-  console.log(teamMain);
   //const heroSlider = document.querySelectorAll('[data-slider="hero-slider"]');
   if (teamMain) {
     teamMain.forEach(slider => {
