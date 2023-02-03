@@ -5,10 +5,12 @@ $('.slick-hero').slick({
   nextArrow:
     '<button type="button" class="slick-hero-next"><svg class="hero-slick-arrow slick-hero-next-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.559 8l-1.419 1.429 6.019 6.061h-26.16v2.021h26.159l-6.018 6.061 1.419 1.429 8.441-8.5-8.441-8.5z"></path></svg></button>',
   infinite: true,
-  speed: 300,
+  speed: 2000,
   slidesToScroll: 1,
   adaptiveHeight: true,
   slidesToShow: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
   // centerMode: true,
 
   // responsive: [
@@ -37,7 +39,7 @@ $('.slick-small').slick({
   nextArrow:
     '<button type="button" class="slick-small-next" aria-label="кнопка слайдера вперед"><svg class="slick-arrow slick-small-next-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.559 8l-1.419 1.429 6.019 6.061h-26.16v2.021h26.159l-6.018 6.061 1.419 1.429 8.441-8.5-8.441-8.5z"></path></svg></button>',
   infinite: true,
-  speed: 300,
+  speed: 500,
   slidesToScroll: 1,
   adaptiveHeight: true,
   slidesToShow: 2,
@@ -54,7 +56,7 @@ $('.slick-details').slick({
   nextArrow:
     '<button type="button" class="slick-details-next" aria-label="кнопка слайдера вперед"><svg class="details-slick-arrow slick-details-next-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.559 8l-1.419 1.429 6.019 6.061h-26.16v2.021h26.159l-6.018 6.061 1.419 1.429 8.441-8.5-8.441-8.5z"></path></svg></button>',
   infinite: true,
-  speed: 300,
+  speed: 500,
   slidesToScroll: 1,
   adaptiveHeight: true,
   slidesToShow: 2,
@@ -70,7 +72,7 @@ $('.slick-details-secondary').slick({
   nextArrow:
     '<button type="button" class="slick-details-next" aria-label="кнопка слайдера вперед"><svg class="details-slick-arrow slick-details-next-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.559 8l-1.419 1.429 6.019 6.061h-26.16v2.021h26.159l-6.018 6.061 1.419 1.429 8.441-8.5-8.441-8.5z"></path></svg></button>',
   infinite: true,
-  speed: 300,
+  speed: 500,
   slidesToScroll: 1,
   adaptiveHeight: true,
   slidesToShow: 2,
